@@ -19,6 +19,11 @@ commit-to-history () {
 zle -N commit-to-history
 bindkey -M viins "^x^h" commit-to-history
 bindkey -M emacs "^x^h" commit-to-history
+bindkey "^A" vi-beginning-of-line
+bindkey "^E" vi-end-of-line
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey "\e[3~" delete-char
 
 function zsh_stats() {
     fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n20
