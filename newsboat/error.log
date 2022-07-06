@@ -1,0 +1,1345 @@
+[2020-09-12 18:02:03] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2020-09-12 18:02:46] Error while retrieving http://coolshell.cn/feed: Timeout was reached
+[2020-10-01 17:37:05] Error while retrieving http://farseerfc.me/feeds/atom.xml: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://blog.yoitsu.moe/feeds/all.atom.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://nova.moe/feed/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://www.nerdsdaydream.com/feed/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://diygod.me/atom.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://jhuo.ca/index.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving http://www.overcomingbias.com/feed: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://starlite.me/rss.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://citizenlab.org/feed/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://plainlaw.me/feed/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://blog.einsamleser.me/feeds/atom.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://melty.land/feed.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://blog.bgme.me/rss.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://robinzed.wordpress.com/feed/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving http://theatlantic.com/feed/all/: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving http://feeds.kenengba.com/kenengbarss: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://blog.lilydjwg.me/feed: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving http://twstreetcorner.org/feed/: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving http://feeds.feedburner.com/Wenson: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving http://whogovernstw.org/feed/: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving http://feeds.feedburner.com/ideobook/: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://taiwan.chtsai.org/feed/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving http://feeds.feedburner.com/marginalrevolution/feed: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://linuxtoy.org/feeds/all.atom.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://blog.yoitsu.moe/feeds/all.atom.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving http://christopherharpertill.wordpress.com/feed/: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving http://daily.jstor.org/feed/: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://www.newyorker.com/feed/news: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://www.assyluminexile.com/feed: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving http://gravitysworm.com/rss: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://feeds.feedburner.com/commentshk: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving http://www.matrix67.com/blog/feed.asp: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving http://doomsday-specter.blogspot.com/feeds/posts/default: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving http://lyric.im/feed/: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving http://cnpolitics.org/feed/: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://dikaioslin.blogspot.com/feeds/posts/default: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://www.evennotes.cn/atom.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving http://stratechery.com/feed/: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://lutaonan.com/rss.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://blog.megumifox.com/public/index.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving http://coolshell.cn/feed: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://www.twisted-meadows.com/feed/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://mises.org/feed/blog.rss: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://cn.nytimes.com/rss/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://biopolyhedron.github.io/atom.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://whymehin.wordpress.com/feed/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://languagelog.ldc.upenn.edu/nll/?feed=atom: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://ganietotres29.github.io/index.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving http://www.annualreviews.org/action/showFeed?ui=45mu4&mi=3fndc3&ai=t0&jc=soc&type=etoc&feed=rss%20: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving http://www.justzht.com/rss/: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://feeds2.feedburner.com/programthink: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://jing.io/feed.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://k4yt3x.com/index.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://hypercritical.co/feeds/main: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://bellingcat.com/feed/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://en.typeblog.net/feed: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving http://blog.farmostwood.net/feed: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://mediachina.today/feed.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://suzumiyashirone.github.io/atom.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://fangkc.cn/feed/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://www.sixthtone.com/rss: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://blog.yliu.io/atom.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://blog.einverne.info/feed.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://www.yystv.cn/rss/feed: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://pockies.github.io/feed.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://sitoi.cn/atom.xml: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://rsshub.app/gcores/category/articles: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://workerstudyroom.wordpress.com/feed/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://revisesociology.com/feed/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving http://corrupttheyouth.net/feed/: Server returned nothing (no headers, no data)
+[2020-10-01 17:37:05] Error while retrieving https://terra-incognita.dev/blog/rss/: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://guavanthropology.tw/feed: SSL connect error
+[2020-10-01 17:37:05] Error while retrieving https://sociologist.xyz/feed.xml: SSL connect error
+[2020-10-03 11:41:28] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2020-10-03 11:41:42] Error while retrieving https://fangkc.cn/feed/: SSL connect error
+[2020-10-03 11:41:43] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2020-10-05 09:43:51] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2020-10-05 09:44:06] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2020-10-05 10:43:52] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2020-10-05 10:44:06] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2020-10-05 10:44:49] Error while retrieving https://mediachina.today/feed.xml: Timeout was reached
+[2020-10-05 11:43:52] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2020-10-05 11:44:07] Error while retrieving http://feeds.feedburner.com/marginalrevolution/feed: Server returned nothing (no headers, no data)
+[2020-10-05 11:44:07] Error while retrieving http://feeds.feedburner.com/Wenson: Server returned nothing (no headers, no data)
+[2020-10-05 11:44:07] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2020-10-05 11:44:07] Error while retrieving https://whymehin.wordpress.com/feed/: SSL connect error
+[2020-10-05 11:44:17] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2020-10-05 20:24:49] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2020-10-05 20:25:28] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2020-10-09 23:34:55] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2020-10-09 23:35:17] Error while retrieving http://daily.jstor.org/feed/: Timeout was reached
+[2020-10-09 23:35:45] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2020-10-09 23:36:21] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2020-10-09 23:36:42] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2020-10-09 23:36:45] Error while retrieving http://feeds.feedburner.com/chinadigitaltimes/IyPt: Server returned nothing (no headers, no data)
+[2020-10-09 23:36:49] Error while retrieving https://melty.land/feed.xml: Timeout was reached
+[2020-10-09 23:36:53] Error while retrieving https://blog.horo.moe/?feed=rss2: Timeout was reached
+[2020-10-09 23:36:59] Error while retrieving https://taiwan.chtsai.org/feed/: Timeout was reached
+[2020-10-09 23:37:04] Error while retrieving http://coolshell.cn/feed: Timeout was reached
+[2020-10-09 23:37:14] Error while retrieving https://www.twisted-meadows.com/feed/: SSL connect error
+[2020-10-09 23:37:35] Error while retrieving https://guavanthropology.tw/feed: Timeout was reached
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving </outline>: Error: unsupported URL: </outline>
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving </outline>: Error: unsupported URL: </outline>
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving </head>: Error: unsupported URL: </head>
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <head>: Error: unsupported URL: <head>
+[2021-01-26 19:59:47] Error while retrieving </outline>: Error: unsupported URL: </outline>
+[2021-01-26 19:59:47] Error while retrieving </body>: Error: unsupported URL: </body>
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving </opml>: Error: unsupported URL: </opml>
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <body>: Error: unsupported URL: <body>
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <opml: Error: unsupported URL: <opml
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <?xml: Error: unsupported URL: <?xml
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <title>Subscriptions: Error: unsupported URL: <title>Subscriptions
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 19:59:47] Error while retrieving <outline: Error: unsupported URL: <outline
+[2021-01-26 20:01:10] Error while retrieving https://blog.yoitsu.moe/feeds/all.atom.xml: Timeout was reached
+[2021-01-26 20:01:12] Error while retrieving https://www.twisted-meadows.com/feed/: Timeout was reached
+[2021-01-26 20:01:28] Error while retrieving http://blog.gslin.org/feed/: Timeout was reached
+[2021-01-26 20:01:30] Error while retrieving http://feeds.feedburner.com/ideobook/: unsupported feed format
+[2021-01-26 20:01:37] Error while retrieving http://gravitysworm.com/rss: Timeout was reached
+[2021-01-26 20:01:37] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-01-26 20:01:40] Error while retrieving http://lyric.im/feed/: Timeout was reached
+[2021-01-26 20:01:58] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-01-26 20:02:11] Error while retrieving http://etlavita.wordpress.com/feed/: Server returned nothing (no headers, no data)
+[2021-01-26 20:02:11] Error while retrieving http://www.justzht.com/rss/: SSL connect error
+[2021-01-26 20:02:11] Error while retrieving https://biopolyhedron.github.io/atom.xml: SSL connect error
+[2021-01-26 20:02:20] Error while retrieving https://fangkc.cn/feed/: Timeout was reached
+[2021-01-26 20:02:34] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Timeout was reached
+[2021-01-30 13:23:54] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-01-30 13:24:01] Error while retrieving http://feeds.feedburner.com/ideobook/: unsupported feed format
+[2021-01-30 13:24:20] Error while retrieving http://coolshell.cn/feed: Server returned nothing (no headers, no data)
+[2021-01-30 13:24:20] Error while retrieving http://archer1609wp.wordpress.com/feed/: SSL connect error
+[2021-01-30 13:24:23] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-01-30 13:24:30] Error while retrieving https://revisesociology.com/feed/: SSL connect error
+[2021-01-30 13:24:30] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: SSL connect error
+[2021-01-30 13:24:31] Error while retrieving https://fangkc.cn/feed/: SSL connect error
+[2021-01-30 14:23:59] Error while retrieving http://i.mouto.org/rss.xml: Server returned nothing (no headers, no data)
+[2021-01-30 14:23:59] Error while retrieving http://lyric.im/feed/: SSL connect error
+[2021-01-30 14:23:59] Error while retrieving https://www.twisted-meadows.com/feed/: SSL connect error
+[2021-01-30 14:23:59] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-01-30 14:23:59] Error while retrieving http://gravitysworm.com/rss: Server returned nothing (no headers, no data)
+[2021-01-30 14:23:59] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Server returned nothing (no headers, no data)
+[2021-01-30 14:24:04] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-01-30 14:24:09] Error while retrieving https://www.bennythink.com/feed: Timeout was reached
+[2021-01-30 14:24:54] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: Timeout was reached
+[2021-01-30 14:25:14] Error while retrieving https://cd-dc.typlog.io/feed.xml: SSL connect error
+[2021-01-30 15:23:44] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-01-30 15:24:01] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-01-30 15:24:24] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: Timeout was reached
+[2021-01-30 16:23:57] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-01-30 16:24:12] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-01-30 16:24:35] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: Timeout was reached
+[2021-01-30 16:24:44] Error while retrieving https://fangkc.cn/feed/: SSL connect error
+[2021-01-30 17:23:44] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-01-30 17:24:08] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 10:25:53] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 10:25:54] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 10:25:59] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 10:26:28] Error while retrieving http://coolshell.cn/feed: Timeout was reached
+[2021-02-15 10:27:39] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 10:27:40] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 10:27:44] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 10:29:18] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 10:29:18] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 10:29:23] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 10:29:52] Error while retrieving http://coolshell.cn/feed: Timeout was reached
+[2021-02-15 10:30:13] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 10:30:14] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 10:30:17] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 10:30:49] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 10:30:50] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 10:31:01] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 10:31:02] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 10:31:05] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 10:31:29] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 10:31:30] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 10:31:33] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 10:32:07] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 10:32:09] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 10:32:12] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 10:32:42] Error while retrieving http://coolshell.cn/feed: Timeout was reached
+[2021-02-15 10:36:10] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 10:36:10] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 10:36:14] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 10:36:44] Error while retrieving http://coolshell.cn/feed: Timeout was reached
+[2021-02-15 15:11:01] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 15:11:06] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 15:11:10] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 15:23:42] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 15:23:43] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 15:23:50] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 15:23:56] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-02-15 15:24:16] Error while retrieving http://coolshell.cn/feed: Timeout was reached
+[2021-02-15 15:25:06] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 15:25:06] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 15:25:10] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 15:25:19] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-02-15 15:25:32] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 15:25:32] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 15:25:36] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 15:25:46] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-02-15 15:26:07] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 15:26:08] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 15:26:12] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 15:26:20] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-02-15 15:26:30] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 15:26:31] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 15:26:36] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 15:26:43] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-02-15 15:27:04] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 15:27:04] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 15:27:09] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 15:27:24] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 15:27:25] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 15:27:30] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 15:27:38] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-02-15 15:27:58] Error while retrieving http://coolshell.cn/feed: Timeout was reached
+[2021-02-15 20:58:07] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-02-15 20:58:08] Error while retrieving https://blog.502.li/feed: Number of redirects hit maximum amount
+[2021-02-15 20:58:14] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-02-15 20:58:43] Error while retrieving http://coolshell.cn/feed: Timeout was reached
+[2021-03-01 21:17:04] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-03-01 21:17:13] Error while retrieving http://www.matrix67.com/blog/feed.asp: Server returned nothing (no headers, no data)
+[2021-03-01 21:17:13] Error while retrieving http://gravitysworm.com/rss: SSL connect error
+[2021-03-01 21:17:13] Error while retrieving http://etlavita.wordpress.com/feed/: Server returned nothing (no headers, no data)
+[2021-03-01 21:17:13] Error while retrieving https://dikaioslin.blogspot.com/feeds/posts/default: SSL connect error
+[2021-03-01 21:17:13] Error while retrieving https://whymehin.wordpress.com/feed/: SSL connect error
+[2021-03-01 21:17:13] Error while retrieving https://lutaonan.com/rss.xml: SSL connect error
+[2021-03-01 21:17:33] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-03-01 21:17:37] Error while retrieving https://fangkc.cn/feed/: SSL connect error
+[2021-03-01 21:17:37] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-06 23:09:11] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-06 23:09:18] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-06 23:09:32] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-06 23:12:41] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-06 23:12:47] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-06 23:12:47] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 08:01:13] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 08:01:19] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 08:01:29] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 08:01:39] Error while retrieving https://www.bennythink.com/feed: Timeout was reached
+[2021-05-09 09:01:12] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 09:01:16] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 09:01:23] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 10:01:11] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 10:01:16] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 10:01:22] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 11:01:13] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 11:01:17] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 11:01:22] Error while retrieving https://languagelog.ldc.upenn.edu/nll/?feed=atom: SSL connect error
+[2021-05-09 11:01:30] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 12:01:12] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 12:01:16] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 12:01:34] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 13:01:13] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 13:01:16] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 13:01:19] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 14:01:07] Error while retrieving http://theatlantic.com/feed/all/: SSL connect error
+[2021-05-09 14:01:11] Error while retrieving http://feeds.kenengba.com/kenengbarss: Server returned nothing (no headers, no data)
+[2021-05-09 14:01:12] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 14:01:16] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 14:01:20] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 17:40:57] Error while retrieving https://www.newyorker.com/feed/news: SSL connect error
+[2021-05-09 17:40:58] Error while retrieving http://feeds.kenengba.com/kenengbarss: Server returned nothing (no headers, no data)
+[2021-05-09 17:40:59] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 17:41:02] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 17:41:08] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 18:40:58] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 18:41:03] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 18:41:20] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 19:40:58] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 19:41:02] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 19:41:07] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 21:05:39] Error while retrieving http://whogovernstw.org/feed/: Server returned nothing (no headers, no data)
+[2021-05-09 21:05:42] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 21:05:49] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 21:05:49] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 22:05:46] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 22:05:51] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 22:06:14] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 22:44:41] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 22:44:46] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 22:44:56] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-09 23:05:44] Error while retrieving https://www.newyorker.com/feed/news: SSL connect error
+[2021-05-09 23:05:45] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-09 23:05:50] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-09 23:06:01] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-17 23:08:10] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-17 23:08:13] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-17 23:08:18] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-17 23:08:33] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-17 23:08:38] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-17 23:08:40] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-17 23:08:40] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-05-18 08:12:52] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-18 08:13:07] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-18 08:13:10] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-18 08:13:15] Error while retrieving https://fangkc.cn/feed/: SSL connect error
+[2021-05-18 08:13:24] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-05-18 22:06:39] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-18 22:06:44] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-18 22:07:10] Error while retrieving http://cnpolitics.org/feed/: Timeout was reached
+[2021-05-18 22:07:14] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-05-18 22:07:18] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-18 23:06:29] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-18 23:06:38] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-18 23:06:46] Error while retrieving https://www.yystv.cn/rss/feed: SSL connect error
+[2021-05-18 23:06:53] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-18 23:06:56] Error while retrieving https://www.evennotes.cn/atom.xml: SSL connect error
+[2021-05-18 23:07:00] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-05-21 08:12:59] Error while retrieving http://theatlantic.com/feed/all/: SSL connect error
+[2021-05-21 08:13:16] Error while retrieving https://sspai.com/feed: SSL connect error
+[2021-05-21 08:13:25] Error while retrieving https://matrix.org/blog/feed/: SSL connect error
+[2021-05-21 08:13:25] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-21 08:13:30] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-21 08:13:38] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-21 08:13:46] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-05-21 18:57:09] Error while retrieving http://theatlantic.com/feed/all/: SSL connect error
+[2021-05-21 18:57:18] Error while retrieving https://matrix.org/blog/feed/: SSL connect error
+[2021-05-21 18:57:19] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-21 18:57:20] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-21 18:57:23] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-21 18:57:27] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-05-21 19:48:53] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-21 19:49:16] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-05-21 19:49:19] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-21 19:49:32] Error while retrieving http://coolshell.cn/feed: Server returned nothing (no headers, no data)
+[2021-05-21 19:49:38] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-05-21 20:48:59] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-05-21 20:49:03] Error while retrieving https://blog.einverne.info/feed.xml: SSL connect error
+[2021-05-21 20:49:05] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-05-21 20:49:09] Error while retrieving https://www.yystv.cn/rss/feed: SSL connect error
+[2021-05-21 20:49:27] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-05-21 20:49:28] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-06-22 22:41:19] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-06-22 22:41:22] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-06-22 22:41:27] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-06-22 22:41:43] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-06-22 22:41:44] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-06-22 22:42:02] Error while retrieving https://rsshub.app/gcores/category/articles: Timeout was reached
+[2021-06-23 08:06:04] Error while retrieving http://theatlantic.com/feed/all/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:04] Error while retrieving http://whogovernstw.org/feed/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:04] Error while retrieving https://nova.moe/feed/: SSL connect error
+[2021-06-23 08:06:04] Error while retrieving http://philosophyandtechnology.network/language/zh/feed/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:04] Error while retrieving https://blog.douchi.space/?feed=rss2: SSL connect error
+[2021-06-23 08:06:04] Error while retrieving https://plainlaw.me/feed/: SSL connect error
+[2021-06-23 08:06:04] Error while retrieving https://www.assyluminexile.com/feed: SSL connect error
+[2021-06-23 08:06:04] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: SSL connect error
+[2021-06-23 08:06:04] Error while retrieving https://blog.horo.moe/?feed=rss2: SSL connect error
+[2021-06-23 08:06:04] Error while retrieving http://www.matrix67.com/blog/feed.asp: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:04] Error while retrieving http://feeds.feedburner.com/vladris: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:07] Error while retrieving https://blog.lilydjwg.me/feed: SSL connect error
+[2021-06-23 08:06:07] Error while retrieving https://blog.bgme.me/rss.xml: SSL connect error
+[2021-06-23 08:06:07] Error while retrieving https://jhuo.ca/index.xml: SSL connect error
+[2021-06-23 08:06:07] Error while retrieving https://melty.land/feed.xml: SSL connect error
+[2021-06-23 08:06:07] Error while retrieving https://blog.yoitsu.moe/feeds/all.atom.xml: SSL connect error
+[2021-06-23 08:06:07] Error while retrieving https://starlite.me/rss.xml: SSL connect error
+[2021-06-23 08:06:09] Error while retrieving http://www.sixthtone.com/rss: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:09] Error while retrieving https://diygod.me/atom.xml: SSL connect error
+[2021-06-23 08:06:09] Error while retrieving https://sspai.com/feed: SSL connect error
+[2021-06-23 08:06:09] Error while retrieving http://shell909090.org/index.xml: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:09] Error while retrieving https://citizenlab.org/feed/: SSL connect error
+[2021-06-23 08:06:09] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-06-23 08:06:09] Error while retrieving https://robinzed.wordpress.com/feed/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://www.senra.me/feed/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving http://lyric.im/feed/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://farseerfc.me/feeds/atom.xml: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://www.newyorker.com/feed/news: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://kirikira.moe/rss/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://whymehin.wordpress.com/feed/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://twstreetcorner.org/feed/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving http://blog.gslin.org/feed/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://lutaonan.com/rss.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://www.nerdsdaydream.com/feed/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://taiwan.chtsai.org/feed/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://i.mouto.org/rss.xml: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving http://feeds.kenengba.com/kenengbarss: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://bellingcat.com/feed/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://gravitysworm.com/rss: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving http://www.overcomingbias.com/feed: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving http://daily.jstor.org/feed/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://www.twisted-meadows.com/feed/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://feeds2.feedburner.com/programthink: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://hky.moe/feed/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://cnpolitics.org/feed/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving http://feeds.feedburner.com/marginalrevolution/feed: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://christopherharpertill.wordpress.com/feed/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://linuxtoy.org/feeds/all.atom.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://www.yystv.cn/rss/feed: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://workerstudyroom.wordpress.com/feed/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://feeds.feedburner.com/Wenson: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://feeds2.feedburner.com/GFWReport: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://doomsday-specter.blogspot.com/feeds/posts/default: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://feeds.feedburner.com/commentshk: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://en.typeblog.net/feed: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://www.twreporter.org/a/rss2.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://viflythink.com/atom.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://feeds.feedburner.com/ideobook/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving http://etlavita.wordpress.com/feed/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving http://archer1609wp.wordpress.com/feed/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://ganietotres29.github.io/index.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://coolshell.cn/feed: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving http://shendanqi.blog.caixin.com/feed: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving http://www.annualreviews.org/action/showFeed?ui=45mu4&mi=3fndc3&ai=t0&jc=soc&type=etoc&feed=rss%20: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving http://www.justzht.com/rss/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://dikaioslin.blogspot.com/feeds/posts/default: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://terra-incognita.dev/blog/rss/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://k4yt3x.com/index.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://biopolyhedron.github.io/atom.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://fangkc.cn/feed/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://blog.einverne.info/feed.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://matrix.org/blog/feed/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://www.evennotes.cn/atom.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://blog.megumifox.com/public/index.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://jing.io/feed.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://mediachina.today/feed.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://blog.farmostwood.net/feed: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://toshiko0o.github.io/rss.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://stratechery.com/feed/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://cd-dc.typlog.io/feed.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://hypercritical.co/feeds/main: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=sssb&type=etoc&feed=rss: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://blog.yliu.io/atom.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://suzumiyashirone.github.io/atom.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://chenchenzhang.net/feed/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://typeblog.net/feed.rss: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://pockies.github.io/feed.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://rsshub.app/gcores/category/articles: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://physicsworld.com/feed: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://g2ex.github.io/atom.xml: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://languagelog.ldc.upenn.edu/nll/?feed=atom: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://arthistorystrolls.com/feed/: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving http://corrupttheyouth.net/feed/: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:10] Error while retrieving https://yilinhut.net/feed: SSL connect error
+[2021-06-23 08:06:10] Error while retrieving https://sociologist.xyz/feed.xml: SSL connect error
+[2021-06-23 08:06:15] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: SSL connect error
+[2021-06-23 08:06:15] Error while retrieving https://revisesociology.com/feed/: SSL connect error
+[2021-06-23 08:06:20] Error while retrieving http://digitalmilieu.net/?feed=rss2: Server returned nothing (no headers, no data)
+[2021-06-23 08:06:20] Error while retrieving https://guavanthropology.tw/feed: SSL connect error
+[2021-07-03 00:20:16] Error while retrieving https://i.nebula.moe/rss.xml: HTTP response code said error 404
+[2021-07-03 00:20:18] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-07-03 00:20:21] Error while retrieving http://blog.gslin.org/feed/: HTTP response code said error 503
+[2021-07-03 00:20:21] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-08-17 08:26:08] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-08-17 08:26:09] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-08-17 08:26:17] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-08-17 08:26:27] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-08-17 08:26:35] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-08-17 08:26:40] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-08-17 08:26:43] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-08-17 08:26:45] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-08-17 08:26:54] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-08-17 08:26:58] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-08-17 08:26:58] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-08-17 08:27:00] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-08-17 08:27:11] Error while retrieving https://yilinhut.net/feed: SSL peer certificate or SSH remote key was not OK
+[2021-08-17 08:27:28] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: Timeout was reached
+[2021-09-01 21:59:58] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-01 22:00:00] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-01 22:00:09] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-09-01 22:00:10] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-09-01 22:00:15] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-09-01 22:00:22] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-09-01 22:00:47] Error while retrieving https://rsshub.app/gcores/category/articles: Timeout was reached
+[2021-09-01 22:00:49] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: Timeout was reached
+[2021-09-01 22:06:31] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-01 22:06:33] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-01 22:06:43] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-09-01 22:06:43] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-09-01 22:06:46] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-09-01 22:06:52] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-09-01 22:07:19] Error while retrieving https://rsshub.app/gcores/category/articles: Timeout was reached
+[2021-09-01 22:07:25] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: Timeout was reached
+[2021-09-01 22:09:03] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-01 22:13:38] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-01 22:17:17] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-01 22:17:20] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-01 22:18:47] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-01 22:18:49] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-01 22:18:54] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-09-01 22:19:01] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-01 22:19:03] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-01 22:19:09] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-09-01 22:19:10] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-09-01 22:19:13] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-09-01 22:19:18] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-09-01 22:20:34] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-01 22:20:49] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-01 22:20:51] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-01 22:20:57] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-09-01 22:20:59] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-09-04 08:18:24] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-04 08:18:27] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-05 23:00:01] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-05 23:00:03] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-05 23:00:06] Error while retrieving http://theatlantic.com/feed/all/: SSL connect error
+[2021-09-05 23:00:10] Error while retrieving http://feeds.kenengba.com/kenengbarss: HTTP response code said error 502
+[2021-09-05 23:00:11] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-09-05 23:00:12] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-09-05 23:00:18] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-09-05 23:00:19] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-09-05 23:00:21] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-09-05 23:00:48] Error while retrieving http://coolshell.cn/feed: Timeout was reached
+[2021-09-07 20:37:49] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-07 20:37:52] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-07 20:38:02] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-09-07 20:38:06] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-09-07 20:38:13] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-09-07 20:38:15] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-09-07 20:38:22] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-09-07 20:38:45] Error while retrieving https://rsshub.app/gcores/category/articles: Timeout was reached
+[2021-09-10 23:08:08] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-10 23:08:10] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-10 23:08:20] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-09-10 23:08:20] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-09-10 23:08:24] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-09-10 23:08:26] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-09-10 23:08:27] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-09-10 23:08:54] Error while retrieving http://coolshell.cn/feed: Timeout was reached
+[2021-09-10 23:08:57] Error while retrieving https://rsshub.app/gcores/category/articles: Timeout was reached
+[2021-09-13 22:05:35] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-13 22:05:37] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-13 22:05:39] Error while retrieving http://theatlantic.com/feed/all/: HTTP response code said error 502
+[2021-09-13 22:05:46] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-09-13 22:05:48] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-09-13 22:05:50] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-09-13 22:05:51] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-09-13 22:05:54] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-09-13 22:06:23] Error while retrieving https://rsshub.app/gcores/category/articles: Timeout was reached
+[2021-09-19 16:56:13] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-19 16:56:14] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-19 16:56:23] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-09-19 16:56:24] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-09-19 16:56:28] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-09-19 16:56:28] Error while retrieving https://blog.einverne.info/feed.xml: SSL connect error
+[2021-09-19 16:56:28] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-09-19 16:56:31] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-09-19 16:56:59] Error while retrieving https://rsshub.app/gcores/category/articles: Timeout was reached
+[2021-09-19 17:56:13] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-19 17:56:14] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-19 17:56:21] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-09-19 17:56:22] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-09-19 17:56:26] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-09-19 17:56:29] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-09-19 17:56:32] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-09-19 17:56:57] Error while retrieving https://rsshub.app/gcores/category/articles: Timeout was reached
+[2021-09-20 10:02:34] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2021-09-20 10:02:35] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-09-20 10:02:43] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-09-20 10:02:47] Error while retrieving https://sspai.com/feed: SSL connect error
+[2021-10-01 23:21:47] Error while retrieving https://i.nebula.moe/rss.xml: HTTP response code said error 404
+[2021-10-01 23:21:48] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-10-01 23:21:52] Error while retrieving http://theatlantic.com/feed/all/: SSL connect error
+[2021-10-01 23:21:52] Error while retrieving https://blog.horo.moe/?feed=rss2: SSL connect error
+[2021-10-01 23:21:56] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-10-01 23:21:58] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-10-01 23:22:03] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-10-01 23:22:08] Error while retrieving http://cnpolitics.org/feed/: HTTP response code said error 502
+[2021-10-01 23:22:11] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2021-10-01 23:22:13] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-10-01 23:22:14] Error while retrieving https://rsshub.app/gcores/category/articles: SSL connect error
+[2021-10-01 23:22:14] Error while retrieving https://blog.lilydjwg.me/feed: Timeout was reached
+[2021-12-11 08:30:25] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-11 08:30:35] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-11 08:30:42] Error while retrieving https://blog.502.li/feed: HTTP response code said error 403
+[2021-12-11 08:30:50] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-11 08:30:52] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-11 08:30:58] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-11 08:32:02] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-11 08:32:10] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-11 08:32:13] Error while retrieving https://blog.502.li/feed: HTTP response code said error 403
+[2021-12-11 08:32:16] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-11 08:32:26] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-11 08:32:26] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-11 08:44:16] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-11 08:44:17] Error while retrieving https://blog.502.li/feed: HTTP response code said error 403
+[2021-12-11 08:44:25] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-11 08:44:31] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-11 08:44:32] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-11 08:44:43] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-11 08:46:44] Error while retrieving https://blog.502.li/feed: HTTP response code said error 403
+[2021-12-11 08:46:51] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-11 08:46:52] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-11 08:46:53] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-11 08:47:01] Error while retrieving https://fangkc.cn/feed/: SSL connect error
+[2021-12-11 08:47:04] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-11 08:47:09] Error while retrieving http://coolshell.cn/feed: SSL connect error
+[2021-12-11 08:47:14] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-11 09:00:00] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-11 09:00:09] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-11 09:00:11] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-12-11 09:00:15] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-11 09:00:19] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-11 09:00:29] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2021-12-11 09:00:31] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-11 09:00:46] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: HTTP response code said error 500
+[2021-12-11 09:00:47] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: HTTP response code said error 500
+[2021-12-11 10:00:01] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2021-12-11 10:00:03] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-11 10:00:07] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: HTTP response code said error 500
+[2021-12-11 10:00:08] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: HTTP response code said error 500
+[2021-12-11 10:00:09] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-11 10:00:11] Error while retrieving https://blog.502.li/feed: HTTP response code said error 403
+[2021-12-11 10:00:16] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-11 10:00:17] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-11 10:00:28] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-11 13:45:09] Error while retrieving https://rssfeed.today/weibo/rss/6336831292: HTTP response code said error 500
+[2021-12-11 13:45:10] Error while retrieving https://rssfeed.today/weibo/rss/5902255865: HTTP response code said error 500
+[2021-12-11 13:45:12] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2021-12-11 13:45:12] Error while retrieving https://rssfeed.today/weibo/rss/1967179897: HTTP response code said error 500
+[2021-12-11 13:45:13] Error while retrieving https://rssfeed.today/weibo/rss/1747817202: HTTP response code said error 500
+[2021-12-11 13:45:14] Error while retrieving https://rssfeed.today/weibo/rss/7392172347: HTTP response code said error 500
+[2021-12-11 13:45:15] Error while retrieving https://rssfeed.today/weibo/rss/1768631600: HTTP response code said error 500
+[2021-12-11 13:45:17] Error while retrieving https://rssfeed.today/weibo/rss/6533586539: HTTP response code said error 500
+[2021-12-11 13:45:18] Error while retrieving https://rssfeed.today/weibo/rss/1907380525: HTTP response code said error 500
+[2021-12-11 13:45:19] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-11 13:45:20] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: HTTP response code said error 500
+[2021-12-11 13:45:20] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: HTTP response code said error 500
+[2021-12-11 13:45:25] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-11 13:45:30] Error while retrieving https://blog.502.li/feed: HTTP response code said error 403
+[2021-12-11 13:45:33] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-11 13:45:33] Error while retrieving https://rssfeed.today/weibo/rss/5822404600: HTTP response code said error 500
+[2021-12-11 13:45:34] Error while retrieving https://rssfeed.today/weibo/rss/1666968252: HTTP response code said error 500
+[2021-12-11 13:45:34] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-11 13:45:37] Error while retrieving https://rssfeed.today/weibo/rss/6629766915: HTTP response code said error 500
+[2021-12-11 13:45:41] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-11 13:45:54] Error while retrieving http://blog.farmostwood.net/feed: HTTP response code said error 502
+[2021-12-11 13:45:54] Error while retrieving https://sociologist.xyz/feed.xml: SSL connect error
+[2021-12-11 13:45:54] Error while retrieving https://fangkc.cn/feed/: SSL connect error
+[2021-12-11 13:45:54] Error while retrieving http://www.justzht.com/rss/: HTTP response code said error 502
+[2021-12-11 13:45:59] Error while retrieving https://blog.einverne.info/feed.xml: SSL connect error
+[2021-12-11 13:45:59] Error while retrieving https://mediachina.today/feed.xml: SSL connect error
+[2021-12-11 13:45:59] Error while retrieving https://hypercritical.co/feeds/main: SSL connect error
+[2021-12-11 16:33:07] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-11 16:33:07] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2021-12-11 16:33:13] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: HTTP response code said error 500
+[2021-12-11 16:33:14] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: HTTP response code said error 500
+[2021-12-11 16:33:17] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-11 16:33:20] Error while retrieving https://blog.502.li/feed: HTTP response code said error 403
+[2021-12-11 16:33:22] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-11 16:33:23] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-11 16:33:31] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-13 19:17:30] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-13 19:17:43] Error while retrieving https://blog.502.li/feed: HTTP response code said error 403
+[2021-12-13 19:17:43] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-13 19:17:44] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-13 19:17:53] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-13 19:18:01] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-13 20:17:34] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-13 20:17:41] Error while retrieving http://feeds.kenengba.com/kenengbarss: HTTP response code said error 502
+[2021-12-13 20:17:42] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-13 20:17:42] Error while retrieving https://blog.502.li/feed: HTTP response code said error 403
+[2021-12-13 20:17:45] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-13 20:17:51] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-13 20:17:54] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-13 21:17:25] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-13 21:17:31] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-13 21:17:35] Error while retrieving https://blog.502.li/feed: HTTP response code said error 403
+[2021-12-13 21:17:37] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-13 21:17:39] Error while retrieving http://feeds.kenengba.com/kenengbarss: HTTP response code said error 502
+[2021-12-13 21:17:42] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-13 21:17:45] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-13 21:17:57] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-13 21:18:10] Error while retrieving https://fangkc.cn/feed/: Timeout was reached
+[2021-12-22 19:06:08] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-22 19:06:10] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-22 19:06:20] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-22 19:06:22] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-22 19:06:27] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2021-12-22 19:06:30] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-22 19:06:37] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-22 19:08:37] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-22 19:08:38] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-22 19:08:46] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2021-12-22 19:08:47] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-22 19:08:48] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-22 19:08:55] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-22 19:08:56] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-22 19:12:39] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-22 19:12:45] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-22 19:12:46] Error while retrieving http://whogovernstw.org/feed/: HTTP response code said error 502
+[2021-12-22 19:12:53] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2021-12-22 19:12:54] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-22 19:12:56] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-22 19:12:58] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-22 19:13:01] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-22 19:13:03] Error while retrieving http://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=sssb&type=etoc&feed=rss: HTTP response code said error 520
+[2021-12-22 20:12:40] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-22 20:12:44] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-22 20:12:51] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-22 20:12:52] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2021-12-22 20:12:54] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-22 20:12:58] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-22 20:12:59] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-23 21:21:32] Error while retrieving https://rssfeed.today/weibo/rss/6629766915: HTTP response code said error 500
+[2021-12-23 21:21:32] Error while retrieving https://rssfeed.today/weibo/rss/7107428537: HTTP response code said error 500
+[2021-12-23 21:21:33] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-23 21:21:33] Error while retrieving https://rssfeed.today/weibo/rss/6336831292: HTTP response code said error 500
+[2021-12-23 21:21:35] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-23 21:21:35] Error while retrieving https://rssfeed.today/weibo/rss/5902255865: HTTP response code said error 500
+[2021-12-23 21:21:36] Error while retrieving https://rssfeed.today/weibo/rss/6384219300: HTTP response code said error 500
+[2021-12-23 21:21:37] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2021-12-23 21:21:40] Error while retrieving https://rssfeed.today/weibo/rss/1747817202: HTTP response code said error 500
+[2021-12-23 21:21:41] Error while retrieving https://rssfeed.today/weibo/rss/7392172347: HTTP response code said error 500
+[2021-12-23 21:21:43] Error while retrieving https://rssfeed.today/weibo/rss/3702002507: HTTP response code said error 500
+[2021-12-23 21:21:44] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-23 21:21:44] Error while retrieving https://rssfeed.today/weibo/rss/1768631600: HTTP response code said error 500
+[2021-12-23 21:21:45] Error while retrieving https://rssfeed.today/weibo/rss/6533586539: HTTP response code said error 500
+[2021-12-23 21:21:46] Error while retrieving https://rssfeed.today/weibo/rss/1907380525: HTTP response code said error 500
+[2021-12-23 21:21:47] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-23 21:21:47] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: HTTP response code said error 500
+[2021-12-23 21:21:47] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2021-12-23 21:21:47] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: HTTP response code said error 500
+[2021-12-23 21:21:48] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-23 21:21:52] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-23 21:21:57] Error while retrieving https://rssfeed.today/weibo/rss/5822404600: HTTP response code said error 500
+[2021-12-23 21:22:01] Error while retrieving https://rssfeed.today/weibo/rss/1666968252: HTTP response code said error 500
+[2021-12-23 21:22:02] Error while retrieving https://rssfeed.today/weibo/rss/6036390124: HTTP response code said error 500
+[2021-12-23 21:22:45] Error while retrieving https://terra-incognita.dev/blog/rss/: SSL connect error
+[2021-12-24 22:03:38] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-24 22:03:38] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-24 22:03:40] Error while retrieving https://rssfeed.today/weibo/rss/6629766915: HTTP response code said error 500
+[2021-12-24 22:03:48] Error while retrieving https://rssfeed.today/weibo/rss/7107428537: HTTP response code said error 500
+[2021-12-24 22:03:49] Error while retrieving https://rssfeed.today/weibo/rss/6336831292: HTTP response code said error 500
+[2021-12-24 22:03:49] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-24 22:03:50] Error while retrieving https://rssfeed.today/weibo/rss/5902255865: HTTP response code said error 500
+[2021-12-24 22:03:50] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2021-12-24 22:03:51] Error while retrieving https://rssfeed.today/weibo/rss/6384219300: HTTP response code said error 500
+[2021-12-24 22:03:53] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2021-12-24 22:03:53] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-24 22:03:54] Error while retrieving https://rssfeed.today/weibo/rss/1967179897: HTTP response code said error 500
+[2021-12-24 22:03:55] Error while retrieving https://rssfeed.today/weibo/rss/1747817202: HTTP response code said error 500
+[2021-12-24 22:03:55] Error while retrieving https://rssfeed.today/weibo/rss/7392172347: HTTP response code said error 500
+[2021-12-24 22:03:56] Error while retrieving https://rssfeed.today/weibo/rss/5822404600: HTTP response code said error 500
+[2021-12-24 22:03:56] Error while retrieving https://rssfeed.today/weibo/rss/3702002507: HTTP response code said error 500
+[2021-12-24 22:03:57] Error while retrieving https://rssfeed.today/weibo/rss/1666968252: HTTP response code said error 500
+[2021-12-24 22:03:57] Error while retrieving https://rssfeed.today/weibo/rss/1768631600: HTTP response code said error 500
+[2021-12-24 22:03:57] Error while retrieving https://rssfeed.today/weibo/rss/6036390124: HTTP response code said error 500
+[2021-12-24 22:03:58] Error while retrieving https://rssfeed.today/weibo/rss/6533586539: HTTP response code said error 500
+[2021-12-24 22:03:58] Error while retrieving https://rssfeed.today/weibo/rss/1907380525: HTTP response code said error 500
+[2021-12-24 22:04:00] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: HTTP response code said error 500
+[2021-12-24 22:04:00] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-24 22:04:00] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: HTTP response code said error 500
+[2021-12-24 22:04:06] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-25 04:02:05] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-25 04:02:10] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-25 04:02:17] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-25 04:02:18] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-25 04:02:19] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-25 04:02:22] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-12-25 04:02:24] Error while retrieving https://languagelog.ldc.upenn.edu/nll/?feed=atom: SSL connect error
+[2021-12-25 04:02:25] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-25 04:44:27] Error while retrieving https://rssfeed.today/weibo/rss/6036390124: HTTP response code said error 500
+[2021-12-25 04:44:28] Error while retrieving https://rssfeed.today/weibo/rss/6629766915: HTTP response code said error 500
+[2021-12-25 04:44:29] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-25 04:44:29] Error while retrieving https://rssfeed.today/weibo/rss/7107428537: HTTP response code said error 500
+[2021-12-25 04:44:30] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-25 04:44:30] Error while retrieving https://rssfeed.today/weibo/rss/6336831292: HTTP response code said error 500
+[2021-12-25 04:44:30] Error while retrieving https://rssfeed.today/weibo/rss/5902255865: HTTP response code said error 500
+[2021-12-25 04:44:31] Error while retrieving https://rssfeed.today/weibo/rss/6384219300: HTTP response code said error 500
+[2021-12-25 04:44:32] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2021-12-25 04:44:33] Error while retrieving https://rssfeed.today/weibo/rss/1967179897: HTTP response code said error 500
+[2021-12-25 04:44:33] Error while retrieving https://rssfeed.today/weibo/rss/1747817202: HTTP response code said error 500
+[2021-12-25 04:44:34] Error while retrieving https://rssfeed.today/weibo/rss/7392172347: HTTP response code said error 500
+[2021-12-25 04:44:35] Error while retrieving https://rssfeed.today/weibo/rss/3702002507: HTTP response code said error 500
+[2021-12-25 04:44:36] Error while retrieving https://rssfeed.today/weibo/rss/1768631600: HTTP response code said error 500
+[2021-12-25 04:44:36] Error while retrieving https://rssfeed.today/weibo/rss/6533586539: HTTP response code said error 500
+[2021-12-25 04:44:37] Error while retrieving https://rssfeed.today/weibo/rss/1907380525: HTTP response code said error 500
+[2021-12-25 04:44:38] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: HTTP response code said error 500
+[2021-12-25 04:44:39] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: HTTP response code said error 500
+[2021-12-25 04:44:40] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-25 04:44:41] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-25 04:44:42] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-25 04:44:42] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-12-25 04:44:47] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-25 04:44:56] Error while retrieving https://rssfeed.today/weibo/rss/5822404600: HTTP response code said error 500
+[2021-12-25 04:44:57] Error while retrieving https://rssfeed.today/weibo/rss/1666968252: HTTP response code said error 500
+[2021-12-25 04:50:01] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-25 04:50:06] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-25 04:50:11] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-25 04:50:12] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-12-25 04:50:16] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-25 04:50:17] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-25 04:50:21] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-25 04:52:24] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-25 04:52:24] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-25 04:52:32] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-25 04:52:34] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-25 04:52:35] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-12-25 04:52:36] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-25 04:52:40] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-25 23:15:51] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-25 23:15:59] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-25 23:16:02] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-25 23:16:06] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-12-25 23:16:13] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-25 23:16:16] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-25 23:16:17] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-26 12:11:17] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-26 12:11:24] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-26 12:11:29] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-26 12:11:32] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-26 12:11:35] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2021-12-26 12:11:38] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-26 12:11:44] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-26 12:11:45] Error while retrieving https://guavanthropology.tw/feed: SSL connect error
+[2021-12-28 22:09:17] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2021-12-28 22:09:17] Error while retrieving https://rssfeed.today/weibo/rss/1967179897: HTTP response code said error 500
+[2021-12-28 22:09:18] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: HTTP response code said error 500
+[2021-12-28 22:09:18] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: HTTP response code said error 500
+[2021-12-28 22:09:19] Error while retrieving https://rssfeed.today/weibo/rss/1907380525: HTTP response code said error 500
+[2021-12-28 22:09:22] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2021-12-28 22:09:23] Error while retrieving https://rssfeed.today/weibo/rss/6533586539: HTTP response code said error 500
+[2021-12-28 22:09:24] Error while retrieving https://rssfeed.today/weibo/rss/1768631600: HTTP response code said error 500
+[2021-12-28 22:09:24] Error while retrieving https://rssfeed.today/weibo/rss/3702002507: HTTP response code said error 500
+[2021-12-28 22:09:25] Error while retrieving https://rssfeed.today/weibo/rss/7392172347: HTTP response code said error 500
+[2021-12-28 22:09:26] Error while retrieving https://rssfeed.today/weibo/rss/1747817202: HTTP response code said error 500
+[2021-12-28 22:09:26] Error while retrieving https://bellingcat.com/feed/: Number of redirects hit maximum amount
+[2021-12-28 22:09:27] Error while retrieving https://rssfeed.today/weibo/rss/1666968252: HTTP response code said error 500
+[2021-12-28 22:09:28] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2021-12-28 22:09:31] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2021-12-28 22:09:32] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2021-12-28 22:09:35] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2021-12-28 22:09:36] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2021-12-28 22:09:36] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2021-12-28 22:09:36] Error while retrieving https://rssfeed.today/weibo/rss/5902255865: HTTP response code said error 500
+[2021-12-28 22:09:37] Error while retrieving https://rssfeed.today/weibo/rss/6336831292: HTTP response code said error 500
+[2021-12-28 22:09:39] Error while retrieving https://rssfeed.today/weibo/rss/7107428537: HTTP response code said error 500
+[2021-12-28 22:09:39] Error while retrieving https://rssfeed.today/weibo/rss/6629766915: HTTP response code said error 500
+[2021-12-28 22:09:40] Error while retrieving https://rssfeed.today/weibo/rss/6036390124: HTTP response code said error 500
+[2021-12-28 22:09:42] Error while retrieving https://fangkc.cn/feed/: SSL connect error
+[2021-12-28 22:09:48] Error while retrieving https://rssfeed.today/weibo/rss/5822404600: HTTP response code said error 500
+[2022-01-02 13:42:05] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-01-02 13:42:07] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-01-02 13:42:15] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-01-02 13:42:15] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-01-02 13:42:20] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2022-01-02 13:42:20] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2022-01-02 13:42:22] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-01-02 13:42:22] Error while retrieving https://rssfeed.today/weibo/rss/6384219300: HTTP response code said error 500
+[2022-01-09 15:23:32] Error while retrieving https://rssfeed.today/weibo/rss/1967179897: SSL connect error
+[2022-01-09 15:23:33] Error while retrieving https://citizenlab.org/feed/: SSL connect error
+[2022-01-09 15:23:33] Error while retrieving https://melty.land/feed.xml: SSL connect error
+[2022-01-09 15:23:33] Error while retrieving https://blog.douchi.space/?feed=rss2: SSL connect error
+[2022-01-09 15:23:33] Error while retrieving http://theatlantic.com/feed/all/: SSL connect error
+[2022-01-09 15:23:33] Error while retrieving https://taiwan.chtsai.org/feed/: SSL connect error
+[2022-01-09 15:23:35] Error while retrieving http://daily.jstor.org/feed/: HTTP response code said error 502
+[2022-01-09 15:23:36] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: SSL connect error
+[2022-01-09 15:23:37] Error while retrieving https://jhuo.ca/index.xml: SSL connect error
+[2022-01-09 15:23:37] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: SSL connect error
+[2022-01-09 15:23:38] Error while retrieving https://i.nebula.moe/rss.xml: SSL connect error
+[2022-01-09 15:23:38] Error while retrieving http://twstreetcorner.org/feed/: HTTP response code said error 502
+[2022-01-09 15:23:38] Error while retrieving https://starlite.me/rss.xml: SSL connect error
+[2022-01-09 15:23:38] Error while retrieving https://diygod.me/atom.xml: SSL connect error
+[2022-01-09 15:23:38] Error while retrieving http://www.sixthtone.com/rss: HTTP response code said error 502
+[2022-01-09 15:23:41] Error while retrieving https://blog.tfei.moe/rss.xml: SSL connect error
+[2022-01-09 15:23:43] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: SSL connect error
+[2022-01-09 15:23:43] Error while retrieving http://whogovernstw.org/feed/: HTTP response code said error 502
+[2022-01-09 15:23:43] Error while retrieving https://kirikira.moe/rss/: SSL connect error
+[2022-01-09 15:23:43] Error while retrieving http://lyric.im/feed/: HTTP response code said error 502
+[2022-01-09 15:23:44] Error while retrieving https://www.newyorker.com/feed/news: SSL connect error
+[2022-01-09 15:23:44] Error while retrieving https://rssfeed.today/weibo/rss/1907380525: HTTP response code said error 500
+[2022-01-09 15:23:45] Error while retrieving https://blog.bgme.me/rss.xml: SSL connect error
+[2022-01-09 15:23:45] Error while retrieving https://rssfeed.today/weibo/rss/6533586539: HTTP response code said error 500
+[2022-01-09 15:23:45] Error while retrieving https://blog.yoitsu.moe/feeds/all.atom.xml: SSL connect error
+[2022-01-09 15:23:46] Error while retrieving https://rssfeed.today/weibo/rss/1768631600: HTTP response code said error 500
+[2022-01-09 15:23:48] Error while retrieving https://hky.moe/feed/: SSL connect error
+[2022-01-09 15:23:48] Error while retrieving https://rssfeed.today/weibo/rss/7392172347: HTTP response code said error 500
+[2022-01-09 15:23:48] Error while retrieving http://shell909090.org/index.xml: HTTP response code said error 502
+[2022-01-09 15:23:48] Error while retrieving http://philosophyandtechnology.network/language/zh/feed/: HTTP response code said error 502
+[2022-01-09 15:23:49] Error while retrieving https://rssfeed.today/weibo/rss/1747817202: HTTP response code said error 500
+[2022-01-09 15:23:49] Error while retrieving http://feeds.feedburner.com/vladris: HTTP response code said error 502
+[2022-01-09 15:23:50] Error while retrieving https://rssfeed.today/weibo/rss/5822404600: HTTP response code said error 500
+[2022-01-09 15:23:50] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-01-09 15:23:50] Error while retrieving https://blog.horo.moe/?feed=rss2: SSL connect error
+[2022-01-09 15:23:50] Error while retrieving http://feeds.kenengba.com/kenengbarss: HTTP response code said error 502
+[2022-01-09 15:23:51] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2022-01-09 15:23:51] Error while retrieving https://rssfeed.today/weibo/rss/6384219300: HTTP response code said error 500
+[2022-01-09 15:23:53] Error while retrieving https://rssfeed.today/weibo/rss/5902255865: HTTP response code said error 500
+[2022-01-09 15:23:54] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-01-09 15:23:55] Error while retrieving https://rssfeed.today/weibo/rss/6336831292: HTTP response code said error 500
+[2022-01-09 15:23:55] Error while retrieving http://feeds.feedburner.com/Wenson: HTTP response code said error 502
+[2022-01-09 15:23:55] Error while retrieving http://feeds.feedburner.com/marginalrevolution/feed: HTTP response code said error 502
+[2022-01-09 15:23:55] Error while retrieving http://www.annualreviews.org/action/showFeed?ui=45mu4&mi=3fndc3&ai=t0&jc=soc&type=etoc&feed=rss%20: HTTP response code said error 502
+[2022-01-09 15:23:56] Error while retrieving https://rssfeed.today/weibo/rss/7107428537: HTTP response code said error 500
+[2022-01-09 15:23:56] Error while retrieving http://gravitysworm.com/rss: HTTP response code said error 502
+[2022-01-09 15:23:56] Error while retrieving http://i.mouto.org/rss.xml: HTTP response code said error 502
+[2022-01-09 15:23:56] Error while retrieving https://freemind.pluskid.org/rss.xml: SSL connect error
+[2022-01-09 15:23:56] Error while retrieving https://rssfeed.today/weibo/rss/6629766915: HTTP response code said error 500
+[2022-01-09 15:23:57] Error while retrieving https://rssfeed.today/weibo/rss/6036390124: HTTP response code said error 500
+[2022-01-09 15:23:58] Error while retrieving https://rssfeed.today/weibo/rss/1666968252: HTTP response code said error 500
+[2022-01-09 15:23:59] Error while retrieving http://blog.gslin.org/feed/: SSL connect error
+[2022-01-09 15:24:00] Error while retrieving https://lutaonan.com/rss.xml: SSL connect error
+[2022-01-09 15:24:01] Error while retrieving http://etlavita.wordpress.com/feed/: HTTP response code said error 502
+[2022-01-09 15:24:01] Error while retrieving https://physicsworld.com/feed: SSL connect error
+[2022-01-09 15:24:01] Error while retrieving http://www.overcomingbias.com/feed: HTTP response code said error 502
+[2022-01-09 15:24:01] Error while retrieving https://feeds.feedburner.com/commentshk: SSL connect error
+[2022-01-09 15:24:01] Error while retrieving https://linuxtoy.org/feeds/all.atom.xml: SSL connect error
+[2022-01-09 15:24:05] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-01-09 15:24:08] Error while retrieving http://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=sssb&type=etoc&feed=rss: HTTP response code said error 503
+[2022-01-09 15:24:10] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2022-01-09 15:24:11] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-01-09 15:24:13] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-01-09 15:24:14] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-01-09 15:24:16] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2022-01-09 15:24:55] Error while retrieving https://yilinhut.net/feed: Timeout was reached
+[2022-01-17 18:50:43] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-01-17 18:50:46] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-01-17 18:50:53] Error while retrieving https://wethinker.com/feed/: SSL peer certificate or SSH remote key was not OK
+[2022-01-17 18:50:53] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-01-17 18:50:53] Error while retrieving https://rssfeed.today/weibo/rss/3702002507: HTTP response code said error 500
+[2022-01-17 18:50:54] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-01-17 18:50:54] Error while retrieving https://rssfeed.today/weibo/rss/7392172347: HTTP response code said error 500
+[2022-01-17 18:50:55] Error while retrieving https://rssfeed.today/weibo/rss/1747817202: HTTP response code said error 500
+[2022-01-17 18:50:56] Error while retrieving https://rssfeed.today/weibo/rss/5822404600: HTTP response code said error 500
+[2022-01-17 18:50:57] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2022-01-17 18:50:57] Error while retrieving https://rssfeed.today/weibo/rss/6384219300: HTTP response code said error 500
+[2022-01-17 18:50:58] Error while retrieving http://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=sssb&type=etoc&feed=rss: HTTP response code said error 503
+[2022-01-17 18:50:58] Error while retrieving https://rssfeed.today/weibo/rss/5902255865: HTTP response code said error 500
+[2022-01-17 18:50:59] Error while retrieving https://rssfeed.today/weibo/rss/6336831292: HTTP response code said error 500
+[2022-01-17 18:51:00] Error while retrieving https://rssfeed.today/weibo/rss/7107428537: HTTP response code said error 500
+[2022-01-17 18:51:01] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-01-17 18:51:01] Error while retrieving https://rssfeed.today/weibo/rss/6629766915: HTTP response code said error 500
+[2022-01-17 18:51:01] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-01-17 18:51:02] Error while retrieving https://rssfeed.today/weibo/rss/6036390124: HTTP response code said error 500
+[2022-01-17 18:51:03] Error while retrieving https://rssfeed.today/weibo/rss/1666968252: HTTP response code said error 500
+[2022-01-17 18:51:03] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2022-01-17 18:51:04] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-01-17 19:50:44] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-01-17 19:50:50] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-01-17 19:50:51] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-01-17 19:50:53] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-01-17 19:50:57] Error while retrieving https://wethinker.com/feed/: SSL peer certificate or SSH remote key was not OK
+[2022-01-17 19:50:58] Error while retrieving http://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=sssb&type=etoc&feed=rss: HTTP response code said error 503
+[2022-01-17 19:51:00] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-01-17 19:51:04] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-01-17 19:51:06] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-01-17 19:51:13] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2022-01-17 19:52:09] Error while retrieving https://rssfeed.today/weibo/rss/6629766915: Timeout was reached
+[2022-01-17 19:52:11] Error while retrieving https://rssfeed.today/weibo/rss/6036390124: HTTP response code said error 500
+[2022-01-17 19:52:12] Error while retrieving https://rssfeed.today/weibo/rss/1666968252: HTTP response code said error 500
+[2022-01-17 20:50:47] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-01-17 20:50:47] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-01-17 20:50:53] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-01-17 20:50:55] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-01-17 20:50:55] Error while retrieving http://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=sssb&type=etoc&feed=rss: HTTP response code said error 503
+[2022-01-17 20:50:58] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-01-17 20:51:00] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2022-01-17 20:51:00] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-01-17 20:51:05] Error while retrieving https://wethinker.com/feed/: SSL peer certificate or SSH remote key was not OK
+[2022-01-17 20:51:06] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-01-17 20:51:08] Error while retrieving https://blog.einverne.info/feed.xml: SSL connect error
+[2022-01-17 21:50:42] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-01-17 21:50:43] Error while retrieving https://rssfeed.today/weibo/rss/1967179897: HTTP response code said error 500
+[2022-01-17 21:50:44] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: HTTP response code said error 500
+[2022-01-17 21:50:44] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-01-17 21:50:45] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: HTTP response code said error 500
+[2022-01-17 21:50:47] Error while retrieving https://rssfeed.today/weibo/rss/1907380525: HTTP response code said error 500
+[2022-01-17 21:50:48] Error while retrieving https://rssfeed.today/weibo/rss/6533586539: HTTP response code said error 500
+[2022-01-17 21:50:49] Error while retrieving https://rssfeed.today/weibo/rss/1768631600: HTTP response code said error 500
+[2022-01-17 21:50:50] Error while retrieving https://rssfeed.today/weibo/rss/3702002507: HTTP response code said error 500
+[2022-01-17 21:50:51] Error while retrieving https://rssfeed.today/weibo/rss/7392172347: HTTP response code said error 500
+[2022-01-17 21:50:52] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-01-17 21:50:52] Error while retrieving https://rssfeed.today/weibo/rss/1747817202: HTTP response code said error 500
+[2022-01-17 21:50:52] Error while retrieving https://wethinker.com/feed/: SSL peer certificate or SSH remote key was not OK
+[2022-01-17 21:50:53] Error while retrieving http://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=sssb&type=etoc&feed=rss: HTTP response code said error 503
+[2022-01-17 21:50:54] Error while retrieving https://rssfeed.today/weibo/rss/5822404600: HTTP response code said error 500
+[2022-01-17 21:50:55] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2022-01-17 21:50:56] Error while retrieving https://rssfeed.today/weibo/rss/6384219300: HTTP response code said error 500
+[2022-01-17 21:50:57] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-01-17 21:50:57] Error while retrieving https://rssfeed.today/weibo/rss/5902255865: HTTP response code said error 500
+[2022-01-17 21:50:59] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2022-01-17 21:50:59] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-01-17 21:51:00] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-01-17 21:51:00] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-01-17 21:51:00] Error while retrieving https://rssfeed.today/weibo/rss/6336831292: HTTP response code said error 500
+[2022-01-17 21:51:01] Error while retrieving https://rssfeed.today/weibo/rss/7107428537: HTTP response code said error 500
+[2022-01-17 21:51:03] Error while retrieving https://rssfeed.today/weibo/rss/6629766915: HTTP response code said error 500
+[2022-01-17 21:51:06] Error while retrieving https://rssfeed.today/weibo/rss/6036390124: HTTP response code said error 500
+[2022-01-17 21:51:07] Error while retrieving https://rssfeed.today/weibo/rss/1666968252: HTTP response code said error 500
+[2022-01-17 22:50:46] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-01-17 22:50:47] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-01-17 22:50:53] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-01-17 22:50:53] Error while retrieving https://wethinker.com/feed/: SSL peer certificate or SSH remote key was not OK
+[2022-01-17 22:50:54] Error while retrieving http://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=sssb&type=etoc&feed=rss: HTTP response code said error 503
+[2022-01-17 22:50:55] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-01-17 22:51:02] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-01-17 22:51:02] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-01-17 22:51:04] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 404
+[2022-01-17 22:51:04] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-01-21 22:15:24] Error while retrieving https://nova.moe/feed/: HTTP response code said error 404
+[2022-01-21 22:15:24] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-01-21 22:15:28] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-01-21 22:15:35] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-01-21 22:15:38] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-01-21 22:15:39] Error while retrieving https://www.nerdsdaydream.com/feed/: HTTP response code said error 500
+[2022-01-21 22:15:41] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2022-01-21 22:15:41] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-01-21 22:15:44] Error while retrieving http://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=sssb&type=etoc&feed=rss: HTTP response code said error 503
+[2022-01-21 22:15:45] Error while retrieving https://rsshub.app/gcores/category/articles: HTTP response code said error 404
+[2022-01-21 22:15:47] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-01-21 22:15:49] Error while retrieving https://rssfeed.today/weibo/rss/1967179897: Timeout was reached
+[2022-01-21 22:15:58] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-01-21 22:16:00] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2022-01-21 22:16:14] Error while retrieving http://coolshell.cn/feed: Timeout was reached
+[2022-01-21 22:16:19] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: Timeout was reached
+[2022-01-21 22:16:49] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: Timeout was reached
+[2022-01-21 22:17:18] Error while retrieving https://rssfeed.today/weibo/rss/1907380525: HTTP response code said error 500
+[2022-01-21 22:17:18] Error while retrieving https://rssfeed.today/weibo/rss/6533586539: HTTP response code said error 500
+[2022-01-21 22:17:20] Error while retrieving https://rssfeed.today/weibo/rss/1768631600: HTTP response code said error 500
+[2022-01-21 22:17:21] Error while retrieving https://rssfeed.today/weibo/rss/3702002507: HTTP response code said error 500
+[2022-01-21 22:17:21] Error while retrieving https://rssfeed.today/weibo/rss/7392172347: HTTP response code said error 500
+[2022-01-21 22:17:22] Error while retrieving https://rssfeed.today/weibo/rss/1747817202: HTTP response code said error 500
+[2022-01-21 22:17:24] Error while retrieving https://rssfeed.today/weibo/rss/5822404600: HTTP response code said error 500
+[2022-01-21 22:17:25] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2022-01-21 22:17:26] Error while retrieving https://rssfeed.today/weibo/rss/6384219300: HTTP response code said error 500
+[2022-01-21 22:17:27] Error while retrieving https://rssfeed.today/weibo/rss/5902255865: HTTP response code said error 500
+[2022-01-21 22:17:28] Error while retrieving https://rssfeed.today/weibo/rss/6336831292: HTTP response code said error 500
+[2022-01-21 22:17:58] Error while retrieving https://rssfeed.today/weibo/rss/7107428537: Timeout was reached
+[2022-01-21 23:15:20] Error while retrieving https://nova.moe/feed/: HTTP response code said error 404
+[2022-01-21 23:15:21] Error while retrieving https://rssfeed.today/weibo/rss/1967179897: HTTP response code said error 500
+[2022-01-21 23:15:22] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: HTTP response code said error 500
+[2022-01-21 23:15:23] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: HTTP response code said error 500
+[2022-01-21 23:15:23] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-01-21 23:15:27] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-01-21 23:15:29] Error while retrieving https://www.nerdsdaydream.com/feed/: SSL connect error
+[2022-01-21 23:15:32] Error while retrieving https://wethinker.com/feed/: XML root node is NULL
+[2022-01-21 23:15:33] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-01-21 23:15:36] Error while retrieving http://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=sssb&type=etoc&feed=rss: HTTP response code said error 503
+[2022-01-21 23:15:36] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-01-21 23:15:38] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2022-01-21 23:15:39] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-01-21 23:15:39] Error while retrieving https://rsshub.app/gcores/category/articles: HTTP response code said error 404
+[2022-01-21 23:15:41] Error while retrieving https://rssfeed.today/weibo/rss/1907380525: HTTP response code said error 500
+[2022-01-21 23:15:41] Error while retrieving https://rssfeed.today/weibo/rss/6533586539: HTTP response code said error 500
+[2022-01-21 23:15:42] Error while retrieving https://rssfeed.today/weibo/rss/1768631600: HTTP response code said error 500
+[2022-01-21 23:15:43] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-01-21 23:15:45] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-01-21 23:15:45] Error while retrieving https://rssfeed.today/weibo/rss/3702002507: HTTP response code said error 500
+[2022-01-21 23:15:46] Error while retrieving https://rssfeed.today/weibo/rss/7392172347: HTTP response code said error 500
+[2022-01-21 23:15:51] Error while retrieving https://viflythink.com/atom.xml: SSL connect error
+[2022-01-21 23:15:55] Error while retrieving https://rssfeed.today/weibo/rss/1747817202: HTTP response code said error 500
+[2022-01-21 23:15:57] Error while retrieving https://rssfeed.today/weibo/rss/5822404600: HTTP response code said error 500
+[2022-01-21 23:15:58] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2022-01-21 23:16:03] Error while retrieving https://rssfeed.today/weibo/rss/6384219300: HTTP response code said error 500
+[2022-01-21 23:16:04] Error while retrieving https://rssfeed.today/weibo/rss/5902255865: HTTP response code said error 500
+[2022-01-21 23:16:17] Error while retrieving https://rssfeed.today/weibo/rss/7107428537: HTTP response code said error 500
+[2022-01-21 23:16:19] Error while retrieving https://rssfeed.today/weibo/rss/6629766915: HTTP response code said error 500
+[2022-01-21 23:16:25] Error while retrieving https://rssfeed.today/weibo/rss/1666968252: HTTP response code said error 500
+[2022-01-23 21:21:37] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-01-23 21:21:44] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-01-23 21:21:45] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-01-23 21:21:46] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-01-23 21:21:52] Error while retrieving https://wethinker.com/feed/: XML root node is NULL
+[2022-01-23 21:21:56] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-01-23 21:21:59] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-01-23 21:21:59] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-01-23 21:22:11] Error while retrieving http://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=sssb&type=etoc&feed=rss: HTTP response code said error 503
+[2022-01-23 21:22:28] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-01-25 22:52:40] Error while retrieving https://rssfeed.today/weibo/rss/1967179897: HTTP response code said error 400
+[2022-01-25 22:52:40] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: HTTP response code said error 403
+[2022-01-25 22:52:40] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: HTTP response code said error 403
+[2022-01-25 22:52:41] Error while retrieving https://rssfeed.today/weibo/rss/1907380525: HTTP response code said error 403
+[2022-01-25 22:52:41] Error while retrieving https://rssfeed.today/weibo/rss/6533586539: HTTP response code said error 403
+[2022-01-25 22:52:42] Error while retrieving https://rssfeed.today/weibo/rss/1768631600: HTTP response code said error 403
+[2022-01-25 22:52:42] Error while retrieving https://rssfeed.today/weibo/rss/3702002507: HTTP response code said error 403
+[2022-01-25 22:52:42] Error while retrieving https://rssfeed.today/weibo/rss/7392172347: HTTP response code said error 403
+[2022-01-25 22:52:43] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-01-25 22:52:43] Error while retrieving https://rssfeed.today/weibo/rss/1747817202: HTTP response code said error 403
+[2022-01-25 22:52:43] Error while retrieving https://rssfeed.today/weibo/rss/5822404600: HTTP response code said error 403
+[2022-01-25 22:52:43] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 403
+[2022-01-25 22:52:44] Error while retrieving https://rssfeed.today/weibo/rss/6384219300: HTTP response code said error 403
+[2022-01-25 22:52:44] Error while retrieving https://rssfeed.today/weibo/rss/5902255865: HTTP response code said error 403
+[2022-01-25 22:52:45] Error while retrieving https://rssfeed.today/weibo/rss/6336831292: HTTP response code said error 403
+[2022-01-25 22:52:45] Error while retrieving https://rssfeed.today/weibo/rss/7107428537: HTTP response code said error 403
+[2022-01-25 22:52:45] Error while retrieving https://rssfeed.today/weibo/rss/6629766915: HTTP response code said error 403
+[2022-01-25 22:52:46] Error while retrieving https://rssfeed.today/weibo/rss/6036390124: HTTP response code said error 403
+[2022-01-25 22:52:46] Error while retrieving https://rssfeed.today/weibo/rss/1666968252: HTTP response code said error 403
+[2022-01-25 22:52:46] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-01-25 22:52:55] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-01-25 22:52:57] Error while retrieving https://wethinker.com/feed/: XML root node is NULL
+[2022-01-25 22:53:00] Error while retrieving http://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=sssb&type=etoc&feed=rss: HTTP response code said error 503
+[2022-01-25 22:53:01] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-01-25 22:53:03] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-01-25 22:53:04] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-01-25 22:53:07] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-01-25 22:53:10] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-01-25 22:53:34] Error while retrieving https://fangkc.cn/feed/: Timeout was reached
+[2022-02-05 19:10:57] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-05 19:10:57] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-05 19:11:00] Error while retrieving https://kirikira.moe/rss/: SSL connect error
+[2022-02-05 19:11:08] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-02-05 19:11:09] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-02-05 19:11:11] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-02-05 19:11:14] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2022-02-05 19:11:14] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-02-05 19:11:16] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-02-05 19:11:17] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-02-05 19:12:46] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-05 19:12:47] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-05 19:12:49] Error while retrieving https://kirikira.moe/rss/: HTTP response code said error 521
+[2022-02-05 19:12:54] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-02-05 19:12:56] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-02-05 19:12:56] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-02-05 19:12:56] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-02-05 19:12:59] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2022-02-05 19:13:01] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-02-05 19:13:05] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-02-05 19:14:15] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-05 19:14:17] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-05 19:14:18] Error while retrieving https://kirikira.moe/rss/: SSL connect error
+[2022-02-05 19:14:24] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-02-05 19:14:25] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-02-05 19:14:26] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-02-05 19:14:27] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-02-05 19:14:29] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-02-05 19:14:30] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2022-02-05 19:16:25] Error while retrieving http://www.senra.me/feed/: Transferred a partial file
+[2022-02-05 19:16:28] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-05 19:16:28] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-05 19:16:31] Error while retrieving https://kirikira.moe/rss/: SSL connect error
+[2022-02-05 19:16:40] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-05 19:16:40] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-05 19:16:49] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-05 19:16:49] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-05 19:16:50] Error while retrieving https://kirikira.moe/rss/: SSL connect error
+[2022-02-05 19:16:55] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-02-05 19:16:56] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-02-05 19:16:57] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-02-05 19:16:59] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-02-05 19:17:01] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2022-02-05 19:17:01] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-02-05 19:17:07] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-02-05 19:17:25] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-05 19:17:25] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-05 19:17:27] Error while retrieving https://kirikira.moe/rss/: HTTP response code said error 521
+[2022-02-05 19:17:32] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-02-05 19:17:32] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-02-05 19:17:33] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-02-05 19:17:35] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-02-05 19:17:35] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2022-02-05 19:17:37] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-02-05 19:17:40] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-02-05 19:18:00] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-05 19:18:02] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-05 19:18:02] Error while retrieving https://kirikira.moe/rss/: SSL connect error
+[2022-02-05 19:18:08] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-02-05 19:18:08] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-02-05 19:18:10] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-02-05 19:18:10] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-02-05 19:18:12] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-02-05 19:18:12] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2022-02-05 19:18:15] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-02-05 23:03:01] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-05 23:03:02] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-05 23:03:07] Error while retrieving https://kirikira.moe/rss/: SSL connect error
+[2022-02-05 23:03:13] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-02-05 23:03:14] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-02-05 23:03:15] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-02-05 23:03:15] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-02-05 23:03:17] Error while retrieving https://wethinker.com/feed/: SSL connect error
+[2022-02-05 23:03:17] Error while retrieving https://linuxtoy.org/feeds/all.atom.xml: SSL connect error
+[2022-02-05 23:03:19] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-02-05 23:03:20] Error while retrieving https://rsshub.app/gcores/category/articles: HTTP response code said error 404
+[2022-02-05 23:03:23] Error while retrieving https://www.assyluminexile.com/feed: SSL connect error
+[2022-02-05 23:03:28] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: SSL connect error
+[2022-02-05 23:03:37] Error while retrieving https://cd-dc.typlog.io/feed.xml: SSL connect error
+[2022-02-11 20:55:51] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-11 20:55:53] Error while retrieving https://kirikira.moe/rss/: SSL connect error
+[2022-02-11 20:55:55] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-11 20:56:00] Error while retrieving http://cnpolitics.org/feed/: HTTP response code said error 404
+[2022-02-11 20:56:03] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-02-11 20:56:05] Error while retrieving https://matrix.org/blog/feed/: SSL connect error
+[2022-02-11 20:56:06] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-02-11 20:56:07] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-02-11 20:56:13] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-02-11 20:56:14] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-02-11 20:56:18] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-02-11 20:56:22] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2022-02-11 20:56:31] Error while retrieving https://yilinhut.net/feed: SSL peer certificate or SSH remote key was not OK
+[2022-02-12 08:40:06] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-12 08:40:07] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-12 08:40:10] Error while retrieving http://cnpolitics.org/feed/: HTTP response code said error 404
+[2022-02-12 08:40:10] Error while retrieving https://kirikira.moe/rss/: SSL connect error
+[2022-02-12 08:40:14] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-02-12 08:40:16] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-02-12 08:40:17] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-02-12 08:40:20] Error while retrieving https://blog.502.li/feed: unsupported feed format
+[2022-02-12 08:40:23] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-02-12 08:40:23] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-02-12 08:40:29] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2022-02-12 08:40:39] Error while retrieving https://yilinhut.net/feed: SSL peer certificate or SSH remote key was not OK
+[2022-02-20 23:40:47] Error while retrieving https://i.nebula.moe/rss.xml: SSL peer certificate or SSH remote key was not OK
+[2022-02-20 23:40:48] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-20 23:40:50] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-20 23:40:53] Error while retrieving http://cnpolitics.org/feed/: HTTP response code said error 404
+[2022-02-20 23:40:54] Error while retrieving http://whogovernstw.org/feed/: HTTP response code said error 502
+[2022-02-26 08:59:40] Error while retrieving https://i.nebula.moe/rss.xml: SSL peer certificate or SSH remote key was not OK
+[2022-02-26 08:59:41] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-26 08:59:42] Error while retrieving https://www.nerdsdaydream.com/feed/: SSL connect error
+[2022-02-26 08:59:43] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-26 08:59:45] Error while retrieving https://rssfeed.today/weibo/rss/7268136381: HTTP response code said error 500
+[2022-02-26 08:59:46] Error while retrieving https://rssfeed.today/weibo/rss/1703919077: HTTP response code said error 500
+[2022-02-26 08:59:47] Error while retrieving https://rssfeed.today/weibo/rss/1907380525: HTTP response code said error 500
+[2022-02-26 08:59:47] Error while retrieving http://cnpolitics.org/feed/: HTTP response code said error 404
+[2022-02-26 08:59:48] Error while retrieving https://rssfeed.today/weibo/rss/6533586539: HTTP response code said error 500
+[2022-02-26 08:59:50] Error while retrieving https://rssfeed.today/weibo/rss/3702002507: HTTP response code said error 500
+[2022-02-26 08:59:50] Error while retrieving https://rssfeed.today/weibo/rss/7392172347: HTTP response code said error 500
+[2022-02-26 08:59:51] Error while retrieving https://rssfeed.today/weibo/rss/1747817202: HTTP response code said error 500
+[2022-02-26 08:59:52] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-02-26 08:59:52] Error while retrieving https://rssfeed.today/weibo/rss/1967179897: HTTP response code said error 500
+[2022-02-26 08:59:53] Error while retrieving https://rssfeed.today/weibo/rss/1057283657: HTTP response code said error 500
+[2022-02-26 08:59:53] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-02-26 08:59:54] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-02-26 08:59:54] Error while retrieving https://rssfeed.today/weibo/rss/5902255865: HTTP response code said error 500
+[2022-02-26 08:59:55] Error while retrieving https://rssfeed.today/weibo/rss/6336831292: HTTP response code said error 500
+[2022-02-26 08:59:56] Error while retrieving https://rssfeed.today/weibo/rss/7107428537: HTTP response code said error 500
+[2022-02-26 08:59:56] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2022-02-26 08:59:59] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-02-26 09:00:00] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-02-26 09:00:04] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2022-02-26 09:00:12] Error while retrieving https://yilinhut.net/feed: SSL peer certificate or SSH remote key was not OK
+[2022-02-27 21:39:51] Error while retrieving https://sh.alynx.moe/atom.xml: SSL connect error
+[2022-02-27 21:39:52] Error while retrieving https://blog.tfei.moe/feeds/atom.xml: HTTP response code said error 404
+[2022-02-27 21:39:52] Error while retrieving https://www.nerdsdaydream.com/feed/: SSL connect error
+[2022-02-27 21:39:53] Error while retrieving http://cnpolitics.org/feed/: HTTP response code said error 404
+[2022-02-27 21:40:01] Error while retrieving https://toshiko0o.github.io/rss.xml: HTTP response code said error 404
+[2022-02-27 21:40:03] Error while retrieving https://www.bennythink.com/feed: SSL connect error
+[2022-02-27 21:40:04] Error while retrieving https://blog.502.li/feed: SSL connect error
+[2022-02-27 21:40:04] Error while retrieving https://typeblog.net/feed.rss: HTTP response code said error 403
+[2022-02-27 21:40:10] Error while retrieving https://feed.rssunify.com/5a8431245fd0d/rss.xml: HTTP response code said error 502
+[2022-02-27 21:40:12] Error while retrieving https://rsshub.app/gcores/category/articles: HTTP response code said error 404
+[2022-02-27 21:40:16] Error while retrieving https://i.nebula.moe/rss.xml: Timeout was reached
+[2022-02-27 21:40:35] Error while retrieving http://kam-a-tiam.typepad.com/blog/rss.xml: Number of redirects hit maximum amount
+[2022-02-27 21:40:40] Error while retrieving https://wethinker.com/feed/: HTTP response code said error 410
+[2022-02-27 21:40:41] Error while retrieving https://fangkc.cn/feed/: Timeout was reached
+[2022-02-27 21:40:46] Error while retrieving https://yilinhut.net/feed: SSL peer certificate or SSH remote key was not OK

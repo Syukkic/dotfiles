@@ -1,0 +1,46 @@
+syntax on
+
+set encoding=utf-8
+set fileencodings=utf-8,chinese,latin-1,gbk,gb18030,gk2312
+set fileencoding=utf-8
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 12
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
+
+set backspace=indent,eol,start
+
+set number
+set relativenumber
+set autoindent
+set shiftwidth=4
+set smarttab
+set tabstop=4
+
+set hlsearch
+set ignorecase
+set incsearch
+set smartcase
+
+set display+=lastline
+set encoding=utf-8
+set linebreak
+set scrolloff=1
+set wrap
+
+set ruler
+set visualbell
+set title
+
+set history=1000
+
+set noswapfile
+set nobackup

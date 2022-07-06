@@ -1,0 +1,73 @@
+" Vim-plug
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.config/nvim/plugged')
+
+Plug 'chun-yang/auto-pairs'
+Plug 'junegunn/vim-easy-align'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+
+" let g:neomake_python_enabled_makers = ['pylint']
+
+
+colorscheme gruvbox
+set background=dark
+autocmd VimEnter * hi Normal ctermbg=none
+
+syntax enable
+filetype plugin indent on
+filetype on
+set omnifunc=syntaxcomplete#Complete
+set nocompatible
+" autocmd FileType python set breakindentopt=shift:4
+
+syntax on
+set encoding=utf-8
+set modelines=0
+set number
+set relativenumber
+set ruler
+set visualbell
+set noswapfile
+set backspace=indent,eol,start
+
+set wrap
+set textwidth=0
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set autoindent
+set fileformat=unix
+
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set showmatch
+
+autocmd BufNewFile *.sh,*.py exec ":call SetTitle()"
+func SetTitle()
+    if &filetype == 'sh'
+        call setline(1,"#!/usr/bin/zsh")
+        call append(line("."), "")
+    else
+        call setline(1,"#!/usr/bin/python")
+        call append(line("."),"# coding: utf-8")
+        call append(line(".")+1, "")
+    endif
+endfunc
+
+
+" I-Beam
+let &t_SI = "\<Esc>[6 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[2 q"
+
