@@ -10,9 +10,6 @@ compinit
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
-export PROMPT_EOL_MARK="%B%F{red}🔚"
-
-
 # add a command line to the shells history without executing it
 commit-to-history () {
        print -s ${(z)BUFFER}
@@ -83,6 +80,7 @@ alias remove="sudo pacman -Rns"
 alias Ss="pacman -Ss"
 
 alias vim="nvim"
+alias cdd="cd ~/wkspace/dotfiles"
 
 export LESS="-R -N"
 
