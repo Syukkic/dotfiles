@@ -225,4 +225,5 @@ exec --no-startup-id picom -CGb
 exec_always --no-startup-id feh --bg-fill ~/Pictures/ACG/NieR\ Automata/nierautomata.jpg
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec_always --no-startup-id ~/.config/i3/scrips/Kensington_Expert_Setup.sh
-bindsym $mod+Shift+s exec flameshot gui
+exec_always --no-startup-id /usr/bin/flameshot
+bindsym $mod+Shift+s exec --no-startup-id flameshot gui
