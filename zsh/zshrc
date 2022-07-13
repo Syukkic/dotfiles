@@ -6,6 +6,26 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 
+export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
+export ZSH_AUTOSUGGEST_USE_ASYNC=true
+
+_ZSH_PLUGINS="/usr/share/zsh/plugins"
+_enabled_plugins=(
+        zsh-autosuggestions
+        zsh-history-substring-search
+        zsh-syntax-highlighting
+        zsh-completions
+)
+
+ZSH_F_SH_H="$HOME/F-Sy-H/f-sy-h.plugin.zsh"
+if test -r "$ZSH_F_SH_H"; then
+  source $ZSH_F_SH_H
+  _enabled_plugins=(${_enabled_plguins:|zsh-syntax-highlighting})
+fi
+for _zsh_plugin in $_enabled_plugins[@]; do
+   [[ ! -r "$_ZSH_PLUGINS/$_zsh_plugin/$_zsh_plugin.zsh" ]] || source $_ZSH_PLUGINS/$_zsh_plugin/$_zsh_plugin.zsh
+done
+
 # Enable colors and change prompt:
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
@@ -69,7 +89,7 @@ alias status="sudo systemctl status"
 alias enable="sudo systemctl enable"
 alias disable="sudo systemctl disable"
 
-alias ytdl="yt-dlp"
+alias yt="yt-dlp"
 alias tlmgr="tllocalmgr"
 
 alias proxy="proxychains4"
