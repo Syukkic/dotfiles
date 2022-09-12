@@ -8,10 +8,12 @@
 
 general {
         colors = true
-        interval = 5
+        interval = 1
 }
 
+order += "ethernet_first_"
 order += "wireless _first_"
+order += "volume master"
 order += "battery all"
 order += "load"
 order += "memory"
@@ -25,6 +27,11 @@ wireless _first_ {
 ethernet _first_ {
         format_up = "E: %ip (%speed)"
         format_down = "E: down"
+}
+
+volume master {
+    format = "V: %volume"
+    format_muted = "V: muted (%volume)"
 }
 
 battery all {
