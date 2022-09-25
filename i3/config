@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Windows gaps
 for_window [class=".*"] border pixel 1
-new_window 1pixel
+new_window pixel 1
 smart_borders on
 gaps inner 8
 gaps outer 8
