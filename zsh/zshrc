@@ -67,6 +67,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
+bindkey '^R' history-incremental-search-backward
+
 set backspace=indent,eol,start
 
 # set alias
@@ -103,9 +105,12 @@ alias install="sudo pacman -S"
 alias upgrade="sudo pacman -Syu"
 alias remove="sudo pacman -Rns"
 alias Ss="pacman -Ss"
+alias myip4="curl ipecho.net/plain"
+alias myip6="curl wtfismyip.com/json"
 
 alias vim="nvim"
 alias cdd="cd ~/wkspace/dotfiles"
+alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
 
 export LESS="-R -N"
 
@@ -113,3 +118,9 @@ export LESS="-R -N"
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+
+export GOROOT="/usr/lib/go"
+export GOPATH="$HOME/wkspace/go"
+export PATH=$PATH:$GOROOT/bin:$GOPATH:bin
+
