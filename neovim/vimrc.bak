@@ -1,16 +1,19 @@
 " Vim-plug
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.config/nvim/plugged')
 
+
 Plug 'chun-yang/auto-pairs'
 Plug 'junegunn/vim-easy-align'
 " Plug 'prabirshrestha/vim-lsp'
-" Plug 'mattn/vim-lsp-settings'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neovim/nvim-lspconfig'
+Plug 'mattn/vim-lsp-settings'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'davidhalter/jedi-vim'
 " Plug 'zchee/deoplete-jedi'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 Plug 'vim-python/python-syntax'
+Plug 'liuchengxu/vista.vim'
 
 Plug 'morhetz/gruvbox'
 
@@ -20,6 +23,8 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " let g:neomake_python_enabled_makers = ['pylint']
+set completeopt=menu,menuone,noselect
+
 
 
 colorscheme gruvbox
@@ -66,7 +71,7 @@ func SetTitle()
         call setline(1,"#!/usr/bin/zsh")
         call append(line("."), "")
     else
-        call setline(1,"#!/usr/bin/python")
+        call setline(1,"#!/usr/bin/python3")
         call append(line("."),"# coding: utf-8")
         call append(line(".")+1, "")
     endif
