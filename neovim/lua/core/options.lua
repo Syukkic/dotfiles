@@ -55,4 +55,4 @@ vim.o.backup = false
 vim.o.writebackup = false
 vim.o.swapfile = false
 
-vim.g.python3_host_prog = "~/.pyenv/versions/3.10.5/bin/python"
+vim.g.python3_host_prog = "~/.pyenv/versions/3.10.5/bin/python3.10"
