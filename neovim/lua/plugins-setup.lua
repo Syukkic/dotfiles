@@ -7,32 +7,34 @@ return require("packer").startup(function(use)
     -- Plugin Manager
     use "wbthomason/packer.nvim"
 
-    -- LSP
+    -- Managing & installing lsp server, linter & formatter
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
+        -- configuring lsp server
     use "neovim/nvim-lspconfig"
-    use "RRethy/vim-illuminate"
+    use "hrsh7th/cmp-nvim-lsp"
+    use "glepnir/lspsaga.nvim"
+    use "ray-x/lsp_signature.nvim"
     use "onsails/lspkind.nvim"
+        -- Formatting & linting
     use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
+    use("jayp0521/mason-null-ls.nvim")
 
     -- Completion
     use "hrsh7th/nvim-cmp"
-    use "hrsh7th/cmp-nvim-lsp"
-    use "hrsh7th/cmp-nvim-lua"
     use "hrsh7th/cmp-buffer"
     use "hrsh7th/cmp-path"
-    use "hrsh7th/cmp-cmdline"
-    use "saadparwaiz1/cmp_luasnip"
 
     -- Snippet
     use "L3MON4D3/LuaSnip" --snippet engine
+    use "saadparwaiz1/cmp_luasnip"
     use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
     -- Fuzzy Finder / Telescope
     use "nvim-telescope/telescope.nvim"
     use "nvim-telescope/telescope-media-files.nvim"
     use "tom-anders/telescope-vim-bookmarks.nvim"
-    
+
     -- Syntax/Treesitter
     use "nvim-treesitter/nvim-treesitter"
 
