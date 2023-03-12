@@ -1,3 +1,5 @@
 mpv/watch_later
 newtboat/*.txt
 newtboat/*.log
+
+neovim/plugin/*
