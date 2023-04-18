@@ -1,14 +1,28 @@
-
-# The following lines were added by compinstall
-
+# ==============  Set init  ==============
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 
+
+# ==============  Set exports  ==============
+export EDITOR
+export LESS="-R -N"
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export GOROOT="/usr/lib/go"
+export GOPATH="$HOME/wkspace/go"
+export PATH=$PATH:$GOROOT/bin:$GOPATH:bin
+
+
 export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
 export ZSH_AUTOSUGGEST_USE_ASYNC=true
 
+
+# ==============  Set ZSH  ==============
 _ZSH_PLUGINS="/usr/share/zsh/plugins"
 _enabled_plugins=(
         zsh-autosuggestions
@@ -36,6 +50,8 @@ commit-to-history () {
        zle send-break
 }
 
+
+# ==============  Set bindkeys  ==============
 zle -N commit-to-history
 bindkey -M viins "^x^h" commit-to-history
 bindkey -M emacs "^x^h" commit-to-history
@@ -44,15 +60,15 @@ bindkey "^E" vi-end-of-line
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey "\e[3~" delete-char
+bindkey '^R' history-incremental-search-backward
 
+
+# ==============  Set functions  ==============
 function zsh_stats() {
     fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n20
 }
 
-EDITOR="vim"
-export EDITOR
-
-function ranger-cd {
+function ranger_cd {
     tempfile="$(mktemp)"
     /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
     test -f "$tempfile" &&
@@ -62,25 +78,25 @@ function ranger-cd {
     rm -f -- "$tempfile"
 }
 
-HISTFILE=~/.cache/zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
-setopt appendhistory
+function sync_onedrive {
+    rclone sync ~/Documents/books/ OneDrive:/ebooks/ -P 
+    rclone sync ~/Pictures/ OneDrive:/Pictures/ -P
+}
 
-bindkey '^R' history-incremental-search-backward
+function reverse_sync_onedrive {
+    rclone sync OneDrive:/ebooks/ ~/Documents/books/ -P 
+    rclone sync OneDrive:/Pictures/ ~/Pictures/ -P
+}
 
-set backspace=indent,eol,start
 
-# set alias
+
+# ==============  Set alias  ==============
 alias ls='exa -gb'
 alias ll='ls -l'
 alias la='ls -laa'
 alias lh='ls -lh'
 alias grep='grep --color'
-alias g="git-annex"
-alias k="kde-open5"
 alias x="xdg-open"
-
 alias ~="cd ~"
 alias ..="cd .."
 
@@ -97,8 +113,6 @@ alias tlmgr="tllocalmgr"
 alias proxy="proxychains4"
 alias pmpv="proxychains4 mpv"
 
-alias dotfiles="cd ~/wkspace/dotfiles"
-
 alias orphans="sudo pacman -Qtdq | sudo pacman -Rns -"
 alias pupgrade="proxy sudo pacman -Syu"
 alias install="sudo pacman -S"
@@ -112,15 +126,12 @@ alias vim="nvim"
 alias cdd="cd ~/wkspace/dotfiles"
 alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
 
-export LESS="-R -N"
 
+# ==============  Set others  ==============
+HISTFILE=~/.cache/zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
 
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-
-export GOROOT="/usr/lib/go"
-export GOPATH="$HOME/wkspace/go"
-export PATH=$PATH:$GOROOT/bin:$GOPATH:bin
-
+set backspace=indent,eol,start
+EDITOR="vim"
