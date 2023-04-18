@@ -63,33 +63,6 @@ bindkey "\e[3~" delete-char
 bindkey '^R' history-incremental-search-backward
 
 
-# ==============  Set functions  ==============
-function zsh_stats() {
-    fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n20
-}
-
-function ranger_cd {
-    tempfile="$(mktemp)"
-    /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
-    test -f "$tempfile" &&
-    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
-	cd -- "$(cat "$tempfile")"
-    fi
-    rm -f -- "$tempfile"
-}
-
-function sync_onedrive {
-
-    exclusion="{.stignore,.stfolder/**,.git/**}"
-
-    echo "=====  Start synchronizing ebooks  ===== "
-    rclone sync ~/Documents/books/ OneDrive:/ebooks/ -P --exclude ${exclusion}
-    echo "=====  Start synchronizing Pictures  ===== "
-    rclone sync ~/Pictures/ OneDrive:/Pictures/ -P --exclude ${exclusion}
-    echo "=====  Start synchronizing Music  ===== "
-    rclone sync ~/Music/ OneDrive:/Music/ -P --exclude ${exclusion}
-}
-
 
 # ==============  Set alias  ==============
 alias ls='exa -gb'
@@ -126,7 +99,7 @@ alias myip6="curl wtfismyip.com/json"
 
 alias vim="nvim"
 alias cdd="cd ~/wkspace/dotfiles"
-alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
+alias tlmgr="/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode"
 
 
 # ==============  Set others  ==============
