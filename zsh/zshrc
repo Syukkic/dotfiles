@@ -79,15 +79,16 @@ function ranger_cd {
 }
 
 function sync_onedrive {
-    rclone sync ~/Documents/books/ OneDrive:/ebooks/ -P 
-    rclone sync ~/Pictures/ OneDrive:/Pictures/ -P
-}
 
-function reverse_sync_onedrive {
-    rclone sync OneDrive:/ebooks/ ~/Documents/books/ -P 
-    rclone sync OneDrive:/Pictures/ ~/Pictures/ -P
-}
+    exclusion="{.stignore,.stfolder/**,.git/**}"
 
+    echo "=====  Start synchronizing ebooks  ===== "
+    rclone sync ~/Documents/books/ OneDrive:/ebooks/ -P --exclude ${exclusion}
+    echo "=====  Start synchronizing Pictures  ===== "
+    rclone sync ~/Pictures/ OneDrive:/Pictures/ -P --exclude ${exclusion}
+    echo "=====  Start synchronizing Music  ===== "
+    rclone sync ~/Music/ OneDrive:/Music/ -P --exclude ${exclusion}
+}
 
 
 # ==============  Set alias  ==============
@@ -99,6 +100,7 @@ alias grep='grep --color'
 alias x="xdg-open"
 alias ~="cd ~"
 alias ..="cd .."
+alias dot="cd ~/wkspace/dotfiles"
 
 alias start="sudo systemctl start"
 alias stop="sudo systemctl stop"
