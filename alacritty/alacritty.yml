@@ -12,22 +12,22 @@ history:
 font:
   # Normal (roman) font face
   normal:
-    family: hack
+    family: Cascadia Code
     style: Regular
 
   # Bold font face
   bold:
-    family: hack
+    family: Cascadia Code
     style: Bold
 
   # Italic font face
   italic:
-    family: hack
+    family: Cascadia Code
     style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: hack
+    family: Cascadia Code
     style: Bold Italic
 
   # Point size
