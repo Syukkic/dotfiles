@@ -1,5 +1,5 @@
-mpv/watch_later
-newtboat/cookies.txt
-newtboat/error.log
+**/watch_later
+**/cookies.txt
+**/error.log
 
-neovim/plugin/packer_complied.lua
+neovim/plugin/*
