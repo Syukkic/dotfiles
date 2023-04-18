@@ -32,10 +32,10 @@ openbrowser-and-mark-jumps-to-next-unread yes
 # color listfocus_unread white color17 bold
 # color info white color140 bold
 
-color listfocus white color18 bold
-color listnormal_unread white color60 bold
-color listfocus_unread white color18 bold
-color info white color140 bold
+# color listfocus white color18 bold
+# color listnormal_unread white color60 bold
+# color listfocus_unread white color18 bold
+# color info white color140 bold
 
 # highlights
 highlight article "^(Title):.*$" color103 default
@@ -43,6 +43,6 @@ highlight article "^Author:.*"   color38 default bold
 highlight article "https?://[^ ]+" cyan default
 highlight article "\\[image\\ [0-9]+\\]" green default
 
-# save-path "~/Documents/RSS_Articles/"
+save-path "~/Documents/RSS_Articles/"
 cookie-cache "~/.config/newsboat/cookies.txt"
 error-log "~/.config/newsboat/error.log"
