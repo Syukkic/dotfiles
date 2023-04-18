@@ -9,7 +9,7 @@ require("mason").setup({
 })
 
 require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "gopls", "pyright" }
+    ensure_installed = { "lua_ls", "gopls", "pyright", "rust_analyzer" }
 })
 
 
@@ -43,7 +43,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 local nvim_lsp = require("lspconfig")
-local servers = {"lua_ls", "pyright", "gopls"}
+local servers = {"lua_ls", "pyright", "gopls", "rust_analyzer"}
 
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
@@ -53,6 +53,19 @@ for _, lsp in ipairs(servers) do
 
 end
 
+
+local rt = require("rust-tools")
+
+rt.setup({
+  server = {
+    on_attach = function(_, bufnr)
+      -- Hover actions
+      vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
+      -- Code action groups
+      vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
+    end,
+  },
+})
 
 -- nvim-cmp
 local cmp = require('cmp')

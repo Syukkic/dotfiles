@@ -21,8 +21,15 @@ return require('packer').startup(function(use)
         'williamboman/mason.nvim',
         'williamboman/mason-lspconfig.nvim',
         'neovim/nvim-lspconfig',
+        'simrat39/rust-tools.nvim',
         'onsails/lspkind.nvim',
-        'jose-elias-alvarez/null-ls.nvim' -- for formatters and linters
+        'jose-elias-alvarez/null-ls.nvim', -- for formatters and linters
+    }
+
+    -- Debugging
+    use {
+        'nvim-lua/plenary.nvim',
+        'mfussenegger/nvim-dap',
     }
 
     -- Autocompletion

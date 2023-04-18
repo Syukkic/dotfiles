@@ -30,4 +30,8 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+-- keep 8 lines while scroll up and down
+vim.opt.scrolloff = 8
+vim.opt.sidescrolloff = 8
+
 vim.g.python3_host_prog = "~/.pyenv/versions/3.10.5/bin/python3.10"
