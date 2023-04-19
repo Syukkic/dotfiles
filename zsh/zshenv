@@ -6,7 +6,7 @@ function zsh_stats() {
     fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n20
 }
 
-function ranger_cd {
+function rancd {
     tempfile="$(mktemp)"
     /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
     test -f "$tempfile" &&
@@ -16,9 +16,9 @@ function ranger_cd {
     rm -f -- "$tempfile"
 }
 
-function sync_onedrive {
+function onesync {
 
-    exclusion="{.stignore,.stfolder/**,.git/**}"
+    exclusion="{.stignore,.stfolder/**,.git/**,Element/**}"
 
     echo "=====  Start synchronizing ebooks  ===== "
     rclone sync ~/Documents/books/ OneDrive:/ebooks/ -P --exclude ${exclusion}
