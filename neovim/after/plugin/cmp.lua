@@ -31,13 +31,16 @@ cmp.setup {
         ["<C-f>"] = cmp.mapping.scroll_docs(4),
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<C-e>"] = cmp.mapping.abort(),
-        ["<CR>"] = cmp.mapping.confirm({ select = false }),
+        ["<CR>"] = cmp.mapping.confirm({ select = true }),
     }),
     sources = cmp.config.sources({
         { name = "nvim_lsp" }, -- lsp
-        { name = "luasnip"}, -- snippets
+        { name = "luasnip" }, -- snippets
         { name = "buffer" }, -- text within current buffer
-        { name = "path"},    -- file system paths
+        { name = "path" },    -- file system paths
+        { name = "snippy" },
+    }, {
+        { name = "buffer" }
     }),
     formatting = {
         format = lspkind.cmp_format({
@@ -46,3 +49,19 @@ cmp.setup {
         }),
     },
 }
+
+  -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
+  cmp.setup.cmdline('/', {
+    sources = {
+      { name = 'buffer' }
+    }
+  })
+
+  -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+  cmp.setup.cmdline(':', {
+    sources = cmp.config.sources({
+      { name = 'path' }
+    }, {
+      { name = 'cmdline' }
+    })
+  })

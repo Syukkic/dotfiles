@@ -52,5 +52,10 @@ return require('packer').startup(function(use)
     use {
         'windwp/nvim-autopairs',
         'numToStr/Comment.nvim',
+        'nvim-tree/nvim-web-devicons',
     }
+
+    -- File explorer and tab buffer
+    use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+    use {'nvim-tree/nvim-tree.lua', requires = 'nvim-tree/nvim-web-devicons'}
 end)
