@@ -28,6 +28,9 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+-- yarn (copy) to system cilpboard
+vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
+
 -- keep 8 lines while scroll up and down
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
