@@ -115,8 +115,8 @@ floating_minimum_size 75 x 50
 floating_maximum_size -1 x -1
 
 # start a terminal
-bindsym $mod+Return exec kitty /bin/zsh -l -c "tmux attach || tmux"
-# bindsym $mod+Return exec alacritty
+# bindsym $mod+Return exec kitty /bin/zsh -l -c "tmux attach || tmux"
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
