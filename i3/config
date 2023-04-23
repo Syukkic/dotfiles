@@ -279,7 +279,7 @@ exec --no-startup-id picom -CGb
 exec_always --no-startup-id feh --bg-fill ~/Pictures/pixiv/FhVnNi7VIAAxkWQ.jpg
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec_always --no-startup-id ~/.config/i3/scrips/Kensington_Expert_Setup.sh
-exec_always --no-startup-id /usr/bin/flameshot
+# exec_always --no-startup-id /usr/bin/flameshot
 bindsym $mod+c exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort > /dev/null"
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 

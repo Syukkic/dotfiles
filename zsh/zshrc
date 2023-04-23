@@ -71,10 +71,12 @@ alias la='ls -laa'
 alias lh='ls -lh'
 alias grep='grep --color'
 alias x="xdg-open"
-alias ~="cd ~"
+
+## entrance
 alias ..="cd .."
 alias dot="cd ~/repos/dotfiles"
 alias cdr="cd ~/repos"
+alias blog="cd ~/repos/blog"
 
 alias start="sudo systemctl start"
 alias stop="sudo systemctl stop"

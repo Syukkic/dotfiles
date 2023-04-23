@@ -27,20 +27,18 @@ macro , open-in-browser
 max-browser-tabs 3
 openbrowser-and-mark-jumps-to-next-unread yes
 
-# color listfocus white color17 bold
-# color listnormal_unread white color25 bold
-# color listfocus_unread white color17 bold
-# color info white color140 bold
 
-# color listfocus white color18 bold
-# color listnormal_unread white color60 bold
-# color listfocus_unread white color18 bold
-# color info white color140 bold
+color background         default   default
+color listnormal         default   default
+color listnormal_unread  default   default
+color listfocus          black     yellow
+color listfocus_unread   black     yellow
+color info               default   black
+color article            default   default
 
 # highlights
-highlight article "^(Title):.*$" color103 default
-highlight article "^Author:.*"   color38 default bold
-highlight article "https?://[^ ]+" cyan default
+highlight article "^(Title):.*$" blue default
+highlight article "https?://[^ ]+" red default
 highlight article "\\[image\\ [0-9]+\\]" green default
 
 save-path "~/Documents/RSS_Articles/"
