@@ -42,7 +42,10 @@ done
 
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[yellow]%}%n%{$reset_color%} at %B%{$fg[blue]%}%m%{$reset_color%} in %{$fg[green]%}%~%{$reset_color%}% 
+$%b "
+
 
 # add a command line to the shells history without executing it
 commit-to-history () {
