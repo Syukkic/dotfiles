@@ -87,9 +87,12 @@ alias disable="sudo systemctl disable"
 
 alias yt="yt-dlp"
 alias tlmgr="tllocalmgr"
-
 alias proxy="proxychains4"
 alias pmpv="proxychains4 mpv"
+alias vim="nvim"
+alias tlmgr="/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode"
+alias setproxy="export http_proxy=http://127.0.0.1:7890 && export https_proxy=https://127.0.0.1:7890"
+alias unsetproxy="unset http_proxy && unset https_proxy"
 
 alias orphans="sudo pacman -Qtdq | sudo pacman -Rns -"
 alias pupgrade="proxy sudo pacman -Syu"
@@ -100,9 +103,6 @@ alias Ss="pacman -Ss"
 alias myip4="curl ipecho.net/plain"
 alias myip6="curl wtfismyip.com/json"
 
-alias vim="nvim"
-alias cdd="cd ~/wkspace/dotfiles"
-alias tlmgr="/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode"
 
 
 # ==============  Set others  ==============
