@@ -112,7 +112,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 floating_minimum_size 75 x 50
-floating_maximum_size 1200 x 840
+floating_maximum_size -1 x -1
 
 # start a terminal
 # bindsym $mod+Return exec kitty /bin/zsh -l -c "tmux attach || tmux"
