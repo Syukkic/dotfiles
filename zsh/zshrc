@@ -9,15 +9,6 @@ compinit
 export EDITOR
 export LESS="-R -N"
 
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-export GOROOT="/usr/lib/go"
-export GOPATH="$HOME/repos/go"
-export PATH=$PATH:$GOROOT/bin:$GOPATH:bin
-
-
 export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
 export ZSH_AUTOSUGGEST_USE_ASYNC=true
 
@@ -42,8 +33,7 @@ done
 
 # Enable colors and change prompt:
 autoload -U colors && colors
-# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-PS1="%B%{$fg[yellow]%}%n%{$reset_color%} at %B%{$fg[blue]%}%m%{$reset_color%} in %{$fg[green]%}%~%{$reset_color%}% 
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}
 $%b "
 
 
@@ -77,9 +67,9 @@ alias x="xdg-open"
 
 ## entrance
 alias ..="cd .."
-alias dot="cd ~/repos/dotfiles"
-alias cdr="cd ~/repos"
-alias blog="cd ~/repos/blog"
+alias dot="cd ~/Repos/dotfiles"
+alias cdr="cd ~/Repos"
+alias blog="cd ~/Repos/blog"
 
 alias start="sudo systemctl start"
 alias stop="sudo systemctl stop"
@@ -105,6 +95,7 @@ alias remove="sudo pacman -Rns"
 alias Ss="pacman -Ss"
 alias myip4="curl ipecho.net/plain"
 alias myip6="curl wtfismyip.com/json"
+alias vim="nvim"
 
 
 
@@ -115,4 +106,4 @@ SAVEHIST=10000
 setopt appendhistory
 
 set backspace=indent,eol,start
-EDITOR="vim"
+EDITOR="nvim"
