@@ -5,7 +5,7 @@
  *******************************************************************************/
 
 * {
-    font:   "FiraCode Nerd Font Medium 14";
+    font:   "FiraCode Nerd Font Medium 12";
 
     bg0:     #2B3339;
     bg1:     #323D43;
@@ -24,7 +24,7 @@
 
 window {
     location:   center;
-    width:      680;
+    width:      720;
 
     background:  transparent;
     background-color:   @bg0;
