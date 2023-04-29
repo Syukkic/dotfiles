@@ -126,6 +126,11 @@ function onesync {
     rclone sync ~/Music/ OneDrive:/Music/ -P --exclude ${exclusion}
 }
 
+function curltime() {
+    # https://stackoverflow.com/a/22625150
+    curl -w @$HOME/Repos/dotfiles/scripts/curl-format.txt -o /dev/null -s $1
+}
+
 
 # ==============  Set others  ==============
 HISTFILE=~/.cache/zsh_history
