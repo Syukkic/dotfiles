@@ -58,12 +58,15 @@ bindkey '^R' history-incremental-search-backward
 
 
 # ==============  Set alias  ==============
-alias ls='exa -gb'
-alias ll='ls -l'
-alias la='ls -laa'
-alias lh='ls -lh'
 alias grep='grep --color'
 alias x="xdg-open"
+
+# Changing "ls" to "exa"
+alias ls='exa --icons --color=always --group-directories-first'
+alias ll='exa -alF --icons --color=always --group-directories-first'
+alias la='exa -a --icons --color=always --group-directories-first'
+alias l='exa -F --icons --color=always --group-directories-first'
+alias l.='exa -a | egrep "^\."'
 
 ## entrance
 alias ..="cd .."
@@ -83,7 +86,6 @@ alias yt="yt-dlp"
 alias tlmgr='TEXMFDIST/scripts/texlive/tlmgr.pl --usermode'
 alias proxy="proxychains4"
 alias pmpv="proxychains4 mpv"
-alias vim="nvim"
 alias tlmgr="/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode"
 alias setproxy="export http_proxy=http://127.0.0.1:7890 && export https_proxy=https://127.0.0.1:7890"
 alias unsetproxy="unset http_proxy && unset https_proxy"
@@ -124,6 +126,8 @@ function onesync {
     rclone sync ~/Pictures/ OneDrive:/Pictures/ -P --exclude ${exclusion}
     echo "=====  Start synchronizing Music  ===== "
     rclone sync ~/Music/ OneDrive:/Music/ -P --exclude ${exclusion}
+    echo "=====  Start synchronizing Documents  ===== "
+    rclone sync ~/Documents/Dropbox\ Sync/ OneDrive:/Documents/ -P --exclude ${exclusion}
 }
 
 function curltime() {
