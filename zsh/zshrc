@@ -71,7 +71,6 @@ alias l.='exa -a | egrep "^\."'
 ## entrance
 alias ..="cd .."
 alias dot="cd ~/Repos/dotfiles"
-alias cdr="cd ~/Repos"
 alias blog="cd ~/Repos/blog"
 
 alias start="sudo systemctl start"
@@ -89,6 +88,7 @@ alias pmpv="proxychains4 mpv"
 alias tlmgr="/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode"
 alias setproxy="export http_proxy=http://127.0.0.1:7890 && export https_proxy=https://127.0.0.1:7890"
 alias unsetproxy="unset http_proxy && unset https_proxy"
+alias code="code --disable-gpu"
 
 alias orphans="sudo pacman -Qtdq | sudo pacman -Rns -"
 alias pupgrade="proxy sudo pacman -Syu"
@@ -144,3 +144,8 @@ setopt appendhistory
 
 set backspace=indent,eol,start
 EDITOR="nvim"
+
+# Pyenv environment
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -20,7 +22,9 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 
+-- keep 8 lines while scroll up and down
 vim.opt.scrolloff = 8
+vim.opt.sidescrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
@@ -28,12 +32,7 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
--- Yank (copy) to system cilpboard
-vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
 
--- keep 8 lines while scroll up and down
-vim.opt.scrolloff = 8
-vim.opt.sidescrolloff = 8
 
-vim.g.python3_host_prog = "~/.pyenv/versions/3.10.5/bin/python3.10"
+vim.g.python3_host_prog = "~/.pyenv/versions/3.11.2/bin/python3.11"
 

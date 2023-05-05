@@ -18,9 +18,10 @@ smart_borders on
 gaps inner 8
 gaps outer 8
 
+# xprop finds class and instance
 for_window [class="TelegramDesktop" instance="telegram-desktop"] floating enable
 for_window [class="KeePassXC" instance="keepassxc"] floating enable
-for_window [class="Spotify" instance="spotify"] floating enable
+# for_window [class="Spotify" instance="spotify"] floating enable
 
 bindsym $mod+W gaps outer current plus 5
 bindsym $mod+Shift+w gaps outer current minus 5
@@ -111,8 +112,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-floating_minimum_size 75 x 50
-floating_maximum_size 1200 x 840
+# floating_minimum_size 75 x 50
+floating_maximum_size 1200 x 880
 
 # start a terminal
 # bindsym $mod+Return exec kitty /bin/zsh -l -c "tmux attach || tmux"
@@ -275,7 +276,6 @@ bindsym $mod+Shift+o mode "$mode_system"
 exec_always --no-startup-id dropbox
 exec --no-startup-id fcitx5 -d
 exec --no-startup-id picom -CGb
-# exec_always --no-startup-id feh --bg-fill ~/Pictures/ACG/NieR\ Automata/nierautomata.jpg
 exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/FhVnNi7VIAAxkWQ.jpg
 
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
