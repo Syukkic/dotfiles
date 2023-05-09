@@ -17,7 +17,7 @@ read -p "Choose the partition to being decrypted: " partition
 
 encrypted_partition="/dev/${partition}"
 
-cryptsetup open ${$encrypted_partition} ${decrypted}
+cryptsetup open ${encrypted_partition} ${decrypted}
 echo "Found external driver --> $encrypted_partition"
 
 mount ${decrypted_point} ${mounted_point}
