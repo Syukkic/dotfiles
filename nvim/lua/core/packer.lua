@@ -54,6 +54,8 @@ return require('packer').startup(function(use)
         'nvim-tree/nvim-web-devicons',
     }
 
+    use {'nvim-lualine/lualine.nvim', requires = { 'nvim-tree/nvim-web-devicons', opt = true }}
+
     -- File explorer and tab buffer
     use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
     use {'nvim-tree/nvim-tree.lua', requires = 'nvim-tree/nvim-web-devicons'}
