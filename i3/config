@@ -271,7 +271,7 @@ mode "$mode_system" {
 bindsym $mod+Shift+o mode "$mode_system"
 
 
-set $mode_monitor (B)enQ (S)elf
+set $mode_monitor (b)enQ (d)efault
 mode "$mode_monitor" {
     bindsym b exec --no-startup-id /usr/bin/bash ~/.screenlayout/BenQ_Primary.sh
     bindsym d exec --no-startup-id /usr/bin/bash ~/.screenlayout/Default.sh
