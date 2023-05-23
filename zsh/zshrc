@@ -89,6 +89,10 @@ alias tlmgr="/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode"
 alias setproxy="export http_proxy=http://127.0.0.1:7890 && export https_proxy=https://127.0.0.1:7890"
 alias unsetproxy="unset http_proxy && unset https_proxy"
 alias code="code --disable-gpu"
+alias fsssh="sshfs lain@192.168.50.55:/home/lain/ ~/Public/"
+alias ufsssh="fusermount3 -u ~/Public"
+alias myip4="curl ipecho.net/plain"
+alias myip6="curl wtfismyip.com/json"
 
 alias orphans="sudo pacman -Qtdq | sudo pacman -Rns -"
 alias pupgrade="proxy sudo pacman -Syu"
@@ -96,9 +100,6 @@ alias install="sudo pacman -S"
 alias upgrade="sudo pacman -Syu"
 alias remove="sudo pacman -Rns"
 alias Ss="pacman -Ss"
-alias myip4="curl ipecho.net/plain"
-alias myip6="curl wtfismyip.com/json"
-alias vim="nvim"
 
 
 # ==============  Set functions  ==============
@@ -127,7 +128,7 @@ function onesync {
     echo "=====  Start synchronizing Music  ===== "
     rclone sync ~/Music/ OneDrive:/Music/ -P --exclude ${exclusion}
     echo "=====  Start synchronizing Documents  ===== "
-    rclone sync ~/Documents/Dropbox\ Sync/ OneDrive:/Documents/ -P --exclude ${exclusion}
+    rclone sync ~/Documents/CrossPlatform_Sync/ OneDrive:/Documents/ -P --exclude ${exclusion}
 }
 
 function curltime() {

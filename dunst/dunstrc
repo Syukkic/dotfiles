@@ -10,6 +10,8 @@
     word_wrap = yes
     ignore_newline = no
     geometry = "0x0-30+20"
+    origin = "bottom-right"
+    offset = 20x100
     transparency = 0
     idle_threshold = 60
     monitor = 0

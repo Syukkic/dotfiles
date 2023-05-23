@@ -39,3 +39,4 @@ scala_*
 *.pth
 *.bin
 hcy
+targer/
