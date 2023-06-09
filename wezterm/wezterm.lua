@@ -5,6 +5,6 @@ return {
     font = wezterm.font("Fira Code Nerd Font"),
     font_size = 10.5,
     enable_tab_bar = false,
-    default_prog = { '/bin/bash', '-l', '-c', 'tmux attach || tmux' },
+    default_prog = { '/bin/zsh', '-l', '-c', 'tmux attach || tmux' },
 }
 

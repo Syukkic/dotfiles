@@ -61,12 +61,19 @@ bindkey '^R' history-incremental-search-backward
 alias grep='grep --color'
 alias x="xdg-open"
 
+# Change "ls" to "lsd"
+alias ls='lsd'
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+
 # Changing "ls" to "exa"
-alias ls='exa --icons --color=always --group-directories-first'
-alias ll='exa -alF --icons --color=always --group-directories-first'
-alias la='exa -a --icons --color=always --group-directories-first'
-alias l='exa -F --icons --color=always --group-directories-first'
-alias l.='exa -a | egrep "^\."'
+# alias ls='exa --icons --color=always --group-directories-first'
+# alias ll='exa -alF --icons --color=always --group-directories-first'
+# alias la='exa -a --icons --color=always --group-directories-first'
+# alias l='exa -F --icons --color=always --group-directories-first'
+# alias l.='exa -a | egrep "^\."'
 
 ## entrance
 alias ..="cd .."

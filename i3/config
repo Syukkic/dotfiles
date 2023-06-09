@@ -92,8 +92,7 @@ floating_modifier $mod
 floating_maximum_size 1200 x 880
 
 # start a terminal
-# bindsym $mod+Return exec kitty /bin/zsh -l -c "tmux attach || tmux"
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec wezterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
