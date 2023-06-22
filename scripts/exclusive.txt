@@ -40,3 +40,7 @@ scala_*
 *.bin
 hcy
 targer/
+Videos/*空之境界*
+VirtualBox\ VMs/*
+**target/
+**.git/**

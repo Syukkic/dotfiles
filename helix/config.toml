@@ -1,0 +1,44 @@
+theme = "gruvbox_transparent"
+
+[editor]
+line-number = "relative"
+mouse = true
+cursorline = true
+cursorcolumn = true
+bufferline = "multiple"
+
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = []
+right = ["file-name", "diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 0
+wrap-indicator = ""  # set wrap-indicator to "" to hide it
+
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+
+
+[editor.lsp]
+display-messages = true

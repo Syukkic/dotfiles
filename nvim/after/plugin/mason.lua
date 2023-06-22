@@ -50,7 +50,7 @@ local nvim_lsp = require("lspconfig")
 local util = require("lspconfig/util")
 local servers = {
     "lua_ls", "pyright", "rust_analyzer", "clangd",
-    "html", "ruff_lsp"
+    "html"
 }
 
 for _, lsp in ipairs(servers) do
@@ -60,4 +60,12 @@ for _, lsp in ipairs(servers) do
     }
 end
 
+require('lspconfig').ruff_lsp.setup {
+    on_attach = on_attach,
+    init_options = {
+        settings = {
+            args = {}
+        }
+    }
+}
 

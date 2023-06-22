@@ -12,26 +12,26 @@ history:
 font:
   # Normal (roman) font face
   normal:
-    family: Cascadia Code
+    family: Fira Code
     style: Regular
 
   # Bold font face
   bold:
-    family: Cascadia Code
+    family: Fira Code
     style: Bold
 
   # Italic font face
   italic:
-    family: Cascadia Code
+    family: Fira Code
     style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: Cascadia Code Bold Italic
+    family: Fira Code
     style: Bold Italic
 
   # Point size
-  size: 11.0
+  size: 10.5
 
 colors:
   # Default colors
