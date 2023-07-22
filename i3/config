@@ -93,7 +93,7 @@ floating_modifier $mod
 floating_maximum_size 1200 x 880
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec wezterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -266,7 +266,7 @@ bindsym $mod+Shift+m mode "$mode_monitor"
 # exec_always --no-startup-id dropbox
 exec --no-startup-id fcitx5 -d
 exec --no-startup-id picom -CGb
-exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/nierautomata.jpg
 
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec_always --no-startup-id /usr/bin/flameshot

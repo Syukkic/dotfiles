@@ -2,11 +2,13 @@ local wezterm = require("wezterm")
 local config = {
     color_scheme = "Gruvbox dark, medium (base16)";
     window_background_opacity = 0.9;
-    -- font = wezterm.font("Fira Code Nerd Font");
     font = wezterm.font_with_fallback {
+        "JetBrains Mono",
         "Fira Code Nerd Font",
         "Cascadia Code",
-        "Nerd Font"
+        "Nerd Font",
+        "Source Han Sans SC",
+        "Source Han Sans TC",
     };
     font_size = 10.5;
     enable_tab_bar = false;
