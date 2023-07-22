@@ -9,7 +9,7 @@ require("mason").setup({
 })
 
 require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "pyright", "rust_analyzer" }
+    ensure_installed = { "lua_ls", "pyright", "rust_analyzer", "bashls"}
 })
 
 local opts = { noremap=true, silent=true }
@@ -50,7 +50,7 @@ local nvim_lsp = require("lspconfig")
 local util = require("lspconfig/util")
 local servers = {
     "lua_ls", "pyright", "rust_analyzer", "clangd",
-    "html"
+    "html", "bashls"
 }
 
 for _, lsp in ipairs(servers) do

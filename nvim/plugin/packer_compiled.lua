@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/yuki/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  ["haskell-tools.nvim"] = {
+    loaded = true,
+    path = "/home/yuki/.local/share/nvim/site/pack/packer/start/haskell-tools.nvim",
+    url = "https://github.com/mrcjkb/haskell-tools.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/home/yuki/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
