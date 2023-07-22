@@ -38,9 +38,12 @@ scala_*
 .g8
 *.pth
 *.bin
+.rye
 hcy
 targer/
 Videos/*空之境界*
+Videos/ACG/*
 VirtualBox\ VMs/*
+Games/
 **target/
 **.git/**
