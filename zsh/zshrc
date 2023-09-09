@@ -117,6 +117,7 @@ function zsh_stats() {
     fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n20
 }
 
+# Terminal file manager
 function rancd {
     tempfile="$(mktemp)"
     /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
@@ -125,6 +126,10 @@ function rancd {
 	cd -- "$(cat "$tempfile")"
     fi
     rm -f -- "$tempfile"
+}
+
+function lk {
+  cd "$(walk "$@")"
 }
 
 function onesync {
@@ -158,6 +163,8 @@ function c2webp() {
     echo "${filename_without_extension}.webp converted!"
     try rm $filename
 }
+
+
 
 
 # ==============  Set others  ==============
