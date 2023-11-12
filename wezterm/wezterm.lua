@@ -10,7 +10,7 @@ local config = {
     };
     font_size = 10.5;
     enable_tab_bar = false;
-    default_prog = { '/bin/zsh', '-l', '-c', 'tmux attach || tmux' };
+    -- default_prog = { '/bin/zsh', '-l', '-c', 'tmux attach || tmux' };
 
     warn_about_missing_glyphs = false,
 
