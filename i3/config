@@ -267,6 +267,7 @@ bindsym $mod+Shift+m mode "$mode_monitor"
 exec --no-startup-id fcitx5 -d
 exec --no-startup-id picom -CGb
 exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/FhVnNi7VIAAxkWQ.jpg
+# exec_always --no-startup-id xwinwrap -g 1920x1080 -ni -s -nf -b a -un -ov -fdt -argb -- mpv -wid WID --ao=null --loop=inf --stop-screensaver=no ~/Pictures/Wallpapers/Atri-My-Dear-Moments.mp4
 
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec_always --no-startup-id /usr/bin/flameshot
