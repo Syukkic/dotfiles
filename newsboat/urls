@@ -10,6 +10,7 @@ https://robinzed.wordpress.com/feed/ "friends"
 https://blog.horo.moe/?feed=rss2 "blog" "friends" "tech"
 https://blog.yoitsu.moe/feeds/all.atom.xml "blog" "friends" "tech"
 https://137.ppfarm.boats/posts/index.xml "friends"
+https://benpigchu.github.io/pikanote/feed.xml "friends"
 
 # ACG
 https://blog.sakugabooru.com/feed/ "ACG"
@@ -31,6 +32,7 @@ http://www.overcomingbias.com/feed "STS"
 http://digitalmilieu.net/?feed=rss2 "STS"
 https://revisesociology.com/feed/ "sociology"
 https://sociologist.xyz/feed.xml "sociology"
+https://blog.yunyi.beiyan.us/rss.xml "humanities" "blog"
 
 # Almost tech blog
 https://blog.yliu.io/atom.xml "blog"
@@ -103,3 +105,4 @@ https://blog.lightsing.me/index.xml "blog"
 https://blog.nest.moe/rss.xml "blog"
 https://www.julydate.com/atom.xml "blog"
 https://jiongks.name/atom.xml "blog"
+https://lemire.me/blog/feed/ "blog"
