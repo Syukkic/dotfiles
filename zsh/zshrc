@@ -36,8 +36,7 @@ done
 
 setopt prompt_subst
 autoload -U colors && colors
-PS1='%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}
-$%b '
+PS1='%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b '
 
 # add a command line to the shells history without executing it
 commit-to-history () {
@@ -138,6 +137,7 @@ function onesync {
 
     echo "=====  Start synchronizing ebooks  ===== "
     rclone sync ~/Documents/Library/ OneDrive:/ebooks/ -P --exclude ${exclusion}
+    rclone sync ~/Documents/Calibre\ Library/ OneDrive:/CalibreL\ Library/ -P --exclude ${exclusion}
     echo "=====  Start synchronizing Pictures  ===== "
     rclone sync ~/Pictures/ OneDrive:/Pictures/ -P --exclude ${exclusion}
     echo "=====  Start synchronizing Music  ===== "
