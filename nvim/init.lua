@@ -1,15 +1,2 @@
-require("core.keymaps")
-require("core.basics")
-require("core.packer")
-
-require("plugins.autopairs")
-require("plugins.cmp")
-require("plugins.colorscheme")
-require("plugins.comment")
-require("plugins.lualine")
-require("plugins.mason")
-require("plugins.null-ls")
-require("plugins.nvim-tree")
-require("plugins.tabbar")
-require("plugins.telescope")
-require("plugins.treesitter")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
