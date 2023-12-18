@@ -9,7 +9,7 @@ vim.g.mapleader = " "
 keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Yank (copy) to system cilpboard
--- vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
+vim.opt.clipboard:append({ "unnamed", "unnamedplus" })
 keymap.set("n", "<leader>y", '"+y')
 keymap.set("v", "<leader>y", '"+y')
 keymap.set("n", "<leader>Y", '"+Y')

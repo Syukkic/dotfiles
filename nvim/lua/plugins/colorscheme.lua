@@ -1,7 +1,7 @@
 return {
   {
-    "ellisonleao/gruvbox.nvim",
-    lazy = true,
+    "craftzdog/solarized-osaka.nvim",
+    lazy = false,
     priority = 1000,
     opts = function()
       return {
