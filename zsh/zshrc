@@ -95,7 +95,7 @@ alias tlmgr='TEXMFDIST/scripts/texlive/tlmgr.pl --usermode'
 alias pc="proxychains4"
 alias pmpv="proxychains4 mpv"
 alias tlmgr="/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode"
-alias setproxy="export http_proxy=http://127.0.0.1:7890 && export https_proxy=https://127.0.0.1:7890"
+alias setproxy="export http_proxy=http://127.0.0.1:8080 && export https_proxy=https://127.0.0.1:8080"
 alias unsetproxy="unset http_proxy && unset https_proxy"
 alias code="code --disable-gpu"
 alias hx="helix"
@@ -109,6 +109,7 @@ alias install="sudo pacman -S"
 alias upgrade="sudo pacman -Syu"
 alias remove="sudo pacman -Rns"
 alias search="pacman -Ss"
+alias jo="~/Repos/dotfiles/joshuto/joshuto-wrapper.sh"
 
 
 # ==============  Set functions  ==============
@@ -143,7 +144,7 @@ function onesync {
     echo "=====  Start synchronizing Music  ===== "
     rclone sync ~/Music/ OneDrive:/Music/ -P --exclude ${exclusion}
     echo "=====  Start synchronizing Documents  ===== "
-    rclone sync ~/Documents/CrossPlatform_Sync/ OneDrive:/Documents/ -P --exclude ${exclusion}
+    rclone sync ~/Documents/CrossPlatform_Sync/ OneDrive:/Documents/CrossSync -P --exclude ${exclusion}
 }
 
 function curltime() {
@@ -162,6 +163,17 @@ function c2webp() {
     convert $1 -quality 10 ${filename_without_extension}.webp
     echo "${filename_without_extension}.webp converted!"
     try rm $filename
+}
+
+
+# DNS
+# https://github.com/ogham/dog
+function dns () {
+    if [[ "$#" -eq 1 ]]; then
+        dog --tls "@1.1.1.1:853" A AAAA NS MX TXT $@
+    else
+        dog --tls "@1.1.1.1:853" A AAAA $@
+    fi
 }
 
 
