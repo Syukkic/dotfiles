@@ -3,6 +3,7 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
+fpath=( ~/.zfunc "${fpath[@]}" )
 
 
 # ==============  Set exports  ==============
@@ -62,22 +63,16 @@ bindkey '^R' history-incremental-search-backward
 alias grep='grep --color'
 alias x="xdg-open"
 
-# Change "ls" to "lsd"
+# https://github.com/lsd-rs/lsd
 alias ls='lsd'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 
-# Changing "ls" to "exa"
-# alias ls='exa --icons --color=always --group-directories-first'
-# alias ll='exa -alF --icons --color=always --group-directories-first'
-# alias la='exa -a --icons --color=always --group-directories-first'
-# alias l='exa -F --icons --color=always --group-directories-first'
-# alias l.='exa -a | egrep "^\."'
-
 ## entrance
 alias ..="cd .."
+alias ...="cd ..; cd .."
 alias dot="cd ~/Repos/dotfiles"
 alias blog="cd ~/Repos/blog"
 
@@ -89,13 +84,12 @@ alias enable="sudo systemctl enable"
 alias disable="sudo systemctl disable"
 
 alias yt="yt-dlp"
-alias ytmusic="youtube-dl -x --audio-format mp3"
 # alias tlmgr="tllocalmgr"
 alias tlmgr='TEXMFDIST/scripts/texlive/tlmgr.pl --usermode'
 alias pc="proxychains4"
 alias pmpv="proxychains4 mpv"
 alias tlmgr="/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode"
-alias setproxy="export http_proxy=http://127.0.0.1:8080 && export https_proxy=https://127.0.0.1:8080"
+alias setproxy="export http_proxy=http://127.0.0.1:7890 && export https_proxy=https://127.0.0.1:7890"
 alias unsetproxy="unset http_proxy && unset https_proxy"
 alias code="code --disable-gpu"
 alias hx="helix"
@@ -103,13 +97,13 @@ alias fsssh="sshfs lain@192.168.50.55:/home/lain/ ~/Public/"
 alias ufsssh="fusermount3 -u ~/Public"
 alias myip4="curl -sL ipecho.net/json"
 alias myip6="curl -s wtfismyip.com/json"
+alias jo="~/Repos/dotfiles/joshuto/joshuto-wrapper.sh"
 
 alias orphans="sudo pacman -Qtdq | sudo pacman -Rns -"
 alias install="sudo pacman -S"
 alias upgrade="sudo pacman -Syu"
 alias remove="sudo pacman -Rns"
 alias search="pacman -Ss"
-alias jo="~/Repos/dotfiles/joshuto/joshuto-wrapper.sh"
 
 
 # ==============  Set functions  ==============
@@ -168,14 +162,31 @@ function c2webp() {
 
 # DNS
 # https://github.com/ogham/dog
-function dns () {
-    if [[ "$#" -eq 1 ]]; then
+function dns () { if [[ "$#" -eq 1 ]]; then
         dog --tls "@1.1.1.1:853" A AAAA NS MX TXT $@
+    # dog --https "@https://dns.alidns.com/dns-query" A AAAA NS MX TXT $@
     else
         dog --tls "@1.1.1.1:853" A AAAA $@
     fi
 }
 
+
+# Download YouTube Music
+function yt-music() {
+    if [[ $@ == *"playlist"* ]]; then
+        echo "$@"
+        yt-dlp -x -f "bestaudio[ext=m4a]"                       \
+            --add-metadata --embed-thumbnail                    \
+            --parse-metadata "playlist_index:%(track_numbers)s" \
+            -o "~/Music/%(playlist_index)s %(title)s.%(ext)s"   \
+            $@
+    else
+        yt-dlp -x -f "bestaudio[ext=m4a]"                       \
+            --add-metadata --embed-thumbnail                    \
+            -o "~/Music/%(title)s.%(ext)s"                      \
+            $@
+    fi
+}
 
 
 
@@ -196,3 +207,4 @@ eval "$(pyenv init -)"
 # Go
 GOPATH=$HOME/.go
 export GOPATH
+
