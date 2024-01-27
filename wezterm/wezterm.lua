@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 local config = {
-	-- color_scheme = "Gruvbox dark, medium (base16)";
-	color_scheme = "Solarized Dark Higher Contrast (Gogh)",
+	color_scheme = "Gruvbox dark, hard (base16)",
+	-- color_scheme = "Vs Code Dark+ (Gogh)",
 	-- calt=0 means ligatures-disabled
 	harfbuzz_features = { "calt=0" },
 	window_background_opacity = 0.9,

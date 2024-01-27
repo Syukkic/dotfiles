@@ -1,3 +1,5 @@
+"query:Unread Articles:unread = \"yes\""
+
 # News
 https://rsshub.app/theinitium/channel/latest/zh-hans "news"
 http://www.sixthtone.com/rss "news"
@@ -11,6 +13,7 @@ https://blog.horo.moe/?feed=rss2 "blog" "friends" "tech"
 https://blog.yoitsu.moe/feeds/all.atom.xml "blog" "friends" "tech"
 https://137.ppfarm.boats/posts/index.xml "friends"
 https://benpigchu.github.io/pikanote/feed.xml "friends"
+https://blog.mistivia.com/index.xml "friends"
 
 # ACG
 https://blog.sakugabooru.com/feed/ "ACG"
@@ -69,7 +72,6 @@ http://archer1609wp.wordpress.com/feed/ "blog" "tech"
 https://lutaonan.com/rss.xml "blog" "tech"
 https://yilinhut.net/feed "STS" "blog"
 http://www.senra.me/feed/ "blog" "tech"
-https://astrologer.cc/posts/rss.xml "blog" "tech"
 https://freemind.pluskid.org/rss.xml "blog" "tech"
 https://imbushuo.net/blog/atom.xml "blog" "tech"
 https://xxchan.github.io/feed.xml "blog" "tech"

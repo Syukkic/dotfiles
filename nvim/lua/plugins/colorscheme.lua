@@ -1,6 +1,7 @@
 return {
   {
-    "craftzdog/solarized-osaka.nvim",
+    "ellisonleao/gruvbox.nvim",
+    -- "Mofiqul/vscode.nvim",
     lazy = false,
     priority = 1000,
     opts = function()

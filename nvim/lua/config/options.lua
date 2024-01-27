@@ -35,3 +35,5 @@ vim.opt.termguicolors = true
 vim.opt.colorcolumn = "80"
 
 vim.g.python3_host_prog = "~/.pyenv/versions/3.11.2/bin/python3.11"
+
+vim.o.background = "dark"

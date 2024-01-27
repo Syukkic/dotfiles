@@ -15,7 +15,7 @@ bind-key h quit
 articlelist-title-format "Articles in feed '%T' (%u unread)"
 
 proxy-type http
-proxy 127.0.0.1:8080
+proxy 127.0.0.1:7890
 use-proxy yes
 
 max-items 500
