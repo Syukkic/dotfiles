@@ -2,8 +2,6 @@
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
-compinit
-fpath=( ~/.zfunc "${fpath[@]}" )
 
 
 # ==============  Set exports  ==============
@@ -23,28 +21,29 @@ _enabled_plugins=(
         zsh-completions
 )
 
-ZSH_F_SH_H="$HOME/F-Sy-H/f-sy-h.plugin.zsh"
-if test -r "$ZSH_F_SH_H"; then
-  source $ZSH_F_SH_H
-  _enabled_plugins=(${_enabled_plguins:|zsh-syntax-highlighting})
-fi
+# ZSH_F_SH_H="$HOME/F-Sy-H/f-sy-h.plugin.zsh"
+# if test -r "$ZSH_F_SH_H"; then
+#   source $ZSH_F_SH_H
+#   _enabled_plugins=(${_enabled_plguins:|zsh-syntax-highlighting})
+# fi
 for _zsh_plugin in $_enabled_plugins[@]; do
    [[ ! -r "$_ZSH_PLUGINS/$_zsh_plugin/$_zsh_plugin.zsh" ]] || source $_ZSH_PLUGINS/$_zsh_plugin/$_zsh_plugin.zsh
 done
 
 
-# https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Zsh
-# Enable colors and change prompt:
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-RPROMPT='%B%{$fg[green]%}${vcs_info_msg_0_}'
-zstyle ':vcs_info:git:*' formats '%b'
+git_prompt() {
+    local branch="$(git symbolic-ref HEAD 2> /dev/null | cut -d'/' -f3-)"
+    local branch_truncated="${branch:0:30}"
+    if (( ${#branch} > ${#branch_truncated} )); then
+        branch="${branch_truncated}..."
+    fi
 
-setopt prompt_subst
+    [ -n "${branch}" ] && echo " (${branch})"
+}
+
+setopt PROMPT_SUBST
 autoload -U colors && colors
-PS1='%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b '
+PS1='%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}%{$reset_color%}%{$fg[cyan]%}$(git_prompt)%{$fg[red]%}]%{$reset_color%}$%b '
 
 # add a command line to the shells history without executing it
 commit-to-history () {
@@ -179,7 +178,7 @@ function dns () { if [[ "$#" -eq 1 ]]; then
 
 
 # Download YouTube Music
-function yt-music() {
+function ytm() {
     if [[ $@ == *"playlist"* ]]; then
         echo "$@"
         yt-dlp -x -f "bestaudio[ext=m4a]"                       \
@@ -193,6 +192,16 @@ function yt-music() {
             -o "~/Music/%(title)s.%(ext)s"                      \
             $@
     fi
+}
+
+# https://yazi-rs.github.io/docs/quick-start
+function ya() {
+	tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
 }
 
 
