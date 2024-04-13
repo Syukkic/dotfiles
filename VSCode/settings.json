@@ -4,12 +4,11 @@
     "editor.fontLigatures": true,
     "vim.smartRelativeLine": true,
     "editor.lineNumbers": "relative",
-    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.iconTheme": "vscode-icons",
     "editor.tabCompletion": "onlySnippets",
     "workbench.sideBar.location": "right",
     "terminal.integrated.fontFamily": "MesloLGS NF",
-    "clangd.path": "/home/yuki/.config/Code - OSS/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
     "latex-workshop.latex.tools": [
         {
             "name": "xelatex",
@@ -56,13 +55,9 @@
         "zh-hant": true
     },
     "http.proxy": "http://127.0.0.1:7890",
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--line-length=80",
-        "--skip-string-normalization"
-    ],
     "path-intellisense.showHiddenFiles": true,
     "path-intellisense.autoSlashAfterDirectory": true,
-    "python.linting.mypyPath": "mypy>",
     "go.gopath": "/home/yuki/.go",
+    "beancount.mainBeanFile": "~/Repos/beancount",
+    "beancount.fixedCJKWidth": true,
 }

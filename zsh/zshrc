@@ -1,11 +1,8 @@
 # ==============  Set init  ==============
 autoload -U compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-
 
 # ==============  Set exports  ==============
-export EDITOR
+export EDITOR=nvim
 export LESS="-R -N"
 
 export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
@@ -21,11 +18,12 @@ _enabled_plugins=(
         zsh-completions
 )
 
-# ZSH_F_SH_H="$HOME/F-Sy-H/f-sy-h.plugin.zsh"
-# if test -r "$ZSH_F_SH_H"; then
-#   source $ZSH_F_SH_H
-#   _enabled_plugins=(${_enabled_plguins:|zsh-syntax-highlighting})
-# fi
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+
+compinit
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 for _zsh_plugin in $_enabled_plugins[@]; do
    [[ ! -r "$_ZSH_PLUGINS/$_zsh_plugin/$_zsh_plugin.zsh" ]] || source $_ZSH_PLUGINS/$_zsh_plugin/$_zsh_plugin.zsh
 done
@@ -79,6 +77,7 @@ alias lt='ls --tree'
 ## entrance
 alias ..="cd .."
 alias ...="cd ..; cd .."
+alias de="cd ~/Desktop"
 alias dot="cd ~/Repos/dotfiles"
 alias blog="cd ~/Repos/blog"
 
@@ -99,11 +98,13 @@ alias setproxy="export http_proxy=http://127.0.0.1:7890 && export https_proxy=ht
 alias unsetproxy="unset http_proxy && unset https_proxy"
 alias code="code --disable-gpu"
 alias hx="helix"
+alias vim="nvim"
 alias fsssh="sshfs lain@192.168.50.55:/home/lain/ ~/Public/"
 alias ufsssh="fusermount3 -u ~/Public"
 alias myip4="curl -sL ipecho.net/json"
 alias myip6="curl -s wtfismyip.com/json"
-alias jo="~/Repos/dotfiles/joshuto/joshuto-wrapper.sh"
+alias gc="git clone"
+alias steam="flatpak run --filesystem=~/.local/share/fonts --filesystem=~/.config/fontconfig com.valvesoftware.Steam"
 
 alias orphans="sudo pacman -Qtdq | sudo pacman -Rns -"
 alias install="sudo pacman -S"
@@ -139,12 +140,8 @@ function onesync {
     echo "=====  Start synchronizing ebooks  ===== "
     rclone sync ~/Documents/Library/ OneDrive:/ebooks/ -P --exclude ${exclusion}
     rclone sync ~/Documents/Calibre\ Library/ OneDrive:/CalibreL\ Library/ -P --exclude ${exclusion}
-    echo "=====  Start synchronizing Pictures  ===== "
-    rclone sync ~/Pictures/ OneDrive:/Pictures/ -P --exclude ${exclusion}
     echo "=====  Start synchronizing Music  ===== "
     rclone sync ~/Music/ OneDrive:/Music/ -P --exclude ${exclusion}
-    echo "=====  Start synchronizing Documents  ===== "
-    rclone sync ~/Documents/CrossPlatform_Sync/ OneDrive:/Documents/CrossSync -P --exclude ${exclusion}
 }
 
 function curltime() {
@@ -170,7 +167,7 @@ function c2webp() {
 # https://github.com/ogham/dog
 function dns () { if [[ "$#" -eq 1 ]]; then
         dog --tls "@1.1.1.1:853" A AAAA NS MX TXT $@
-    # dog --https "@https://dns.alidns.com/dns-query" A AAAA NS MX TXT $@
+	# dog --https "@https://dns.alidns.com/dns-query" A AAAA NS MX TXT $@
     else
         dog --tls "@1.1.1.1:853" A AAAA $@
     fi
@@ -224,3 +221,5 @@ eval "$(pyenv init -)"
 GOPATH=$HOME/.go
 export GOPATH
 
+# atuin
+eval "$(atuin init zsh)"
