@@ -6,7 +6,7 @@ config.color_scheme = "Gruvbox dark, hard (base16)"
 -- calt=0 means ligatures-disabled
 config.harfbuzz_features = { "calt=0" }
 config.window_background_opacity = 0.9
-config.window_decorations = "RESIZE"
+config.window_decorations = "TITLE | RESIZE"
 config.scrollback_lines = 3000
 
 config.font = wezterm.font_with_fallback({
@@ -21,6 +21,9 @@ config.font_size = 10.0
 -- Tab bar
 config.enable_tab_bar = true
 config.use_fancy_tab_bar = false
+config.tab_max_width = 16
+config.tab_bar_at_bottom = true
+
 config.status_update_interval = 1000
 config.enable_wayland = true
 
