@@ -3,7 +3,7 @@ set -e
 
 start() {
 	cryptsetup open /dev/disk/by-partuuid/4489ce12-4d22-6e46-a134-af86edd402ca backup
-	mount /dev/mapper/backup /mnt/backup
+	mount -o compress=zstd,noatime /dev/mapper/backup /mnt/backup
 
 }
 
@@ -17,10 +17,10 @@ external-backup() {
     start
 
     local dt=$(date +'%Y-%m-%d_%H:%M')
-    
+
     btrfs subvol snapshot -r /home /.snapshots/home/snapshot-$dt && sync
     echo "Backing up snapshot-$dt ..."
-    btrfs send -p /.snapshots/home/latest /.snapshots/home/snapshot-$dt | pv | sudo btrfs receive /mnt/backup
+    btrfs send --compressed-data -p /.snapshots/home/latest /.snapshots/home/snapshot-$dt | pv | sudo btrfs receive /mnt/backup
 
     btrfs subvolume delete /.snapshots/home/latest
     mv /.snapshots/home/snapshot-$dt /.snapshots/home/latest
