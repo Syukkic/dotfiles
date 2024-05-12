@@ -24,7 +24,7 @@ config.use_fancy_tab_bar = false
 config.tab_max_width = 16
 config.tab_bar_at_bottom = true
 
-config.status_update_interval = 1000
+config.status_update_interval = 300
 config.enable_wayland = true
 
 -- tmux
@@ -36,10 +36,10 @@ config.hyperlink_rules = wezterm.default_hyperlink_rules()
 
 -- Keybindings
 -- Keys
-config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }
+config.leader = { key = "a", mods = "ALT", timeout_milliseconds = 1000 }
 config.keys = {
     -- Send C-a when pressing C-a twice
-    { key = "a", mods = "LEADER",       action = act.SendKey { key = "a", mods = "CTRL" } },
+    { key = "a", mods = "LEADER",       action = act.SendKey { key = "a", mods = "ALT" } },
     { key = "c", mods = "LEADER",       action = act.ActivateCopyMode },
 
     -- Pane keybindings
