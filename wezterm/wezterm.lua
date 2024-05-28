@@ -10,13 +10,17 @@ config.window_decorations = "TITLE | RESIZE"
 config.scrollback_lines = 3000
 
 config.font = wezterm.font_with_fallback({
+    "Fira Code",
     "JetBrains Mono",
     "Noto Sans CJK HK",
     "Noto Sans CJK SC",
     "Noto Sans CJK JP",
     "Noto Color Emoji",
 })
-config.font_size = 10.0
+config.font_size = 11.5
+
+config.initial_cols = 110
+config.initial_rows = 32
 
 -- Tab bar
 config.enable_tab_bar = true

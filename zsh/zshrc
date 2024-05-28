@@ -1,15 +1,12 @@
 # ==============  Set init  ==============
 autoload -U compinit
 
-# ==============  Set exports  ==============
-export EDITOR=nvim
-export LESS="-R -N"
-
-export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
-export ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 
 # ==============  Set ZSH  ==============
+export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
+export ZSH_AUTOSUGGEST_USE_ASYNC=true
+
 _ZSH_PLUGINS="/usr/share/zsh/plugins"
 _enabled_plugins=(
         zsh-autosuggestions
@@ -210,16 +207,15 @@ SAVEHIST=5000
 setopt appendhistory
 
 set backspace=indent,eol,start
-EDITOR="nvim"
+export EDITOR="nvim"
 
 # Pyenv environment
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-# Go
-GOPATH=$HOME/.go
-export GOPATH
+export GOPATH=$HOME/.go
+export PATH=$HOME/.cargo/bin:$PATH
 
 # atuin
 eval "$(atuin init zsh)"
