@@ -63,3 +63,16 @@ function fish_greeting
 
     set_color normal
 end
+
+
+
+
+function test_length
+    if test (count $argv) -eq 1
+        echo 一個
+    else if test (count $argv) -eq 2
+        echo 兩個
+    else
+        echo 其他
+    end
+end
