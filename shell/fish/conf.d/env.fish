@@ -12,5 +12,7 @@ setenv FZF_DEFAULT_OPTS '--height 20%'
 
 set -gx PATH "$HOME/.cargo/env:$HOME/.cargo/bin" $PATH
 set -gx PATH "$HOME/.go" $PATH
+set -gx EDITOR nvim
+set -gx VISUAL nvim
 
 eval "$(atuin init fish)"

@@ -25,6 +25,7 @@ function fish_greeting
     echo -e (uname -ro | awk '{print " \\\\e[1mOS: \\\\e[0;32m"$0"\\\\e[0m"}')
     echo -e (uptime -p | sed 's/^up //' | awk '{print " \\\\e[1mUptime: \\\\e[0;32m"$0"\\\\e[0m"}')
     echo -e (uname -n | awk '{print " \\\\e[1mHostname: \\\\e[0;32m"$0"\\\\e[0m"}')
+    # echo -e (pacman -Qu | wc -l | awk '{print " \\\\e[1mPackage: \\\\e[0;32m"$0"\\\\e[0m"}')
     # echo -e " \\e[1mDisk usage:\\e[0m"
     # echo
     # duf

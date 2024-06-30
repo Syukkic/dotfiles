@@ -25,17 +25,14 @@ abbr -a tlmgr 'TEXMFDIST/scripts/texlive/tlmgr.pl --usermode'
 abbr -a pc proxychains4
 abbr -a pmpv "proxychains4 mpv"
 abbr -a tlmgr "/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode"
-abbr -a setproxy "export http_proxy http://127.0.0.1:7890 && export https_proxy https://127.0.0.1:7890"
-abbr -a unsetproxy "unset http_proxy && unset https_proxy"
-# abbr -a code "code --disable-gpu"
-abbr -a hx helix
 abbr -a vim nvim
 abbr -a fsssh "sshfs yuki@192.168.50.20:/mnt/btrfs-hdd/ ~/Public/"
 abbr -a ufsssh "fusermount3 -u ~/Public"
-abbr -a myip4 "curl -sL ipecho.net/json"
-abbr -a myip6 "curl -s wtfismyip.com/json"
+abbr -a myip "curl -s wtfismyip.com/json"
 abbr -a gc "git clone"
-abbr -a steam "flatpak run --filesystem ~/.local/share/fonts --filesystem ~/.config/fontconfig com.valvesoftware.Steam"
+abbr -a gts "git status"
+abbr -a steam "flatpak run com.valvesoftware.Steam"
+abbr -a zed "zeditor"
 
 abbr -a orphans "sudo pacman -Qtdq | sudo pacman -Rns -"
 abbr -a install "sudo pacman -S"

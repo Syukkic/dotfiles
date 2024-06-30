@@ -5,12 +5,12 @@ local config = {}
 config.color_scheme = "Gruvbox dark, hard (base16)"
 -- calt=0 means ligatures-disabled
 config.harfbuzz_features = { "calt=0" }
-config.window_background_opacity = 0.9
+config.window_background_opacity = 1.0
 config.window_decorations = "TITLE | RESIZE"
 config.scrollback_lines = 3000
+config.xcursor_theme = "breeze_cursors"
 
 config.font = wezterm.font_with_fallback({
-    "Fira Code",
     "JetBrains Mono",
     "Noto Sans CJK HK",
     "Noto Sans CJK SC",
