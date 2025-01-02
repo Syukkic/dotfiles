@@ -24,8 +24,8 @@ scala_*
 .pyenv
 .python_history
 .rustup
-.config
 .local
+.config
 .cargo
 .npm
 .texlive
@@ -45,5 +45,8 @@ Videos/*空之境界*
 Videos/ACG/*
 VirtualBox\ VMs/*
 Games/
+Repos/**
 **target/
 **.git/**
+Repos/
+Videos

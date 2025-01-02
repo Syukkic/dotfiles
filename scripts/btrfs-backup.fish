@@ -28,7 +28,7 @@ function external-backup
 
     stop
 
-    echo "Backing up done~~ 😸"
+    echo "Backup completed~~ 😸"
 end
 
 external-backup

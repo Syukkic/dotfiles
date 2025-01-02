@@ -9,15 +9,17 @@ config.window_background_opacity = 1.0
 config.window_decorations = "TITLE | RESIZE"
 config.scrollback_lines = 3000
 config.xcursor_theme = "breeze_cursors"
+config.scrollback_lines = 65536
 
 config.font = wezterm.font_with_fallback({
+    "Fira Code",
     "JetBrains Mono",
     "Noto Sans CJK HK",
     "Noto Sans CJK SC",
     "Noto Sans CJK JP",
     "Noto Color Emoji",
 })
-config.font_size = 11.5
+config.font_size = 11.0
 
 config.initial_cols = 110
 config.initial_rows = 32
@@ -72,7 +74,6 @@ config.keys = {
 
     -- Lastly, workspace
     { key = "w", mods = "LEADER",       action = act.ShowLauncherArgs { flags = "FUZZY|WORKSPACES" } },
-
 }
 
 for i = 1, 9 do

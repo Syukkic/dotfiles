@@ -33,6 +33,7 @@ abbr -a gc "git clone"
 abbr -a gts "git status"
 abbr -a steam "flatpak run com.valvesoftware.Steam"
 abbr -a zed "zeditor"
+abbr -a mutt "neomutt"
 
 abbr -a orphans "sudo pacman -Qtdq | sudo pacman -Rns -"
 abbr -a install "sudo pacman -S"

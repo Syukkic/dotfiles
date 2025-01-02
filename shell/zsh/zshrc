@@ -102,6 +102,7 @@ alias myip4="curl -sL ipecho.net/json"
 alias myip6="curl -s wtfismyip.com/json"
 alias gc="git clone"
 alias steam="flatpak run --filesystem=~/.local/share/fonts --filesystem=~/.config/fontconfig com.valvesoftware.Steam"
+alias mutt="neomutt"
 
 alias orphans="sudo pacman -Qtdq | sudo pacman -Rns -"
 alias install="sudo pacman -S"
@@ -208,11 +209,6 @@ setopt appendhistory
 
 set backspace=indent,eol,start
 export EDITOR="nvim"
-
-# Pyenv environment
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 
 export GOPATH=$HOME/.go
 export PATH=$HOME/.cargo/bin:$PATH

@@ -1,18 +1,17 @@
 #!/usr/bin/env zsh
 set -e
 
-start() {
+function start() {
 	cryptsetup open /dev/disk/by-partuuid/4489ce12-4d22-6e46-a134-af86edd402ca backup
 	mount -o compress=zstd,noatime /dev/mapper/backup /mnt/backup
-
 }
 
-stop() {
+function stop() {
 	umount -R /mnt/backup
 	cryptsetup close backup
 }
 
-external-backup() {
+function external-backup() {
     echo "Mounting external drive"
     start
 
