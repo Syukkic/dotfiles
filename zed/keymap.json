@@ -1,4 +1,5 @@
 [
+  { "context": "Workspace", "bindings": { "alt-~": "workspace::NewTerminal", "alt-`": "terminal_panel::ToggleFocus" } },
   {
     "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
     "bindings": { "O": "vim::InsertLineAbove" }

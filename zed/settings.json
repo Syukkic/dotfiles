@@ -6,9 +6,15 @@
   "theme": "Gruvbox Dark",
   "ui_font_size": 16,
   "buffer_font_size": 14,
-  "buffer_font_family": "Hack Nerd Font",
+  "buffer_font_family": "JetBrainsMonoNL Nerd Font Mono",
+  "buffer_font_fallbacks": [
+    "JetBrainsMonoNL Nerd Font Mono",
+    "Noto Sans CJK HK",
+    "Noto Sans CJK SC",
+    "Noto Sans CJK JP",
+    "Noto Color Emoji"
+  ],
   "buffer_font_features": { "calt": false, "cv01": 7 },
-  "buffer_font_fallbacks": ["Hack Nerd Font"],
   "vim_mode": true,
   "relative_line_numbers": true,
   "soft_wrap": "bounded",
@@ -23,13 +29,6 @@
   "centered_layout": {
     "left_padding": 0.15,
     "right_padding": 0.15
-  },
-  "assistant": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-3-5-sonnet"
-    },
-    "version": "2"
   },
   "inlay_hints": {
     "enabled": true
@@ -111,12 +110,22 @@
     "dock": "right"
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
+    "button": false
   },
   "notification_panel": {
     "dock": "left"
   },
   "chat_panel": {
-    "dock": "left"
+    "dock": "left",
+    "button": false
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3-5-sonnet"
+    },
+    "version": "2",
+    "button": false
   }
 }
