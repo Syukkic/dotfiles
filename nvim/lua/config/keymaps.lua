@@ -15,7 +15,8 @@ vim.keymap.set("", "L", "$")
 -- <leader>c will copy entire buffer into clipboard
 vim.keymap.set("n", "<leader>p", "<cmd>read !wl-paste<cr>")
 vim.keymap.set("n", "<leader>c", "<cmd>w !wl-copy<cr><cr>")
-
+-- Yank selection to system clipboard in visual mode
+vim.keymap.set("v", "<leader>y", '"+y', { noremap = true, silent = true })
 -- Explore
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 -- <leader><leader> toggles between buffers
