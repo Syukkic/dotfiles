@@ -3,11 +3,12 @@
     "inline_completion_provider": "none"
   },
   "base_keymap": "VSCode",
-  "theme": "Gruvbox Dark",
+  "theme": "Gruvbox Dark Hard",
   "ui_font_size": 16,
-  "buffer_font_size": 14,
-  "buffer_font_family": "JetBrainsMonoNL Nerd Font Mono",
+  "buffer_font_size": 16,
+  "buffer_font_family": "ComicShannsMono Nerd Font Mono",
   "buffer_font_fallbacks": [
+    "FiraCode Nerd Font Mono",
     "JetBrainsMonoNL Nerd Font Mono",
     "Noto Sans CJK HK",
     "Noto Sans CJK SC",
@@ -107,7 +108,7 @@
     "git_status": true
   },
   "outline_panel": {
-    "dock": "right"
+    "dock": "left"
   },
   "collaboration_panel": {
     "dock": "left",
@@ -121,11 +122,11 @@
     "button": false
   },
   "assistant": {
+    "version": "2",
+    "button": false,
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-3-5-sonnet"
-    },
-    "version": "2",
-    "button": false
+    }
   }
 }
