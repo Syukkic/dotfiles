@@ -91,7 +91,7 @@ alias tlmgr='TEXMFDIST/scripts/texlive/tlmgr.pl --usermode'
 alias pc="proxychains4"
 alias pmpv="proxychains4 mpv"
 alias tlmgr="/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode"
-alias setproxy="export http_proxy=http://127.0.0.1:7890 && export https_proxy=https://127.0.0.1:7890"
+alias setproxy="export http_proxy=http://127.0.0.1:8080 && export https_proxy=https://127.0.0.1:8080"
 alias unsetproxy="unset http_proxy && unset https_proxy"
 # alias code="code --disable-gpu"
 alias hx="helix"
@@ -174,18 +174,36 @@ function dns () { if [[ "$#" -eq 1 ]]; then
 
 # Download YouTube Music
 function ytm() {
-    if [[ $@ == *"playlist"* ]]; then
-        echo "$@"
-        yt-dlp -x -f "bestaudio[ext=m4a]"                       \
-            --add-metadata --embed-thumbnail                    \
+    if [[ "$@" == *"playlist"* ]]; then
+        yt-dlp \
+            --extract-audio \
+            --format "bestaudio" \
+            --audio-format "mp3" \
+            --add-metadata --embed-thumbnail \
             --parse-metadata "playlist_index:%(track_numbers)s" \
-            -o "~/Music/%(playlist_index)s %(title)s.%(ext)s"   \
-            $@
+            --output "~/Music/%(playlist_index)s-%(title)s.%(ext)s" \
+            "$@"
+    elif [[ "$@" == *"split-chapter"* ]]; then
+        # e.g. [ ytm --split-chapter "https://www.youtube.com/watch?v=xkDlet4cxuQ" ]
+        yt-dlp \
+            --extract-audio \
+            --format "bestaudio" \
+            --audio-format "mp3" \
+            #--paths temp:"/tmp" \
+            --paths "~/Music" \
+            --split-chapter \
+            #--add-metadata --embed-chapters \
+            --add-metadata --embed-metadata \
+            --output "chapter:%(section_number)s - %(section_title)s.%(ext)s" \
+            "$@"
     else
-        yt-dlp -x -f "bestaudio[ext=m4a]"                       \
-            --add-metadata --embed-thumbnail                    \
-            -o "~/Music/%(title)s.%(ext)s"                      \
-            $@
+        yt-dlp \
+            --extract-audio \
+            --format "bestaudio" \
+            --audio-format "mp3" \
+            --add-metadata --embed-thumbnail \
+            --output "~/Music/%(title)s.%(ext)s" \
+            "$@"
     fi
 }
 

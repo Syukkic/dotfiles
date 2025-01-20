@@ -41,59 +41,50 @@ return {
 				ctermbg = marked.ctermbg,
 				bold = true,
 			})
-			-- XXX
-			-- Would be nice to customize the highlighting of warnings and the like to make
-			-- them less glaring. But alas
-			-- https://github.com/nvim-lua/lsp_extensions.nvim/issues/21
-			-- call Base16hi("CocHintSign", g:base16_gui03, "", g:base16_cterm03, "", "", "")
 		end,
-	}, -- nice bar at the bottom
+	},
 	{
-		"itchyny/lightline.vim",
-		lazy = false, -- also load at start since it's UI
+		"nvim-lualine/lualine.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+
 		config = function()
-			-- no need to also show mode in cmd line when we have bar
-			vim.o.showmode = false
-			vim.g.lightline = {
-				colorscheme = "wombat",
-				active = {
-					left = { { "mode", "paste" }, { "readonly", "filename", "modified" } },
-					right = { { "lineinfo" }, { "percent" }, { "fileencoding", "filetype" } },
+			require("lualine").setup({
+				options = { theme = "gruvbox" },
+				-- options = { theme = "onelight" },
+			})
+		end,
+	},
+	{
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
+		config = function()
+			require("nvim-treesitter.configs").setup({
+				ensure_installed = {
+					"c",
+					"lua",
+					"vim",
+					"vimdoc",
+					"python",
+					"markdown",
+					"markdown_inline",
+					"scheme",
 				},
-				component_function = {
-					filename = "LightlineFilename",
-				},
-			}
-			function LightlineFilenameInLua(opts)
-				if vim.fn.expand("%:t") == "" then
-					return "[No Name]"
-				else
-					return vim.fn.getreg("%")
-				end
-			end
-			-- https://github.com/itchyny/lightline.vim/issues/657
-			vim.api.nvim_exec(
-				[[
-				function! g:LightlineFilename()
-					return v:lua.LightlineFilenameInLua()
-				endfunction
-				]],
-				true
-			)
+				highlight = { enable = true },
+			})
 		end,
-	}, -- quick navigation
+	},
 	{
-		"ggandor/leap.nvim",
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		-- config = true,
+		-- use opts = {} for passing setup options
+		-- this is equivalent to setup({}) function
 		config = function()
-			require("leap").create_default_mappings()
-		end,
-	}, -- better %
-	{
-		"andymass/vim-matchup",
-		config = function()
-			vim.g.matchup_matchparen_offscreen = {
-				method = "popup",
-			}
+			local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+			local cmp = require("cmp")
+			require("nvim-autopairs").setup({
+				cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done()),
+			})
 		end,
 	},
 	{
@@ -120,7 +111,8 @@ return {
 				},
 			})
 		end,
-	}, -- language support
+	},
+	-- language support
 	-- toml
 	"cespare/vim-toml",
 	-- yaml
@@ -193,8 +185,8 @@ return {
 			conform.setup({
 				formatters_by_ft = {
 					javascript = { "prettier" },
-					typescript = { "prettier" },
 					javascriptreact = { "prettier" },
+					typescript = { "prettier" },
 					typescriptreact = { "prettier" },
 					svelte = { "prettier" },
 					css = { "prettier" },
@@ -212,6 +204,10 @@ return {
 					timeout_ms = 500,
 				},
 			})
+
+			conform.formatters.prettier = {
+				prepend_args = { "--single-quote", "true" },
+			}
 			vim.keymap.set({ "n", "v" }, "<leader>mp", function()
 				conform.format({
 					lsp_fallback = true,
@@ -219,6 +215,55 @@ return {
 					timeout_ms = 500,
 				})
 			end, { desc = "Format file or range (in visual mode)" })
+		end,
+	},
+	{
+		"laytan/cloak.nvim",
+		config = function()
+			require("cloak").setup({
+				enabled = true,
+				cloak_character = "*",
+				-- The applied highlight group (colors) on the cloaking, see `:h highlight`.
+				highlight_group = "Comment",
+				-- Applies the length of the replacement characters for all matched
+				-- patterns, defaults to the length of the matched pattern.
+				cloak_length = nil, -- Provide a number if you want to hide the true length of the value.
+				-- Whether it should try every pattern to find the best fit or stop after the first.
+				try_all_patterns = true,
+				-- Set to true to cloak Telescope preview buffers. (Required feature not in 0.1.x)
+				cloak_telescope = true,
+				-- Re-enable cloak when a matched buffer leaves the window.
+				cloak_on_leave = false,
+				patterns = {
+					{
+						-- Match any file starting with '.env'.
+						-- This can be a table to match multiple file patterns.
+						file_pattern = ".env*",
+						-- Match an equals sign and any character after it.
+						-- This can also be a table of patterns to cloak,
+						-- example: cloak_pattern = { ':.+', '-.+' } for yaml files.
+						cloak_pattern = "=.+",
+						-- A function, table or string to generate the replacement.
+						-- The actual replacement will contain the 'cloak_character'
+						-- where it doesn't cover the original text.
+						-- If left empty the legacy behavior of keeping the first character is retained.
+						replace = nil,
+					},
+				},
+			})
+		end,
+	},
+	{
+		"L3MON4D3/LuaSnip",
+		dependencies = { "rafamadriz/friendly-snippets" },
+		config = function()
+			require("luasnip.loaders.from_vscode").lazy_load() -- Load friendly-snippets
+		end,
+	},
+	{
+		"andymass/vim-matchup",
+		config = function()
+			vim.g.matchup_matchparen_offscreen = { method = "popup" }
 		end,
 	},
 }

@@ -50,10 +50,17 @@ return {
 					settings = {
 						Lua = {
 							diagnostics = {
-								globals = { "vim" }, -- Recognize the `vim` global
+								globals = { "vim", "luasnip" }, -- Recognize the `vim` global
 							},
 						},
 					},
+				})
+			end,
+
+			["ts_ls"] = function()
+				require("lspconfig").ts_ls.setup({
+					filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+					cmd = { "typescript-language-server", "--stdio" },
 				})
 			end,
 		})
@@ -98,6 +105,7 @@ return {
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" }, -- For language server
 				{ name = "luasnip" }, -- For luasnip users.
+				-- { name = "conjure" },
 			}, {
 				{ name = "path" },
 				{ name = "buffer" },
@@ -163,4 +171,25 @@ return {
 			end,
 		})
 	end,
+	-- {
+	-- 	"Olical/conjure",
+	-- 	ft = { "clojure", "fennel", "python", "scheme" }, -- etc
+	-- 	lazy = true,
+	-- 	config = function()
+	-- 		-- Set configuration options here
+	-- 		-- Uncomment this to get verbose logging to help diagnose internal Conjure issues
+	-- 		-- This is VERY helpful when reporting an issue with the project
+	-- 		-- vim.g["conjure#debug"] = true
+	-- 	end,
+	-- },
+	-- {
+	-- 	"PaterJason/cmp-conjure",
+	-- 	lazy = true,
+	-- 	config = function()
+	-- 		local cmp = require("cmp")
+	-- 		local config = cmp.get_config()
+	-- 		table.insert(config.sources, { name = "conjure" })
+	-- 		return cmp.setup(config)
+	-- 	end,
+	-- },
 }

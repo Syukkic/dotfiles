@@ -12,6 +12,9 @@ vim.keymap.set("n", "<C-h>", "<cmd>nohlsearch<cr>")
 vim.keymap.set("", "H", "^")
 vim.keymap.set("", "L", "$")
 
+-- delete current buffer
+vim.keymap.set("n", "<leader>bd", "<cmd>bd<cr>")
+
 -- <leader>p will paste clipboard into buffer
 -- <leader>c will copy entire buffer into clipboard
 vim.keymap.set("n", "<leader>p", "<cmd>read !wl-paste<cr>")
