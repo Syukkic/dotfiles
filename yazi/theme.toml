@@ -10,7 +10,7 @@
 cwd = { fg = "cyan" }
 
 # Hovered
-hovered = { fg = "reset", bg = "darkgray" }
+hovered = { fg = "white", bg = "darkgray" }
 preview_hovered = { underline = true }
 
 # Find
