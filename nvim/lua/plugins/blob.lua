@@ -5,25 +5,25 @@ return {
 		priority = 1000, -- load first
 		config = function()
 			vim.o.background = "dark"
-			vim.cmd([[colorscheme base16-gruvbox-dark-hard]])
-			-- require("base16-colorscheme").setup({
-			-- 	base00 = "#f8f8f8",
-			-- 	base01 = "#e5e5e5",
-			-- 	base02 = "#b9dcdd",
-			-- 	base03 = "#a5a5a5",
-			-- 	base04 = "#555555",
-			-- 	base05 = "#000f7f",
-			-- 	base06 = "#323232",
-			-- 	base07 = "#000000",
-			-- 	base08 = "#257e99",
-			-- 	base09 = "#007d00",
-			-- 	base0A = "#af4444",
-			-- 	base0B = "#a3182b",
-			-- 	base0C = "#0598bc",
-			-- 	base0D = "#785d25",
-			-- 	base0E = "#0000ff",
-			-- 	base0F = "#424442",
-			-- })
+			-- vim.cmd([[colorscheme base16-gruvbox-dark-hard]])
+			require("base16-colorscheme").setup({
+				base00 = "#f8f8f8",
+				base01 = "#e5e5e5",
+				base02 = "#b9dcdd",
+				base03 = "#a5a5a5",
+				base04 = "#555555",
+				base05 = "#000f7f",
+				base06 = "#323232",
+				base07 = "#000000",
+				base08 = "#257e99",
+				base09 = "#007d00",
+				base0A = "#af4444",
+				base0B = "#a3182b",
+				base0C = "#0598bc",
+				base0D = "#785d25",
+				base0E = "#0000ff",
+				base0F = "#424442",
+			})
 			-- XXX: hi Normal ctermbg=NONE
 			-- Make comments more prominent -- they are important.
 			local bools = vim.api.nvim_get_hl(0, {
@@ -49,8 +49,8 @@ return {
 
 		config = function()
 			require("lualine").setup({
-				options = { theme = "gruvbox" },
-				-- options = { theme = "onelight" },
+				-- options = { theme = "gruvbox" },
+				options = { theme = "onelight" },
 			})
 		end,
 	},
@@ -97,7 +97,7 @@ return {
 			vim.keymap.set("", "<C-t>", builtin.help_tags, { desc = "Telescope help tags" })
 		end,
 	},
-	-- inline function signatures
+	-- -- inline function signatures
 	{
 		"ray-x/lsp_signature.nvim",
 		event = "VeryLazy",
@@ -264,6 +264,82 @@ return {
 		"andymass/vim-matchup",
 		config = function()
 			vim.g.matchup_matchparen_offscreen = { method = "popup" }
+		end,
+	},
+	{
+		"windwp/nvim-ts-autotag",
+		config = function()
+			require("nvim-ts-autotag").setup({
+				opts = {
+					-- Defaults
+					enable_close = true, -- Auto close tags
+					enable_rename = true, -- Auto rename pairs of tags
+					enable_close_on_slash = false, -- Auto close on trailing </
+				},
+				-- Also override individual filetype configs, these take priority.
+				-- Empty by default, useful if one of the "opts" global settings
+				-- doesn't work well in a specific filetype
+				per_filetype = {
+					["html"] = {
+						enable_close = false,
+					},
+				},
+			})
+		end,
+	},
+	{
+		"lewis6991/gitsigns.nvim",
+		config = function()
+			require("gitsigns").setup({
+				signs = {
+					add = { text = "┃" },
+					change = { text = "┃" },
+					delete = { text = "_" },
+					topdelete = { text = "‾" },
+					changedelete = { text = "~" },
+					untracked = { text = "┆" },
+				},
+				signs_staged = {
+					add = { text = "┃" },
+					change = { text = "┃" },
+					delete = { text = "_" },
+					topdelete = { text = "‾" },
+					changedelete = { text = "~" },
+					untracked = { text = "┆" },
+				},
+				signs_staged_enable = true,
+				signcolumn = true, -- Toggle with `:Gitsigns toggle_signs`
+				numhl = false, -- Toggle with `:Gitsigns toggle_numhl`
+				linehl = false, -- Toggle with `:Gitsigns toggle_linehl`
+				word_diff = false, -- Toggle with `:Gitsigns toggle_word_diff`
+				watch_gitdir = {
+					follow_files = true,
+				},
+				auto_attach = true,
+				attach_to_untracked = false,
+				current_line_blame = false, -- Toggle with `:Gitsigns toggle_current_line_blame`
+				current_line_blame_opts = {
+					virt_text = true,
+					virt_text_pos = "eol", -- 'eol' | 'overlay' | 'right_align'
+					delay = 1000,
+					ignore_whitespace = false,
+					virt_text_priority = 100,
+					use_focus = true,
+				},
+				current_line_blame_formatter = "<author>, <author_time:%R> - <summary>",
+				sign_priority = 6,
+				update_debounce = 100,
+				status_formatter = nil, -- Use default
+				max_file_length = 40000, -- Disable if file is longer than this (in lines)
+				preview_config = {
+					-- Options passed to nvim_open_win
+					border = "single",
+					style = "minimal",
+					relative = "cursor",
+					row = 0,
+					col = 1,
+				},
+			})
 		end,
 	},
 }

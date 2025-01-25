@@ -16,8 +16,21 @@ return {
 
 	config = function()
 		require("fidget").setup({})
-		require("mason").setup({
-			ensure_installed = { "lua_ls", "rust_analyzer", "beancount-language-server" },
+		require("mason").setup()
+		require("mason-lspconfig").setup({
+			ensure_installed = {
+				"bashls",
+				"cssls",
+				"emmet_language_server",
+				"html",
+				"jsonls",
+				"lua_ls",
+				"pyright",
+				"ruff",
+				"rust_analyzer",
+				"ts_ls",
+				"yamlls",
+			},
 		})
 		require("mason-lspconfig").setup_handlers({
 			function(server_name)
@@ -59,10 +72,24 @@ return {
 
 			["ts_ls"] = function()
 				require("lspconfig").ts_ls.setup({
-					filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+					filetypes = {
+						"typescript",
+						"typescriptreact",
+						"typescript.tsx",
+						"javascript",
+						"javascriptreact",
+						"javascript.jsx",
+					},
 					cmd = { "typescript-language-server", "--stdio" },
 				})
 			end,
+		})
+
+		local lspconfig = require("lspconfig")
+		lspconfig.beancount.setup({
+			init_options = {
+				journal_file = "~/Repos/Mine/beancount/main.beancount",
+			},
 		})
 
 		local cmp = require("cmp")
@@ -171,6 +198,7 @@ return {
 			end,
 		})
 	end,
+
 	-- {
 	-- 	"Olical/conjure",
 	-- 	ft = { "clojure", "fennel", "python", "scheme" }, -- etc
