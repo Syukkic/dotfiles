@@ -1,0 +1,52 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+PS1='[\u@\h \W]\$ '
+
+# alias ls='ls --color=auto'
+alias ls='exa -gb'
+
+alias ll='ls -l'
+alias la='ls -laa'
+alias lh='ls -lh'
+alias grep='grep --color'
+alias g="git-annex"
+alias k="kde-open5"
+alias x="xdg-open"
+export LESS="-R -N"
+
+alias ~="cd ~"
+alias ..="cd .."
+
+alias start="sudo systemctl start"
+alias stop="sudo systemctl stop"
+alias restart="sudo systemctl restart"
+alias status="sudo systemctl status"
+alias enable="sudo systemctl enable"
+alias disable="sudo systemctl disable"
+
+alias ytdl="yt-dlp"
+alias tlmgr="tllocalmgr"
+
+alias proxy="proxychains4"
+alias pmpv="proxychains4 mpv"
+
+alias dotfiles="cd ~/wkspace/dotfiles"
+
+alias orphans="sudo pacman -Qtdq | sudo pacman -Rns -"
+alias pupgrade="proxy sudo pacman -Syu"
+alias install="sudo pacman -S"
+alias upgrade="sudo pacman -Syu"
+alias remove="sudo pacman -Rns"
+alias Ss="pacman -Ss"
+
+HISTFILE=~/.cache/bash_history
+
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+. "$HOME/.cargo/env"

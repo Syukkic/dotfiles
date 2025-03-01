@@ -1,0 +1,23 @@
+# Save in ~/Videos
+-o ~/Videos/%(title)s.%(ext)s
+
+# Always extract audio
+# -x
+
+# Network
+--proxy socks5://127.0.0.1:7890
+
+# Videos Selection
+## Prefer 1080p or lower resolutions
+-f bestvideo[ext=mp4][height<1200]+bestaudio[ext=m4a]/bestvideo[ext=webm][height<1200]+bestaudio[ext=webm]/bestvideo[height<1200]+bestaudio/best[height<1200]/best
+## Playlist
+--yes-playlist
+
+
+# Subtitle
+# --write-auto-sub
+# --all-subs
+
+# Geo Restriction
+--geo-bypass
+

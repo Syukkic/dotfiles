@@ -1,0 +1,89 @@
+# https://newsboat.org/releases/2.12/docs/newsboat.html
+
+auto-reload yes
+bookmark-interactive yes
+display-article-progress yes
+download-full-page yes
+cleanup-on-quit no
+
+# bind keys - vim style
+bind-key j down
+bind-key k up
+bind-key l open
+bind-key h quit
+
+articlelist-title-format "Articles in feed '%T' (%u unread)"
+
+proxy-type http
+proxy 127.0.0.1:8080
+use-proxy false
+
+max-items 500
+keep-articles-days 99
+reload-threads 10
+
+browser "xdg-open %u"
+macro , open-in-browser
+max-browser-tabs 3
+openbrowser-and-mark-jumps-to-next-unread yes
+
+# VS Code Light Modern 配色
+color background         white    default
+color listnormal         black    default
+color listnormal_unread  black    default
+color listfocus          black    color252   # 浅灰背景，黑色文字
+color listfocus_unread   black    color252   # 浅灰背景，黑色文字
+color info               color255 color239      # 黑色文本，白色背景
+color article            black    default    # 黑色文本，默认背景
+
+# Highlights
+highlight article "^(Title):.*$" color20 default  # 深蓝色 (VS Code 主题的蓝色)
+highlight article "https?://[^ ]+" color26 default  # 亮蓝色 (链接颜色)
+highlight article "\\[image\\ [0-9]+\\]" color28 default  # 绿色 (图片占位符)
+
+
+# # Gruvbox light
+# # Set the background and foreground colors
+# color background         default   default
+# color listnormal         default   default
+# color listnormal_unread  default   default
+# color listfocus          black  yellow   # color245 is a soft gray background, and yellow will be Gruvbox yellow
+# color listfocus_unread   black     yellow   # Yellow background for focused unread items
+# color info               black   white    # Light text for info
+# color article            default   default  # Default foreground and background
+#
+# # Highlights
+# highlight article "^(Title):.*$" black default  # blue (Gruvbox blue)
+# highlight article "https?://[^ ]+" color167 default  # red (Gruvbox red)
+# highlight article "\\[image\\ [0-9]+\\]" color113 default  # green (Gruvbox green)
+
+# # Solazried light
+# color background         default   default
+# color listnormal         default   default
+# color listnormal_unread  default   default
+# color listfocus          color240  yellow
+# color listfocus_unread   black     yellow
+# color info               default   white
+# color article            default   default
+#
+# # highlights
+# highlight article "^(Title):.*$" blue default
+# highlight article "https?://[^ ]+" red default
+# highlight article "\\[image\\ [0-9]+\\]" green default
+
+# color background         default   default
+# color listnormal         default   default
+# color listnormal_unread  default   default
+# color listfocus          black     yellow
+# color listfocus_unread   black     yellow
+# color info               default   white
+# color article            default   default
+#
+# # highlights
+# highlight article "^(Title):.*$" yellow default
+# highlight article "https?://[^ ]+" red default
+# highlight article "\\[image\\ [0-9]+\\]" green default
+
+save-path "~/Documents/RSS_Articles/"
+cookie-cache "~/.local/share/newsboat/cookies.txt"
+error-log "~/.local/share/newsboat/error.log"

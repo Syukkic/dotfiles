@@ -1,0 +1,108 @@
+{
+    "workbench.colorCustomizations": {
+        // "activityBar.background": "#f3f3f3",
+        // "activityBar.foreground": "#000000",
+        // "activityBar.activeBorder": "#f3f3f3",
+        // "statusBar.background": "#007acc",
+        // "statusBar.foreground": "#ffffff",
+        // "statusBarItem.remoteBackground": "#16825d",
+        // "statusBarItem.remoteForeground": "#ffffff"
+        //     // "editor.background": "#f3f3f3",
+        //     // "statusBar.background":"#c491a1",
+        //     // "statusBarItem.remoteBackground":"#996c79",
+        // 	// "activityBarBadge.background": "#c28699",
+        //     // "list.activeSelectionBackground":"#d6bfc7",
+        //     // "list.activeSelectionForeground": "#0c0c0c",
+    },
+    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "'ComicShannsMono Nerd Font','Fira Code','JetBrains Mono','Cascadia Code','Droid Sans Mono','monospace'",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": false,
+    "vim.smartRelativeLine": true,
+    "editor.lineNumbers": "relative",
+    "editor.tabCompletion": "onlySnippets",
+    "workbench.sideBar.location": "right",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-xelatex",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {}
+        },
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xelatex -> bibtex -> xelatex * 2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+    ],
+    "editor.wordWrap": "on",
+    "editor.unicodeHighlight.allowedLocales": {
+        "zh-hans": true,
+        "zh-hant": true
+    },
+    // "http.proxy": "http://127.0.0.1:8080",
+    "path-intellisense.showHiddenFiles": true,
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "go.gopath": "/home/yuki/.go",
+    "beancount.mainBeanFile": "~/Repos/beancount/",
+    "beancount.fixedCJKWidth": true,
+    "workbench.startupEditor": "none",
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.rustfmt.rangeFormatting.enable": true,
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true
+    },
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "redhat.telemetry.enabled": false,
+    "[lua]": {
+        "editor.defaultFormatter": "yinfei.luahelper"
+    },
+    "editor.minimap.enabled": false,
+    // "vim.normalModeKeyBindings": [
+    //     {
+    //         "before": [
+    //             "j",
+    //         ],
+    //         "after": [
+    //             "g", "j"
+    //         ]
+    //     },
+    //     {
+    //         "before": [
+    //             "k",
+    //         ],
+    //         "after": [
+    //             "g", "k"
+    //         ]
+    //     }
+    // ]
+}

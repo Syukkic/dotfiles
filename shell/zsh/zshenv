@@ -1,0 +1,31 @@
+export GDK_SCALE=1.75
+. "$HOME/.cargo/env"
+
+# ==============  Set functions  ==============
+function zsh_stats() {
+    fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n20
+}
+
+function rancd {
+    tempfile="$(mktemp)"
+    /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
+    test -f "$tempfile" &&
+    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
+	cd -- "$(cat "$tempfile")"
+    fi
+    rm -f -- "$tempfile"
+}
+
+function onesync {
+
+    exclusion="{.stignore,.stfolder/**,.git/**,Element/**}"
+
+    echo "=====  Start synchronizing ebooks  ===== "
+    rclone sync ~/Documents/books/ OneDrive:/ebooks/ -P --exclude ${exclusion}
+    echo "=====  Start synchronizing Pictures  ===== "
+    rclone sync ~/Pictures/ OneDrive:/Pictures/ -P --exclude ${exclusion}
+    echo "=====  Start synchronizing Music  ===== "
+    rclone sync ~/Music/ OneDrive:/Music/ -P --exclude ${exclusion}
+}
+
+
