@@ -1,35 +1,69 @@
-#!/usr/bin/env zsh
-set -e
+#!/usr/bin/env bash
 
-function start() {
-	cryptsetup open /dev/disk/by-partuuid/4489ce12-4d22-6e46-a134-af86edd402ca backup
-	mount -o compress=zstd,noatime /dev/mapper/backup /mnt/backup
-}
+set -e  # 遇到錯誤時退出
 
-function stop() {
-	umount -R /mnt/backup
-	cryptsetup close backup
-}
+# 檢查是否以 root 身份運行
+if [ "$EUID" -ne 0 ]; then
+    echo "Please run as root"
+    exit 1
+fi
 
-function external-backup() {
-    echo "Mounting external drive"
-    start
+# 設置日誌記錄
+exec > >(tee -a /var/log/btrfs-backup.log) 2>&1
 
-    local dt=$(date +'%Y-%m-%d_%H:%M')
+# 打開 LUKS 設備
+if ! sudo cryptsetup open /dev/disk/by-partuuid/04967bc3-d329-47f0-bf6c-3e1baf067a31 silence; then
+    echo "Failed to open LUKS device"
+    exit 1
+fi
 
-    btrfs subvol snapshot -r /home /.snapshots/home/snapshot-$dt && sync
-    echo "Backing up snapshot-$dt ..."
-    btrfs send --compressed-data -p /.snapshots/home/latest /.snapshots/home/snapshot-$dt | pv | sudo btrfs receive /mnt/backup
+# 掛載文件系統
+if ! sudo mount -o compress=zstd,noatime /dev/mapper/silence /mnt/backup; then
+    echo "Failed to mount backup device"
+    sudo cryptsetup close silence
+    exit 1
+fi
 
-    btrfs subvolume delete /.snapshots/home/latest
-    mv /.snapshots/home/snapshot-$dt /.snapshots/home/latest
+# 設置時間戳
+dt=$(date +'%Y-%m-%d_%H:%M')
 
-    btrfs subvolume delete /mnt/backup/latest
-    mv /mnt/backup/snapshot-$dt /mnt/backup/latest
+# 創建只讀快照
+if ! sudo btrfs subvol snapshot -r /home /.snapshots/home/snapshot-$dt; then
+    echo "Failed to create snapshot"
+    sudo umount -R /mnt/backup
+    sudo cryptsetup close silence
+    exit 1
+fi
 
-    stop
+# 同步數據
+sync
 
-    echo "Backing up done~~ 😸\n"
-}
+# 發送快照到備份設備
+if ! sudo btrfs send --compressed-data -p /.snapshots/home/latest /.snapshots/home/snapshot-$dt | pv | sudo btrfs receive /mnt/backup; then
+    echo "Failed to send/receive snapshot"
+    sudo umount -R /mnt/backup
+    sudo cryptsetup close silence
+    exit 1
+fi
 
-external-backup
+# 刪除舊的快照
+if [ -d /.snapshots/home/latest ]; then
+    sudo btrfs subvolume delete /.snapshots/home/latest
+fi
+
+# 更新最新快照
+sudo mv /.snapshots/home/snapshot-$dt /.snapshots/home/latest
+
+# 刪除備份設備上的舊快照
+if [ -d /mnt/backup/latest ]; then
+    sudo btrfs subvolume delete /mnt/backup/latest
+fi
+
+# 更新備份設備上的最新快照
+sudo mv /mnt/backup/snapshot-$dt /mnt/backup/latest
+
+# 卸載並關閉 LUKS 設備
+sudo umount -R /mnt/backup
+sudo cryptsetup close silence
+
+echo "Backup completed successfully"
