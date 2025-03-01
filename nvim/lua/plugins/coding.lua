@@ -76,6 +76,10 @@ return {
 				jedi_language_server = {
 					filetypes = { "python" },
 				},
+				clangd = {
+					cmd = { "clangd", "--background-index", "--clang-tidy" },
+					filetypes = { "c", "cpp", "objc", "objcpp" },
+				},
 			},
 		},
 		config = function(_, opts)
@@ -85,6 +89,7 @@ return {
 				ensure_installed = {
 					"bashls",
 					"cssls",
+					"clangd",
 					-- "emmet_language_server",
 					"html",
 					"jsonls",
