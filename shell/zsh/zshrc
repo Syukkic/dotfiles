@@ -290,6 +290,7 @@ export EDITOR="nvim"
 
 export GOPATH=$HOME/.go
 export PATH=$HOME/.cargo/bin:$PATH
+export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 
 # atuin
 # eval "$(atuin init zsh)"

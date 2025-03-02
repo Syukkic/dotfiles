@@ -10,14 +10,14 @@ setenv FZF_DEFAULT_COMMAND 'fd --type file --follow'
 setenv FZF_CTRL_T_COMMAND 'fd --type file --follow'
 setenv FZF_DEFAULT_OPTS '--height 20%'
 
+
 set -U VISUAL nvim
 set -Ux GOPATH $HOME/.go
-set -Ua PATH $GOPATH/bin
-
-set -Ua PATH $HOME/.cargo/bin
-set -U fish_user_paths $GOPATH/bin $HOME/.cargo/bin $fish_user_paths
-# set -Ua PATH "$HOME/.cargo/env:$HOME/.cargo/bin" $PATH
+set -Ua fish_user_paths $GOPATH/bin
+set -Ua fish_user_paths $HOME/.cargo/bin
+set -Ua fish_user_paths $HOME/.cabal/bin
+set -Ua fish_user_paths $HOME/.ghcup/bin
 
 # eval "$(atuin init fish)"
 # fzf --fish | source
-eval $(opam config env)
+eval (opam config env)
