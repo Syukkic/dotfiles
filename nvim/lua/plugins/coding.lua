@@ -80,6 +80,33 @@ return {
 					cmd = { "clangd", "--background-index", "--clang-tidy" },
 					filetypes = { "c", "cpp", "objc", "objcpp" },
 				},
+				hls = {
+					cmd = { "haskell-language-server-wrapper", "--lsp" },
+					filetypes = { "hs", "lhs", "haskell" },
+					initializationOptions = { "languageServerHaskell", {} },
+					rootPatterns = { "*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml" },
+					single_file_support = true,
+					settings = {
+						haskell = {
+							cabalFormattingProvider = "cabalfmt",
+							formattingProvider = "ormolu",
+						},
+					},
+				},
+				emmet_language_server = {
+					filetypes = {
+						"css",
+						"eruby",
+						"html",
+						"javascript",
+						"javascriptreact",
+						"less",
+						"sass",
+						"scss",
+						"pug",
+						"typescriptreact",
+					},
+				},
 			},
 		},
 		config = function(_, opts)
@@ -88,13 +115,14 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"bashls",
-					"cssls",
 					"clangd",
-					-- "emmet_language_server",
+					"cssls",
+					"emmet_language_server",
+					"hls",
 					"html",
+					"jedi_language_server",
 					"jsonls",
 					"lua_ls",
-					"jedi_language_server",
 					"rust_analyzer",
 					"tinymist",
 					"ts_ls",
@@ -110,6 +138,20 @@ return {
 					capabilities = capabilities,
 				}, config))
 			end
+
+			-- -- test hsl of ghcup
+			-- lspconfig.hls.setup({
+			-- 	capabilities = require("cmp_nvim_lsp").default_capabilities(),
+			-- 	filetypes = { "haskell", "lhaskell" },
+			-- 	settings = {
+			-- 		haskell = {
+			-- 			checkProject = true,
+			-- 			formatOnImportOn = true,
+			-- 			hlintOn = true,
+			-- 			maxCompletions = 40,
+			-- 		},
+			-- 	},
+			-- })
 
 			-- Global mappings.
 			-- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -176,8 +218,8 @@ return {
 							-- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
 							-- can also be a function to dynamically calculate max width such as
 							-- menu = function() return math.floor(0.45 * vim.o.columns) end,
-							menu = 70,        -- leading text (labelDetails)
-							abbr = 70,        -- actual suggestion item
+							menu = 70, -- leading text (labelDetails)
+							abbr = 70, -- actual suggestion item
 						},
 						ellipsis_char = "...", -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
 						show_labelDetails = true, -- show labelDetails in menu. Disabled by default
