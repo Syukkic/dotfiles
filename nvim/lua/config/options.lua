@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+vim.opt.fileencoding = "utf-8"
 -- never ever folding
 vim.opt.foldenable = false
 vim.opt.foldmethod = "manual"

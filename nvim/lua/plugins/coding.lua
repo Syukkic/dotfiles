@@ -38,6 +38,7 @@ return {
 							completion = {
 								postfix = {
 									enable = false,
+									command = "clippy",
 								},
 							},
 							checkOnsave = {
@@ -107,6 +108,17 @@ return {
 						"typescriptreact",
 					},
 				},
+				beancount = {
+					cmd = { "beancount-language-server", "--stdio" },
+					filetypes = { "bean", "beancount" },
+					init_options = {
+						journalFile = "~/Repos/Mine/finance",
+						pythonPath = "python",
+					},
+					root_dir = function(fname)
+						return vim.fs.dirname(vim.fs.find(".git", { path = fname, upward = true })[1])
+					end,
+				},
 			},
 		},
 		config = function(_, opts)
@@ -117,6 +129,7 @@ return {
 					"bashls",
 					"clangd",
 					"cssls",
+					"beancount",
 					"emmet_language_server",
 					"hls",
 					"html",
@@ -210,24 +223,20 @@ return {
 			vim.o.completeopt = "menu,menuone,noinsert,noselect"
 			-- return {
 			cmp.setup({
+				window = {
+					documentation = false,
+				},
 				formatting = {
 					format = lspkind.cmp_format({
 						-- options: 'text', 'text_symbol', 'symbol_text', 'symbol'
 						mode = "symbol_text",
 						maxwidth = {
-							-- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
-							-- can also be a function to dynamically calculate max width such as
-							-- menu = function() return math.floor(0.45 * vim.o.columns) end,
-							menu = 70, -- leading text (labelDetails)
-							abbr = 70, -- actual suggestion item
+							menu = 50, -- leading text (labelDetails)
+							abbr = 50, -- actual suggestion item
 						},
-						ellipsis_char = "...", -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
-						show_labelDetails = true, -- show labelDetails in menu. Disabled by default
-
-						-- The function below will be called before any actual modifications from lspkind
-						-- so that you can provide more controls on popup customization. (See [#30](https://github.com/onsails/lspkind-nvim/pull/30))
+						ellipsis_char = "...",
+						show_labelDetails = true,
 						before = function(entry, vim_item)
-							-- ...
 							return vim_item
 						end,
 					}),
@@ -294,6 +303,13 @@ return {
 					{ name = "buffer" },
 				}),
 			})
+		end,
+	},
+	{
+		"saecki/crates.nvim",
+		event = { "BufRead Cargo.toml" },
+		config = function()
+			require("crates").setup()
 		end,
 	},
 }

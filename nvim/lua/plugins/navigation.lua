@@ -6,9 +6,9 @@ return {
 		version = false,
 		keys = {
 			{ "<C-p>", "<cmd>Telescope find_files<cr>", desc = "Telescope find files" },
-			{ "<C-g>", "<cmd>Telescope live_grep<cr>",  desc = "Telescope live grep" },
-			{ "<C-b>", "<cmd>Telescope buffers<cr>",    desc = "Telescope buffers" },
-			{ "<C-h>", "<cmd>Telescope help_tags<cr>",  desc = "Telescope help tags" },
+			{ "<C-g>", "<cmd>Telescope live_grep<cr>", desc = "Telescope live grep" },
+			{ "<C-b>", "<cmd>Telescope buffers<cr>", desc = "Telescope buffers" },
+			{ "<C-h>", "<cmd>Telescope help_tags<cr>", desc = "Telescope help tags" },
 		},
 		opts = {
 			defaults = {
@@ -29,17 +29,20 @@ return {
 		opts = {
 			ensure_installed = {
 				"bash",
+				"beancount",
 				"fish",
+				"haskell",
+				"html",
 				"javascript",
 				"lua",
 				"markdown",
 				"python",
 				"rust",
+				"svelte",
+				"sql",
 				"tsx",
 				"typescript",
 				"vim",
-				"svelte",
-				"html",
 			},
 			highlight = { enable = true },
 			indent = { enable = true },
