@@ -1,7 +1,7 @@
 "query:Unread Articles:unread = \"yes\""
 
 # News
-https://rsshub.app/theinitium/channel/latest/zh-hans "news"
+https://rsshub.app/theinitium/channel/latest/zh-hans news
 http://www.sixthtone.com/rss "news"
 http://blog.gslin.org/feed/ "blog" "tech" "news"
 https://this-week-in-rust.org/rss.xml "tech" "rust"

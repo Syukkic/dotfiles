@@ -11,6 +11,7 @@ abbr -a ... "cd ..; cd .."
 abbr -a de "cd ~/Desktop"
 abbr -a dot "cd ~/Repos/dotfiles"
 abbr -a blog "cd ~/Repos/Mine/blog/"
+abbr -a vimconf "nvim ~/Repos/dotfiles/nvim/"
 
 abbr -a start "sudo systemctl start"
 abbr -a stop "sudo systemctl stop"

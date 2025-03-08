@@ -106,7 +106,7 @@ config.key_tables = {
 -- Light Modern
 config.colors = {
 	foreground = "#3b3b3b",
-	background = "#ffffff",
+	background = "#f8f8f8",
 	cursor_fg = "#d4d4d4",
 	cursor_bg = "#323232",
 	selection_bg = "#e5ebf1",

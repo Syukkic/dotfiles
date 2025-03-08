@@ -5,7 +5,7 @@
 # -x
 
 # Network
---proxy socks5://127.0.0.1:7890
+# --proxy socks5://127.0.0.1:7890
 
 # Videos Selection
 ## Prefer 1080p or lower resolutions
@@ -21,3 +21,4 @@
 # Geo Restriction
 --geo-bypass
 
+--cookies-from-browser firefox

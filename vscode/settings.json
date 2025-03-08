@@ -1,28 +1,30 @@
 {
     "workbench.colorCustomizations": {
-        // "activityBar.background": "#f3f3f3",
-        // "activityBar.foreground": "#000000",
-        // "activityBar.activeBorder": "#f3f3f3",
-        // "statusBar.background": "#007acc",
-        // "statusBar.foreground": "#ffffff",
-        // "statusBarItem.remoteBackground": "#16825d",
-        // "statusBarItem.remoteForeground": "#ffffff"
-        //     // "editor.background": "#f3f3f3",
-        //     // "statusBar.background":"#c491a1",
-        //     // "statusBarItem.remoteBackground":"#996c79",
-        // 	// "activityBarBadge.background": "#c28699",
-        //     // "list.activeSelectionBackground":"#d6bfc7",
-        //     // "list.activeSelectionForeground": "#0c0c0c",
+        "activityBar.background": "#f3f3f3",
+        "activityBar.foreground": "#000000",
+        "activityBar.activeBorder": "#f3f3f3",
+        "statusBar.background": "#007acc",
+        "statusBar.foreground": "#ffffff",
+        "statusBarItem.remoteBackground": "#16825d",
+        "statusBarItem.remoteForeground": "#ffffff",
+
+        // "editor.background": "#f3f3f3",
+        // "statusBar.background": "#c491a1",
+        // "statusBarItem.remoteBackground": "#996c79",
+        // "activityBarBadge.background": "#c28699",
+        // "list.activeSelectionBackground": "#d6bfc7",
+        // "list.activeSelectionForeground": "#0c0c0c",
     },
     "window.menuBarVisibility": "toggle",
-    "editor.fontFamily": "'ComicShannsMono Nerd Font','Fira Code','JetBrains Mono','Cascadia Code','Droid Sans Mono','monospace'",
+    "editor.fontFamily": "'Iosevka Nerd Font Mono', 'Fira Code','ComicShannsMono Nerd Font','JetBrains Mono','Cascadia Code','Droid Sans Mono','monospace'",
     "editor.fontSize": 16,
     "editor.fontLigatures": false,
     "vim.smartRelativeLine": true,
     "editor.lineNumbers": "relative",
     "editor.tabCompletion": "onlySnippets",
     "workbench.sideBar.location": "right",
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "'Iosevka Nerd Font Mono',MesloLGS NF",
+    "terminal.integrated.fontSize": 16,
     "latex-workshop.latex.tools": [
         {
             "name": "xelatex",
@@ -81,28 +83,22 @@
         "editor.defaultFormatter": "rust-lang.rust-analyzer",
         "editor.formatOnSave": true
     },
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Default Light Modern",
     "redhat.telemetry.enabled": false,
     "[lua]": {
         "editor.defaultFormatter": "yinfei.luahelper"
     },
-    "editor.minimap.enabled": false,
-    // "vim.normalModeKeyBindings": [
-    //     {
-    //         "before": [
-    //             "j",
-    //         ],
-    //         "after": [
-    //             "g", "j"
-    //         ]
-    //     },
-    //     {
-    //         "before": [
-    //             "k",
-    //         ],
-    //         "after": [
-    //             "g", "k"
-    //         ]
-    //     }
-    // ]
+    "editor.minimap.enabled": true,
+    "window.titleBarStyle": "native",
+    "chat.commandCenter.enabled": false,
+//     "vim.normalModeKeyBindings": [
+//     {
+//         "before": ["j"],
+//         "after": ["g", "j"]
+//     },
+//     {
+//         "before": ["k"],
+//         "after": ["g", "k"]
+//     }
+// ]
 }

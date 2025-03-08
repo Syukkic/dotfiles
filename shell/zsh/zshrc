@@ -7,8 +7,8 @@ autoload -U colors && colors
 # compinit
 autoload -U promptinit && promptinit
 setopt PROMPT_SUBST
-# PS1='%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}%{$reset_color%}%{$fg[cyan]%}$(git_prompt)%{$fg[red]%}]%{$reset_color%}$%b '
-PROMPT='%{$fg_bold[black]%}[%D{%H:%M}] %{$fg[blue]%}%m%{$fg_bold[black]%}:%{$fg[yellow]%}%~ %{$fg[green]%}$(git_prompt_info) %{$fg[red]%}| %{$reset_color%}'
+PS1='%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}%{$reset_color%}%{$fg[cyan]%}$(git_prompt)%{$fg[red]%}]%{$reset_color%}$%b '
+# PROMPT='%{$fg_bold[black]%}[%D{%H:%M}] %{$fg[blue]%}%m%{$fg_bold[black]%}:%{$fg[yellow]%}%~ %{$fg[green]%}$(git_prompt_info) %{$fg[red]%}| %{$reset_color%}'
 
 
 
@@ -44,31 +44,31 @@ function git_prompt_info {
 }
 
 # Custom greeting function
-function greet {
-  # OS and kernel
-  echo -e "\033[1mOS: \033[0;32m$(uname -ro)\033[0m"
-  
-  # Uptime
-  echo -e "\033[1mUptime: \033[0;32m$(uptime -p | sed 's/^up //')\033[0m"
-  
-  # Hostname
-  echo -e "\033[1mHostname: \033[0;32m$(uname -n)\033[0m"
-  
-  # Network interfaces
-  echo -e "\033[1mNetwork:\033[0m"
-    ip addr show up scope global | grep -E ': <|inet' | sed \
-    -e 's/^[[:digit:]]\+: //' \
-    -e 's/: <.*//' \
-    -e 's/.*inet[[:digit:]]* //' \
-    -e 's/\/.*//' | \
-    awk 'BEGIN {i=""} /\.|:/ {print i" "$0"\n"; next} // {i = $0}' | \
-    sort | \
-    column -t -R1 | \
-    sed 's/m\(\(10\.\|172\.\(1[6-9]\|2[0-9]\|3[01]\)\|192\.168\.\).*\)/m\033[24m\1/' | \
-    sed 's/^/\t/'
-}
-
-greet
+# function greet {
+#   # OS and kernel
+#   echo -e "\033[1mOS: \033[0;32m$(uname -ro)\033[0m"
+#
+#   # Uptime
+#   echo -e "\033[1mUptime: \033[0;32m$(uptime -p | sed 's/^up //')\033[0m"
+#
+#   # Hostname
+#   echo -e "\033[1mHostname: \033[0;32m$(uname -n)\033[0m"
+#
+#   # Network interfaces
+#   echo -e "\033[1mNetwork:\033[0m"
+#     ip addr show up scope global | grep -E ': <|inet' | sed \
+#     -e 's/^[[:digit:]]\+: //' \
+#     -e 's/: <.*//' \
+#     -e 's/.*inet[[:digit:]]* //' \
+#     -e 's/\/.*//' | \
+#     awk 'BEGIN {i=""} /\.|:/ {print i" "$0"\n"; next} // {i = $0}' | \
+#     sort | \
+#     column -t -R1 | \
+#     sed 's/m\(\(10\.\|172\.\(1[6-9]\|2[0-9]\|3[01]\)\|192\.168\.\).*\)/m\033[24m\1/' | \
+#     sed 's/^/\t/'
+# }
+#
+# greet
 
 # add a command line to the shells history without executing it
 commit-to-history () {

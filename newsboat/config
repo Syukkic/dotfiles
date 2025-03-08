@@ -42,8 +42,8 @@ highlight article "https?://[^ ]+" color26 default  # 亮蓝色 (链接颜色)
 highlight article "\\[image\\ [0-9]+\\]" color28 default  # 绿色 (图片占位符)
 
 
-# # Gruvbox light
-# # Set the background and foreground colors
+# Gruvbox light
+# Set the background and foreground colors
 # color background         default   default
 # color listnormal         default   default
 # color listnormal_unread  default   default
