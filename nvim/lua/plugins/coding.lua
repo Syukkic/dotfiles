@@ -57,15 +57,29 @@ return {
 					},
 				},
 				ts_ls = {
-					-- filetypes = {
-					-- 	"javascript",
-					-- 	"javascript.jsx",
-					-- 	"javascriptreact",
-					-- 	"typescript",
-					-- 	"typescript.tsx",
-					-- 	"typescriptreact",
-					-- },
+					root_dir = function(fname)
+						local lspconfig = require("lspconfig")
+						return lspconfig.util.root_pattern("package.json")(fname)
+					end,
 					cmd = { "typescript-language-server", "--stdio" },
+					single_file_support = false,
+				},
+				denols = {
+					cmd = { "deno", "lsp" },
+					filetypes = {
+						"javascript",
+						"javascriptreact",
+						"typescript",
+						"typescriptreact",
+					},
+					root_dir = function(fname)
+						local lspconfig = require("lspconfig")
+						return lspconfig.util.root_pattern("deno.json", "deno.jsonc")(fname)
+					end,
+					init_options = {
+						lint = true,
+						unstable = true,
+					},
 				},
 				tinymist = {
 					settings = {
@@ -225,6 +239,34 @@ return {
 			cmp.setup({
 				window = {
 					documentation = false,
+				},
+				sorting = {
+					priority_weight = 2,
+					comparators = {
+						-- 自定義方法類型排序
+						function(entry1, entry2)
+							local kind1 = entry1:get_kind()
+							local kind2 = entry2:get_kind()
+							local method_priority = {
+								[cmp.lsp.CompletionItemKind.Method] = 1, -- 方法
+								[cmp.lsp.CompletionItemKind.Function] = 2, -- 函數
+								[cmp.lsp.CompletionItemKind.Constructor] = 3, -- 構造函數
+							}
+							local priority1 = method_priority[kind1] or 100
+							local priority2 = method_priority[kind2] or 100
+							if priority1 ~= priority2 then
+								return priority1 < priority2
+							end
+						end,
+						cmp.config.compare.offset,
+						cmp.config.compare.exact,
+						cmp.config.compare.score,
+						cmp.config.compare.recently_used,
+						cmp.config.compare.kind,
+						cmp.config.compare.sort_text,
+						cmp.config.compare.length,
+						cmp.config.compare.order,
+					},
 				},
 				formatting = {
 					format = lspkind.cmp_format({
