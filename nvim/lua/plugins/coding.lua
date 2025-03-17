@@ -9,6 +9,7 @@ return {
 			"williamboman/mason-lspconfig.nvim",
 			"hrsh7th/cmp-nvim-lsp",
 			"j-hui/fidget.nvim",
+			"hedyhli/outline.nvim",
 		},
 		opts = {
 			servers = {
@@ -90,7 +91,10 @@ return {
 						semanticTokens = "disable",
 					},
 				},
-				jedi_language_server = {
+				-- jedi_language_server = {
+				-- 	filetypes = { "python" },
+				-- },
+				pyright = {
 					filetypes = { "python" },
 				},
 				clangd = {
@@ -139,19 +143,25 @@ return {
 		},
 		config = function(_, opts)
 			require("fidget").setup({})
+			require("outline").setup({
+				outline_window = {
+					position = "left",
+				},
+			})
 			require("mason").setup()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"bashls",
+					"beancount",
 					"clangd",
 					"cssls",
-					"beancount",
 					"emmet_language_server",
 					"hls",
 					"html",
 					"jedi_language_server",
 					"jsonls",
 					"lua_ls",
+					"pyright",
 					"rust_analyzer",
 					"tinymist",
 					"ts_ls",
@@ -182,6 +192,8 @@ return {
 			-- 	},
 			-- })
 
+			-- toggle outline [ hedyhli/outline.nvim ]
+			vim.keymap.set("n", "<leader>o", "<cmd>Outline<CR>", { desc = "Toggle Outline" })
 			-- Global mappings.
 			-- See `:help vim.diagnostic.*` for documentation on any of the below functions
 			vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)

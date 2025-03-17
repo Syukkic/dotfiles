@@ -61,9 +61,17 @@ return {
 			vim.g.barbar_auto_setup = true
 			local map = vim.api.nvim_set_keymap
 			local opts = { noremap = true, silent = true }
+			filetype =
+				{
+					-- Sets the icon's highlight group.
+					-- If false, will use nvim-web-devicons colors
+					custom_colors = true,
 
-			-- Move to previous/next
-			map("n", "<C-,>", "<Cmd>BufferPrevious<CR>", opts)
+					-- Requires `nvim-web-devicons` if `true`
+					enabled = true,
+				},
+				-- Move to previous/next
+				map("n", "<C-,>", "<Cmd>BufferPrevious<CR>", opts)
 			map("n", "<C-.>", "<Cmd>BufferNext<CR>", opts)
 
 			-- Re-order to previous/next
