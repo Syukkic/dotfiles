@@ -7,7 +7,7 @@ autoload -U colors && colors
 # compinit
 autoload -U promptinit && promptinit
 setopt PROMPT_SUBST
-PS1='%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}%{$reset_color%}%{$fg[cyan]%}$(git_prompt)%{$fg[red]%}]%{$reset_color%}$%b '
+PS1='%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}%{$reset_color%}%{$fg[cyan]%}$(git_prompt_info)%{$fg[red]%}]%{$reset_color%}$%b '
 # PROMPT='%{$fg_bold[black]%}[%D{%H:%M}] %{$fg[blue]%}%m%{$fg_bold[black]%}:%{$fg[yellow]%}%~ %{$fg[green]%}$(git_prompt_info) %{$fg[red]%}| %{$reset_color%}'
 
 
@@ -132,7 +132,7 @@ alias myip4="curl -sL ipecho.net/json"
 alias myip6="curl -s wtfismyip.com/json"
 alias gc="git clone"
 alias steam="flatpak run --filesystem=~/.local/share/fonts --filesystem=~/.config/fontconfig com.valvesoftware.Steam"
-alias mutt="neomutt"
+alias mail="aerc"
 alias wrename="wezterm cli set-tab-title"
 
 alias orphans="sudo pacman -Qtdq | sudo pacman -Rns -"

@@ -117,3 +117,6 @@ function proxy_disable
     set -e ALL_PROXY
     set -e NO_PROXY
 end
+
+# uv
+fish_add_path "/home/yuki/.local/bin"

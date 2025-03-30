@@ -5,9 +5,10 @@
   "base_keymap": "VSCode",
   "theme": "Gruvbox Dark",
   "ui_font_size": 16,
-  "buffer_font_size": 16,
-  "buffer_font_family": "Iosevka",
+  "buffer_font_size": 14,
+  "buffer_font_family": "Noto Sans Mono",
   "buffer_font_fallbacks": [
+    "Noto Sans Mono",
     "Iosevka",
     "FiraCode Nerd Font Mono",
     "JetBrainsMonoNL Nerd Font Mono",

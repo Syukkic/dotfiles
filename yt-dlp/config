@@ -5,7 +5,7 @@
 # -x
 
 # Network
-# --proxy socks5://127.0.0.1:7890
+# --proxy socks5://127.0.0.1:8080
 
 # Videos Selection
 ## Prefer 1080p or lower resolutions
@@ -13,6 +13,7 @@
 ## Playlist
 --yes-playlist
 
+--embed-chapters
 
 # Subtitle
 # --write-auto-sub
