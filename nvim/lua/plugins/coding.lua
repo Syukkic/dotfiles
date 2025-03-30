@@ -10,6 +10,7 @@ return {
 			"hrsh7th/cmp-nvim-lsp",
 			"j-hui/fidget.nvim",
 			"hedyhli/outline.nvim",
+			"jose-elias-alvarez/typescript.nvim",
 		},
 		opts = {
 			servers = {
@@ -24,40 +25,68 @@ return {
 							diagnostics = {
 								globals = { "vim", "luasnip" }, -- Recognize the `vim` global
 							},
+							hint = {
+								enable = true,
+								setType = false,
+								paramType = true,
+								paramName = "Disable",
+								semicolon = "Disable",
+								arrayIndex = "Disable",
+							},
 						},
 					},
 				},
 				rust_analyzer = {
 					settings = {
-						["rust-analyzer"] = {
-							cargo = {
-								allFeatures = true,
+						-- ["rust-analyzer"] = {
+						cargo = {
+							allFeatures = true,
+							loadOutDirsFromCheck = true,
+							runBuildScripts = true,
+						},
+						imports = {
+							group = {
+								enable = false,
 							},
-							imports = {
-								group = {
-									enable = false,
-								},
+						},
+						completion = {
+							postfix = {
+								enable = false,
+								command = "clippy",
 							},
-							completion = {
-								postfix = {
-									enable = false,
-									command = "clippy",
-								},
+						},
+						checkOnsave = {
+							enable = true,
+							allFeatures = true,
+							command = "clippy",
+							extraArgs = {
+								"--",
+								"--no-deps",
+								"-Dclippy::correctness",
+								"-Dclippy::complexity",
+								"-Wclippy::perf",
+								"-Wclippy::pedantic",
 							},
-							checkOnsave = {
-								enable = true,
-							},
-							diagnostics = {
-								enable = true,
-							},
-							inlayHints = {
-								enable = true,
-								showParameterNames = true,
-								parameterHintsPrefix = "<- ",
-								otherHintsPrefix = "=> ",
+						},
+						diagnostics = {
+							enable = true,
+						},
+						inlayHints = {
+							enable = true,
+							showParameterNames = true,
+							parameterHintsPrefix = "<- ",
+							otherHintsPrefix = "=> ",
+						},
+						procMacro = {
+							enable = true,
+							ignored = {
+								["async-trait"] = { "async_trait" },
+								["napi-derive"] = { "napi" },
+								["async-recursion"] = { "async_recursion" },
 							},
 						},
 					},
+					-- },
 				},
 				ts_ls = {
 					root_dir = function(fname)
@@ -66,6 +95,33 @@ return {
 					end,
 					cmd = { "typescript-language-server", "--stdio" },
 					single_file_support = false,
+					settings = {
+						typescript = {
+							inlayHints = {
+								includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all'
+								includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+								includeInlayVariableTypeHints = true,
+								includeInlayFunctionParameterTypeHints = true,
+								includeInlayVariableTypeHintsWhenTypeMatchesName = true,
+								includeInlayPropertyDeclarationTypeHints = true,
+								includeInlayFunctionLikeReturnTypeHints = true,
+								includeInlayEnumMemberValueHints = true,
+							},
+						},
+						javascript = {
+							inlayHints = {
+								includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all'
+								includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+								includeInlayVariableTypeHints = true,
+
+								includeInlayFunctionParameterTypeHints = true,
+								includeInlayVariableTypeHintsWhenTypeMatchesName = true,
+								includeInlayPropertyDeclarationTypeHints = true,
+								includeInlayFunctionLikeReturnTypeHints = true,
+								includeInlayEnumMemberValueHints = true,
+							},
+						},
+					},
 				},
 				denols = {
 					cmd = { "deno", "lsp" },
@@ -83,6 +139,21 @@ return {
 						lint = true,
 						unstable = true,
 					},
+					settings = {
+						deno = {
+							inlayHints = {
+								parameterNames = { enabled = "all", suppressWhenArgumentMatchesName = true },
+								parameterTypes = { enabled = true },
+								variableTypes = { enabled = true, suppressWhenTypeMatchesName = true },
+								propertyDeclarationTypes = { enabled = true },
+								functionLikeReturnTypes = { enable = true },
+								enumMemberValues = { enabled = true },
+							},
+						},
+					},
+					inlayHints = {
+						enabled = true,
+					},
 				},
 				tinymist = {
 					settings = {
@@ -91,12 +162,12 @@ return {
 						semanticTokens = "disable",
 					},
 				},
-				-- jedi_language_server = {
-				-- 	filetypes = { "python" },
-				-- },
-				pyright = {
+				jedi_language_server = {
 					filetypes = { "python" },
 				},
+				-- pyright = {
+				-- 	filetypes = { "python" },
+				-- },
 				clangd = {
 					cmd = { "clangd", "--background-index", "--clang-tidy" },
 					filetypes = { "c", "cpp", "objc", "objcpp" },
@@ -139,6 +210,28 @@ return {
 						return vim.fs.dirname(vim.fs.find(".git", { path = fname, upward = true })[1])
 					end,
 				},
+				gopls = {
+					settings = {
+						gopls = {
+							analyses = {
+								unusedparams = true,
+							},
+							staticcheck = true,
+							gofumpt = true,
+						},
+					},
+				},
+				zls = {
+					settings = {
+						zls = {
+							semantic_tokens = "partial",
+						},
+					},
+				},
+				css_variables = {},
+			},
+			inlay_hints = {
+				enabled = true,
 			},
 		},
 		config = function(_, opts)
@@ -156,6 +249,7 @@ return {
 					"clangd",
 					"cssls",
 					"emmet_language_server",
+					"gopls",
 					"hls",
 					"html",
 					"jedi_language_server",
@@ -166,6 +260,7 @@ return {
 					"tinymist",
 					"ts_ls",
 					"yamlls",
+					"zls",
 				},
 				automatic_installation = true,
 			})
@@ -174,6 +269,7 @@ return {
 
 			for server, config in pairs(opts.servers) do
 				lspconfig[server].setup(vim.tbl_deep_extend("force", {
+					-- print(server),
 					capabilities = capabilities,
 				}, config))
 			end
@@ -193,7 +289,7 @@ return {
 			-- })
 
 			-- toggle outline [ hedyhli/outline.nvim ]
-			vim.keymap.set("n", "<leader>o", "<cmd>Outline<CR>", { desc = "Toggle Outline" })
+			vim.keymap.set("n", "<leader>l", "<cmd>Outline<CR>", { desc = "Toggle Outline" })
 			-- Global mappings.
 			-- See `:help vim.diagnostic.*` for documentation on any of the below functions
 			vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
@@ -252,37 +348,36 @@ return {
 			vim.o.completeopt = "menu,menuone,noinsert,noselect"
 			-- return {
 			cmp.setup({
-				window = {
-					documentation = false,
-				},
-				sorting = {
-					priority_weight = 2,
-					comparators = {
-						-- 自定義方法類型排序
-						function(entry1, entry2)
-							local kind1 = entry1:get_kind()
-							local kind2 = entry2:get_kind()
-							local method_priority = {
-								[cmp.lsp.CompletionItemKind.Method] = 1, -- 方法
-								[cmp.lsp.CompletionItemKind.Function] = 2, -- 函數
-								[cmp.lsp.CompletionItemKind.Constructor] = 3, -- 構造函數
-							}
-							local priority1 = method_priority[kind1] or 100
-							local priority2 = method_priority[kind2] or 100
-							if priority1 ~= priority2 then
-								return priority1 < priority2
-							end
-						end,
-						cmp.config.compare.offset,
-						cmp.config.compare.exact,
-						cmp.config.compare.score,
-						cmp.config.compare.recently_used,
-						cmp.config.compare.kind,
-						cmp.config.compare.sort_text,
-						cmp.config.compare.length,
-						cmp.config.compare.order,
-					},
-				},
+				-- window = {
+				-- 	documentation = true,
+				-- },
+				-- sorting = {
+				-- 	priority_weight = 2,
+				-- 	comparators = {
+				-- 		function(entry1, entry2)
+				-- 			local kind1 = entry1:get_kind()
+				-- 			local kind2 = entry2:get_kind()
+				-- 			local method_priority = {
+				-- 				[cmp.lsp.CompletionItemKind.Method] = 1,
+				-- 				[cmp.lsp.CompletionItemKind.Function] = 2,
+				-- 				[cmp.lsp.CompletionItemKind.Constructor] = 3,
+				-- 			}
+				-- 			local priority1 = method_priority[kind1] or 100
+				-- 			local priority2 = method_priority[kind2] or 100
+				-- 			if priority1 ~= priority2 then
+				-- 				return priority1 < priority2
+				-- 			end
+				-- 		end,
+				-- 		cmp.config.compare.offset,
+				-- 		cmp.config.compare.exact,
+				-- 		cmp.config.compare.score,
+				-- 		cmp.config.compare.recently_used,
+				-- 		cmp.config.compare.kind,
+				-- 		cmp.config.compare.sort_text,
+				-- 		cmp.config.compare.length,
+				-- 		cmp.config.compare.order,
+				-- 	},
+				-- },
 				formatting = {
 					format = lspkind.cmp_format({
 						-- options: 'text', 'text_symbol', 'symbol_text', 'symbol'

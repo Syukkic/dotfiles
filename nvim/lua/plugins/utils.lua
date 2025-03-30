@@ -195,4 +195,10 @@ return {
 		event = "VeryLazy",
 		enabled = vim.fn.has("nvim-0.10.0") == 1,
 	},
+	{
+		"andymass/vim-matchup",
+		config = function()
+			vim.g.matchup_matchparen_offscreen = { method = "popup" }
+		end,
+	},
 }
