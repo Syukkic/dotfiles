@@ -3,11 +3,7 @@ require("config.options")
 
 if vim.g.vscode then
 	require("lazy").setup({
-		spec = {
-			{ import = "plugins.navigation" },
-			{ import = "plugins.coding" },
-			{ import = "plugins.utils" },
-		},
+		spec = {},
 		defaults = {
 			lazy = false,
 			version = false,

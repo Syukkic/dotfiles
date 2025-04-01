@@ -95,7 +95,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufWritePost" }, {
 	pattern = "*.py",
 	callback = function()
-		local clients = vim.lsp.get_active_clients()
+		local clients = vim.lsp.get_clients()
 		for _, client in ipairs(clients) do
 			if client.name == "pyright" then
 				client.notify("workspace/didChangeWatchedFiles", {
@@ -105,6 +105,15 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufWritePost" }, {
 		end
 	end,
 })
+
+-- vim.api.nvim_create_autocmd("LspAttach", {
+-- 	callback = function(ev)
+-- 		local client = vim.lsp.get_client_by_id(ev.data.client_id)
+-- 		if client and client:supports_method("textDocument/completion") then
+-- 			vim.lsp.completion.enable(true, client.id, ev.buf, { autotrigger = true })
+-- 		end
+-- 	end,
+-- })
 
 -- vim.api.nvim_create_autocmd("CursorMoved", {
 -- 	-- https://stackoverflow.com/a/14957727
