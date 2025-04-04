@@ -7,8 +7,8 @@ vim.keymap.set("n", "<C-s>", "<cmd>w<cr>")
 -- make missing : less annoying
 vim.keymap.set("n", ";", ":")
 -- Ctrl+h to stop searching
-vim.keymap.set("v", "<leader>Q", "<cmd>nohlsearch<cr>")
-vim.keymap.set("n", "<leader>Q", "<cmd>nohlsearch<cr>")
+vim.keymap.set("v", "<leader>-", "<cmd>nohlsearch<cr>")
+vim.keymap.set("n", "<leader>-", "<cmd>nohlsearch<cr>")
 -- Jump to start and end of line using the home row keys
 vim.keymap.set("", "H", "^")
 vim.keymap.set("", "L", "$")
