@@ -4,16 +4,12 @@ require("config.options")
 if vim.g.vscode then
 	require("lazy").setup({
 		spec = {},
-		defaults = {
-			lazy = false,
-			version = false,
-		},
+		defaults = { lazy = false, version = false },
 		checker = { enabled = false },
 		performance = {
 			rtp = {
 				disabled_plugins = {
-					"gzip",
-					-- "netrwPlugin",
+					"gzip", -- "netrwPlugin",
 					"tarPlugin",
 					"tohtml",
 					"zipPlugin",
@@ -29,16 +25,12 @@ else
 			{ import = "plugins.coding" },
 			{ import = "plugins.utils" },
 		},
-		defaults = {
-			lazy = false,
-			version = false,
-		},
+		defaults = { lazy = false, version = false },
 		checker = { enabled = false },
 		performance = {
 			rtp = {
 				disabled_plugins = {
-					"gzip",
-					-- "netrwPlugin",
+					"gzip", -- "netrwPlugin",
 					"tarPlugin",
 					"tohtml",
 					"zipPlugin",
