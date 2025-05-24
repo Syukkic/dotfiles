@@ -179,21 +179,21 @@ return {
   {
     'windwp/nvim-ts-autotag',
     config = function()
-      require('nvim-ts-autotag').setup {
+      require('nvim-ts-autotag').setup({
         opts = {
           -- Defaults
           enable_close = true, -- Auto close tags
           enable_rename = true, -- Auto rename pairs of tags
           enable_close_on_slash = false, -- Auto close on trailing </
         },
-      }
+      })
     end,
   },
   {
     'folke/ts-comments.nvim',
     opts = {},
     event = 'VeryLazy',
-    enabled = vim.fn.has 'nvim-0.10.0' == 1,
+    enabled = vim.fn.has('nvim-0.10.0') == 1,
   },
   {
     'andymass/vim-matchup',

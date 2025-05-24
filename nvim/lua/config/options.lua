@@ -43,13 +43,13 @@ vim.opt.smartcase = true
 vim.opt.vb = true
 -- more useful diffs (nvim -d)
 --- by ignoring whitespace
-vim.opt.diffopt:append 'iwhite'
+vim.opt.diffopt:append('iwhite')
 --- and using a smarter algorithm
 --- https://vimways.org/2018/the-power-of-diff/
 --- https://stackoverflow.com/questions/32365271/whats-the-difference-between-git-diff-patience-and-git-diff-histogram
 --- https://luppeng.wordpress.com/2020/10/10/when-to-use-each-of-the-git-diff-algorithms/
-vim.opt.diffopt:append 'algorithm:histogram'
-vim.opt.diffopt:append 'indent-heuristic'
+vim.opt.diffopt:append('algorithm:histogram')
+vim.opt.diffopt:append('indent-heuristic')
 -- show a column at 80 characters as a guide for long lines
 vim.opt.colorcolumn = '80'
 --- except in Rust where the rule is 100 characters
@@ -60,8 +60,9 @@ vim.opt.listchars = 'tab:^ ,nbsp:¬,extends:»,precedes:«,trail:•'
 vim.opt.list = true
 
 -- Spell Checking
+-- vim.opt.spell = true
 vim.opt.spelllang = { 'en_us', 'cjk' }
 
 vim.opt.swapfile = false
 
-vim.diagnostic.config { virtual_text = { current_line = true } }
+vim.diagnostic.config({ virtual_text = { current_line = true } })

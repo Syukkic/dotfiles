@@ -1,6 +1,6 @@
 indent_type = "Spaces"
 quote_style = "AutoPreferSingle"
-call_parentheses = "None"
+call_parentheses = "Always"
 indent_width = 2
 
 [sort_requires]

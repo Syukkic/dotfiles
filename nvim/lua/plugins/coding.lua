@@ -92,10 +92,10 @@ return {
           },
         },
         ts_ls = {
-          root_dir = function(fname)
-            local lspconfig = require 'lspconfig'
-            return (lspconfig.util.root_pattern 'package.json')(fname)
-          end,
+          -- root_dir = function(fname)
+          --   local lspconfig = require('lspconfig')
+          --   return (lspconfig.util.root_pattern('package.json'))(fname)
+          -- end,
           cmd = { 'typescript-language-server', '--stdio' },
           single_file_support = false,
           settings = {
@@ -125,47 +125,49 @@ return {
             },
           },
         },
-        denols = {
-          cmd = { 'deno', 'lsp' },
-          filetypes = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' },
-          root_dir = function(fname)
-            local lspconfig = require 'lspconfig'
-            return (lspconfig.util.root_pattern('deno.json', 'deno.jsonc'))(fname)
-          end,
-          init_options = {
-            lint = true,
-            unstable = true,
-          },
-          settings = {
-            deno = {
-              inlayHints = {
-                parameterNames = {
-                  enabled = 'all',
-                  suppressWhenArgumentMatchesName = true,
-                },
-                parameterTypes = {
-                  enabled = true,
-                },
-                variableTypes = {
-                  enabled = true,
-                  suppressWhenTypeMatchesName = true,
-                },
-                propertyDeclarationTypes = {
-                  enabled = true,
-                },
-                functionLikeReturnTypes = {
-                  enable = true,
-                },
-                enumMemberValues = {
-                  enabled = true,
-                },
-              },
-            },
-          },
-          inlayHints = {
-            enabled = true,
-          },
-        },
+        cssls = {},
+        html = {},
+        -- denols = {
+        --   cmd = { 'deno', 'lsp' },
+        --   filetypes = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' },
+        --   root_dir = function(fname)
+        --     local lspconfig = require('lspconfig')
+        --     return (lspconfig.util.root_pattern('deno.json', 'deno.jsonc'))(fname)
+        --   end,
+        --   init_options = {
+        --     lint = true,
+        --     unstable = true,
+        --   },
+        --   settings = {
+        --     deno = {
+        --       inlayHints = {
+        --         parameterNames = {
+        --           enabled = 'all',
+        --           suppressWhenArgumentMatchesName = true,
+        --         },
+        --         parameterTypes = {
+        --           enabled = true,
+        --         },
+        --         variableTypes = {
+        --           enabled = true,
+        --           suppressWhenTypeMatchesName = true,
+        --         },
+        --         propertyDeclarationTypes = {
+        --           enabled = true,
+        --         },
+        --         functionLikeReturnTypes = {
+        --           enable = true,
+        --         },
+        --         enumMemberValues = {
+        --           enabled = true,
+        --         },
+        --       },
+        --     },
+        --   },
+        --   inlayHints = {
+        --     enabled = true,
+        --   },
+        -- },
         svelte = {
           filetypes = { 'svelte' },
         },
@@ -213,7 +215,7 @@ return {
           cmd = { 'beancount-language-server', '--stdio' },
           filetypes = { 'bean', 'beancount' },
           init_options = {
-            journalFile = '~/Repos/Mine/finance',
+            journalFile = '~/personal/finance/',
             pythonPath = 'python',
           },
           root_dir = function(fname)
@@ -248,14 +250,14 @@ return {
       },
     },
     config = function(_, opts)
-      (require 'fidget').setup {};
-      (require 'outline').setup {
+      (require('fidget')).setup({});
+      (require('outline')).setup({
         outline_window = {
           position = 'left',
         },
-      };
-      (require 'mason').setup();
-      (require 'mason-lspconfig').setup {
+      });
+      (require('mason')).setup();
+      (require('mason-lspconfig')).setup({
         ensure_installed = {
           'bashls',
           'beancount',
@@ -276,14 +278,20 @@ return {
           'zls',
         },
         automatic_installation = true,
-      }
-      local lspconfig = require 'lspconfig'
+      })
+      local lspconfig = require('lspconfig')
       -- local capabilities = (require("cmp_nvim_lsp")).default_capabilities()
       local capabilities = require('blink.cmp').get_lsp_capabilities()
+      local function on_attach()
+        if vim.lsp.inlay_hint then
+          vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ 0 }), { 0 })
+        end
+      end
       for server, config in pairs(opts.servers) do
         lspconfig[server].setup(config)
         lspconfig[server].setup(vim.tbl_deep_extend('force', {
           capabilities = capabilities,
+          on_attach = on_attach,
         }, config))
       end
       vim.keymap.set('n', '<leader>l', '<cmd>Outline<CR>', {
@@ -291,16 +299,16 @@ return {
       })
       vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
       vim.keymap.set('n', '[d', function()
-        vim.diagnostic.jump {
+        vim.diagnostic.jump({
           count = -1,
           float = true,
-        }
+        })
       end)
       vim.keymap.set('n', ']d', function()
-        vim.diagnostic.jump {
+        vim.diagnostic.jump({
           count = 1,
           float = true,
-        }
+        })
       end)
       vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
       vim.keymap.set('n', 'gD', vim.lsp.buf.declaration)
@@ -317,12 +325,12 @@ return {
       vim.keymap.set({ 'n', 'v' }, '<leader>a', vim.lsp.buf.code_action)
       vim.keymap.set('n', 'gr', vim.lsp.buf.references)
       vim.keymap.set('n', '<leader>f', function()
-        vim.lsp.buf.format {
+        vim.lsp.buf.format({
           async = true,
-        }
+        })
       end)
       vim.keymap.set('n', '<leader>i', function()
-        vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { 0 }, { 0 })
+        vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ 0 }), { 0 })
       end)
     end,
   },
@@ -430,7 +438,7 @@ return {
     'saecki/crates.nvim',
     event = { 'BufRead Cargo.toml' },
     config = function()
-      (require 'crates').setup()
+      (require('crates')).setup()
     end,
   },
   {
