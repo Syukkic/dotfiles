@@ -44,45 +44,45 @@ return {
       },
     },
   },
-  {
-    'stevearc/conform.nvim',
-    event = { 'BufReadPre', 'BufNewFile' },
-    opts = {
-      formatters = {
-        black = {
-          prepend_args = { '--skip-string-normalization' },
-        },
-        prettier = {
-          prepend_args = { '--single-quote', 'true' },
-        },
-      },
-      formatters_by_ft = {
-        javascript = { 'prettier' },
-        javascriptreact = { 'prettier' },
-        typescript = { 'prettier' },
-        typescriptreact = { 'prettier' },
-        svelte = { 'svelte' },
-        css = { 'prettier' },
-        ocaml = { 'ocamlformat' },
-        html = { 'prettier' },
-        json = { 'prettier' },
-        yaml = { 'prettier' },
-        markdown = { 'prettier' },
-        graphql = { 'prettier' },
-        lua = { 'stylua' },
-        python = { 'black', 'isort' },
-        -- typst = { "typstfmt" },
-      },
-      format_on_save = {
-        lsp_fallback = true,
-        async = false,
-        timeout_ms = 500,
-      },
-    },
-    config = function(_, opts)
-      require('conform').setup(opts)
-    end,
-  },
+  -- {
+  --   'stevearc/conform.nvim',
+  --   event = { 'BufReadPre', 'BufNewFile' },
+  --   opts = {
+  --     formatters = {
+  --       black = {
+  --         prepend_args = { '--skip-string-normalization' },
+  --       },
+  --       prettier = {
+  --         prepend_args = { '--single-quote', 'true' },
+  --       },
+  --     },
+  --     formatters_by_ft = {
+  --       javascript = { 'prettier' },
+  --       javascriptreact = { 'prettier' },
+  --       typescript = { 'prettier' },
+  --       typescriptreact = { 'prettier' },
+  --       svelte = { 'svelte' },
+  --       css = { 'prettier' },
+  --       ocaml = { 'ocamlformat' },
+  --       html = { 'prettier' },
+  --       json = { 'prettier' },
+  --       yaml = { 'prettier' },
+  --       markdown = { 'prettier' },
+  --       graphql = { 'prettier' },
+  --       lua = { 'stylua' },
+  --       python = { 'black', 'isort' },
+  --       -- typst = { "typstfmt" },
+  --     },
+  --     format_on_save = {
+  --       lsp_fallback = true,
+  --       async = false,
+  --       timeout_ms = 500,
+  --     },
+  --   },
+  --   config = function(_, opts)
+  --     require('conform').setup(opts)
+  --   end,
+  -- },
   {
     'laytan/cloak.nvim',
     opts = {

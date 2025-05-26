@@ -16,6 +16,9 @@ return {
         lua_ls = {
           settings = {
             Lua = {
+              diagnostics = {
+                globals = { 'vim', 'luasnip' },
+              },
               runtime = {
                 version = 'LuaJIT',
               },
@@ -24,9 +27,6 @@ return {
               },
               telemetry = {
                 enable = false,
-              },
-              diagnostics = {
-                globals = { 'vim', 'luasnip' },
               },
               hint = {
                 enable = true,
@@ -365,6 +365,33 @@ return {
           null_ls.builtins.diagnostics.djlint.with({
             extra_args = { '--quiet' },
             filetypes = { 'html', 'jinja', 'django', 'htmldjango' },
+          }),
+          null_ls.builtins.formatting.black.with({
+            extra_args = { '--fast', '--skip-string-normalization' },
+            filetypes = { 'python' },
+          }),
+          null_ls.builtins.formatting.isort.with({
+            filetypes = { 'python' },
+          }),
+          null_ls.builtins.formatting.prettier.with({
+            extra_args = { '--single-quote' },
+            filetypes = {
+              'javascript',
+              'typescript',
+              'typescriptreact',
+              'javascriptreact',
+              'css',
+              'html',
+              'json',
+              'yaml',
+              'markdown',
+            },
+          }),
+          null_ls.builtins.formatting.stylua.with({
+            filetypes = { 'lua' },
+          }),
+          null_ls.builtins.formatting.ocamlformat.with({
+            filetypes = { 'ocaml' },
           }),
         },
       })
