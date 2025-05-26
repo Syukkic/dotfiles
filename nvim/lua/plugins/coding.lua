@@ -5,7 +5,6 @@ return {
     dependencies = {
       'williamboman/mason.nvim',
       'williamboman/mason-lspconfig.nvim',
-      -- "hrsh7th/cmp-nvim-lsp",
       'j-hui/fidget.nvim',
       'hedyhli/outline.nvim',
       'jose-elias-alvarez/typescript.nvim',
@@ -127,47 +126,6 @@ return {
         },
         cssls = {},
         html = {},
-        -- denols = {
-        --   cmd = { 'deno', 'lsp' },
-        --   filetypes = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' },
-        --   root_dir = function(fname)
-        --     local lspconfig = require('lspconfig')
-        --     return (lspconfig.util.root_pattern('deno.json', 'deno.jsonc'))(fname)
-        --   end,
-        --   init_options = {
-        --     lint = true,
-        --     unstable = true,
-        --   },
-        --   settings = {
-        --     deno = {
-        --       inlayHints = {
-        --         parameterNames = {
-        --           enabled = 'all',
-        --           suppressWhenArgumentMatchesName = true,
-        --         },
-        --         parameterTypes = {
-        --           enabled = true,
-        --         },
-        --         variableTypes = {
-        --           enabled = true,
-        --           suppressWhenTypeMatchesName = true,
-        --         },
-        --         propertyDeclarationTypes = {
-        --           enabled = true,
-        --         },
-        --         functionLikeReturnTypes = {
-        --           enable = true,
-        --         },
-        --         enumMemberValues = {
-        --           enabled = true,
-        --         },
-        --       },
-        --     },
-        --   },
-        --   inlayHints = {
-        --     enabled = true,
-        --   },
-        -- },
         svelte = {
           filetypes = { 'svelte' },
         },
@@ -280,15 +238,13 @@ return {
         automatic_installation = true,
       })
       local lspconfig = require('lspconfig')
-      -- local capabilities = (require("cmp_nvim_lsp")).default_capabilities()
       local capabilities = require('blink.cmp').get_lsp_capabilities()
       local function on_attach()
         if vim.lsp.inlay_hint then
-          vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ 0 }), { 0 })
+          vim.lsp.inlay_hint.enable(true, { 0 })
         end
       end
       for server, config in pairs(opts.servers) do
-        lspconfig[server].setup(config)
         lspconfig[server].setup(vim.tbl_deep_extend('force', {
           capabilities = capabilities,
           on_attach = on_attach,
@@ -334,106 +290,6 @@ return {
       end)
     end,
   },
-  -- {
-  -- 	"hrsh7th/nvim-cmp",
-  -- 	event = "InsertEnter",
-  -- 	dependencies = {
-  -- 		"hrsh7th/cmp-buffer",
-  -- 		"hrsh7th/cmp-path",
-  -- 		"hrsh7th/cmp-nvim-lua",
-  -- 		"L3MON4D3/LuaSnip",
-  -- 		"saadparwaiz1/cmp_luasnip",
-  -- 		"rafamadriz/friendly-snippets",
-  -- 		"onsails/lspkind.nvim",
-  -- 	},
-  -- 	opts = function()
-  -- 		local cmp = require("cmp")
-  -- 		local luasnip = require("luasnip")
-  -- 		local lspkind = require("lspkind");
-  -- 		(require("luasnip.loaders.from_vscode")).lazy_load();
-  -- 		(require("luasnip")).filetype_extend("typescript", { "tsdoc" });
-  -- 		(require("luasnip")).filetype_extend("javascript", { "jsdoc" });
-  -- 		(require("luasnip")).filetype_extend("lua", { "luadoc" });
-  -- 		(require("luasnip")).filetype_extend("python", { "pydoc" });
-  -- 		(require("luasnip")).filetype_extend("rust", { "rustdoc" })
-  -- 		vim.o.completeopt = "menu,menuone,noinsert,noselect"
-  -- 		cmp.setup({
-  -- 			formatting = {
-  -- 				format = lspkind.cmp_format({
-  -- 					mode = "symbol_text",
-  -- 					maxwidth = {
-  -- 						menu = 50,
-  -- 						abbr = 50,
-  -- 					},
-  -- 					ellipsis_char = "...",
-  -- 					show_labelDetails = true,
-  -- 					before = function(entry, vim_item)
-  -- 						return vim_item
-  -- 					end,
-  -- 				}),
-  -- 			},
-  -- 			snippet = {
-  -- 				expand = function(args)
-  -- 					(require("luasnip")).lsp_expand(args.body)
-  -- 				end,
-  -- 			},
-  -- 			mapping = cmp.mapping.preset.insert({
-  -- 				["<C-b>"] = cmp.mapping.scroll_docs(-4),
-  -- 				["<C-f>"] = cmp.mapping.scroll_docs(4),
-  -- 				["<C-m>"] = cmp.mapping.complete(),
-  -- 				["<C-e>"] = cmp.mapping.abort(),
-  -- 				["<CR>"] = cmp.mapping.confirm({
-  -- 					select = true,
-  -- 				}),
-  -- 				["<Tab>"] = cmp.mapping(function(fallback)
-  -- 					if cmp.visible() then
-  -- 						cmp.select_next_item()
-  -- 					elseif luasnip.expand_or_jumpable() then
-  -- 						luasnip.expand_or_jump()
-  -- 					else
-  -- 						local col = vim.fn.col(".") - 1
-  -- 						if col == 0 or ((vim.fn.getline(".")):sub(col, col)):match("%s") then
-  -- 							vim.api.nvim_feedkeys(
-  -- 								vim.api.nvim_replace_termcodes("<Tab>", true, true, true),
-  -- 								"n",
-  -- 								true
-  -- 							)
-  -- 						else
-  -- 							fallback()
-  -- 						end
-  -- 					end
-  -- 				end, { "i", "s" }),
-  -- 				["<S-Tab>"] = cmp.mapping(function(fallback)
-  -- 					if cmp.visible() then
-  -- 						cmp.select_prev_item()
-  -- 					elseif luasnip.jumpable(-1) then
-  -- 						luasnip.jump(-1)
-  -- 					else
-  -- 						vim.api.nvim_feedkeys(
-  -- 							vim.api.nvim_replace_termcodes("<S-Tab>", true, true, true),
-  -- 							"n",
-  -- 							true
-  -- 						)
-  -- 						fallback()
-  -- 					end
-  -- 				end, { "i", "s" }),
-  -- 			}),
-  -- 			sources = cmp.config.sources({
-  -- 				{
-  -- 					name = "nvim_lsp",
-  -- 				},
-  -- 				{
-  -- 					name = "luasnip",
-  -- 				},
-  -- 				{
-  -- 					name = "path",
-  -- 				},
-  -- 			}, { {
-  -- 				name = "buffer",
-  -- 			} }),
-  -- 		})
-  -- 	end,
-  -- },
   {
     'saecki/crates.nvim',
     event = { 'BufRead Cargo.toml' },
@@ -492,6 +348,26 @@ return {
 
       -- Extend neovim's client capabilities with the completion ones.
       vim.lsp.config('*', { capabilities = require('blink.cmp').get_lsp_capabilities(nil, true) })
+    end,
+  },
+  {
+    'nvimtools/none-ls.nvim',
+    event = { 'BufReadPre', 'BufNewFile' },
+    config = function()
+      local null_ls = require('null-ls')
+
+      null_ls.setup({
+        sources = {
+          null_ls.builtins.formatting.djlint.with({
+            extra_args = { '--quiet', '--reformat', '--indent=2', '-' },
+            filetypes = { 'html', 'jinja', 'django', 'htmldjango' },
+          }),
+          null_ls.builtins.diagnostics.djlint.with({
+            extra_args = { '--quiet' },
+            filetypes = { 'html', 'jinja', 'django', 'htmldjango' },
+          }),
+        },
+      })
     end,
   },
 }

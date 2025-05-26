@@ -59,6 +59,7 @@ return { -- Fuzz Finder
         'typescript',
         'vim',
         'zig',
+        'htmldjango',
       },
       highlight = {
         enable = true,

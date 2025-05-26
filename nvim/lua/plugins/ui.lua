@@ -30,12 +30,6 @@ return {
       vim.cmd('colorscheme gruvbox')
     end,
   },
-  -- {
-  --   'echasnovski/mini.statusline',
-  --   config = function()
-  --     require('mini.statusline').setup()
-  --   end,
-  -- },
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
