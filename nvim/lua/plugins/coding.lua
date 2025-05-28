@@ -1,15 +1,81 @@
 return {
   {
+    'williamboman/mason.nvim',
+    lazy = false,
+    dependencies = {
+      'williamboman/mason-lspconfig.nvim',
+      'WhoIsSethDaniel/mason-tool-installer.nvim',
+      'neovim/nvim-lspconfig',
+      'saghen/blink.cmp',
+    },
+    config = function()
+      local mason = require('mason')
+      local mason_lspconfig = require('mason-lspconfig')
+      local mason_tool_installer = require('mason-tool-installer')
+      mason.setup({
+        ui = {
+          icons = {
+            package_installed = '✓',
+            package_pending = '➜',
+            package_uninstalled = '✗',
+          },
+        },
+      })
+      mason_lspconfig.setup({
+        automatic_enable = false,
+        ensure_installed = {
+          'bashls',
+          'beancount',
+          'clangd',
+          'cssls',
+          'emmet_language_server',
+          'emmet_ls',
+          'eslint',
+          'gopls',
+          'html',
+          'jsonls',
+          'lua_ls',
+          'marksman',
+          'pyright',
+          'rust_analyzer',
+          'tinymist',
+          'ts_ls',
+          'yamlls',
+        },
+      })
+
+      mason_tool_installer.setup({
+        ensure_installed = {
+          'black',
+          'clangd',
+          'djlint',
+          'isort',
+          'prettier',
+          'stylua',
+        },
+      })
+    end,
+  },
+  {
     'neovim/nvim-lspconfig',
     event = { 'BufReadPre', 'BufNewFile' },
     dependencies = {
-      'williamboman/mason.nvim',
-      'williamboman/mason-lspconfig.nvim',
       'j-hui/fidget.nvim',
       'hedyhli/outline.nvim',
       'jose-elias-alvarez/typescript.nvim',
       'saghen/blink.cmp',
       'rafamadriz/friendly-snippets',
+      {
+        'folke/lazydev.nvim',
+        ft = 'lua', -- only load on lua files
+        opts = {
+          library = {
+            -- See the configuration section for more details
+            -- Load luvit types when the `vim.uv` word is found
+            { path = '${3rd}/luv/library', words = { 'vim%.uv' } },
+          },
+        },
+      },
     },
     opts = {
       servers = {
@@ -135,8 +201,21 @@ return {
             semanticTokens = 'disable',
           },
         },
-        jedi_language_server = {
+        pyright = {
           filetypes = { 'python' },
+          settings = {
+            python = {
+              analysis = {
+                typeCheckingMode = 'basic', -- "off", "basic", or "strict"
+                autoSearchPaths = true,
+                useLibraryCodeForTypes = true,
+                reportMissingImports = true,
+                reportUnusedImport = true,
+                reportUndefinedVariable = true,
+                stubPath = 'typings',
+              },
+            },
+          },
         },
         clangd = {
           cmd = { 'clangd', '--background-index', '--clang-tidy' },
@@ -213,29 +292,6 @@ return {
         outline_window = {
           position = 'left',
         },
-      });
-      (require('mason')).setup();
-      (require('mason-lspconfig')).setup({
-        ensure_installed = {
-          'bashls',
-          'beancount',
-          'clangd',
-          'cssls',
-          'emmet_language_server',
-          'gopls',
-          'hls',
-          'html',
-          'jedi_language_server',
-          'jsonls',
-          'lua_ls',
-          'pyright',
-          'rust_analyzer',
-          'tinymist',
-          'ts_ls',
-          'yamlls',
-          'zls',
-        },
-        automatic_installation = true,
       })
       local lspconfig = require('lspconfig')
       local capabilities = require('blink.cmp').get_lsp_capabilities()
@@ -245,10 +301,11 @@ return {
         end
       end
       for server, config in pairs(opts.servers) do
-        lspconfig[server].setup(vim.tbl_deep_extend('force', {
+        -- lspconfig[server].setup(vim.tbl_deep_extend('force', {
+        lspconfig[server].setup({
           capabilities = capabilities,
           on_attach = on_attach,
-        }, config))
+        }, config)
       end
       vim.keymap.set('n', '<leader>l', '<cmd>Outline<CR>', {
         desc = 'Toggle Outline',
@@ -267,10 +324,13 @@ return {
         })
       end)
       vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
-      vim.keymap.set('n', 'gD', vim.lsp.buf.declaration)
-      vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
+      -- vim.keymap.set('n', 'gD', vim.lsp.buf.declaration)
+      vim.keymap.set('n', 'gD', '<cmd>Telescope lsp_references<CR>', { noremap = true, silent = true })
+      -- vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
+      vim.keymap.set('n', 'gd', '<cmd>Telescope lsp_definitions<CR>', { noremap = true, silent = true })
       vim.keymap.set('n', 'K', vim.lsp.buf.hover)
-      vim.keymap.set('n', 'gi', vim.lsp.buf.implementation)
+      -- vim.keymap.set('n', 'gi', vim.lsp.buf.implementation)
+      vim.keymap.set('n', 'gi', '<cmd>Telescope lsp_implementations<CR>', { noremap = true, silent = true })
       vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help)
       vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder)
       vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder)
@@ -299,7 +359,7 @@ return {
   },
   {
     'saghen/blink.cmp',
-    dependencies = 'LuaSnip',
+    dependencies = 'L3MON4D3/LuaSnip',
     build = 'cargo build --release',
     version = '1.*',
     event = 'InsertEnter',
