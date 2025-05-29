@@ -324,12 +324,10 @@ return {
         })
       end)
       vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
-      -- vim.keymap.set('n', 'gD', vim.lsp.buf.declaration)
-      vim.keymap.set('n', 'gD', '<cmd>Telescope lsp_references<CR>', { noremap = true, silent = true })
-      -- vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
+      vim.keymap.set('n', 'gr', '<cmd>Telescope lsp_references<CR>', { noremap = true, silent = true })
       vim.keymap.set('n', 'gd', '<cmd>Telescope lsp_definitions<CR>', { noremap = true, silent = true })
+      vim.keymap.set('n', 'td', '<cmd>Telescope diagnostics<CR>', { noremap = true, silent = true })
       vim.keymap.set('n', 'K', vim.lsp.buf.hover)
-      -- vim.keymap.set('n', 'gi', vim.lsp.buf.implementation)
       vim.keymap.set('n', 'gi', '<cmd>Telescope lsp_implementations<CR>', { noremap = true, silent = true })
       vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help)
       vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder)
@@ -339,22 +337,23 @@ return {
       end)
       vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename)
       vim.keymap.set({ 'n', 'v' }, '<leader>a', vim.lsp.buf.code_action)
-      vim.keymap.set('n', 'gr', vim.lsp.buf.references)
       vim.keymap.set('n', '<leader>f', function()
-        vim.lsp.buf.format({
-          async = true,
-        })
+        vim.lsp.buf.format({ async = true })
       end)
       vim.keymap.set('n', '<leader>i', function()
         vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ 0 }), { 0 })
       end)
+      -- vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
+      -- vim.keymap.set('n', 'gD', vim.lsp.buf.declaration)
+      -- vim.keymap.set('n', 'gr', vim.lsp.buf.references)
+      -- vim.keymap.set('n', 'gi', vim.lsp.buf.implementation)
     end,
   },
   {
     'saecki/crates.nvim',
     event = { 'BufRead Cargo.toml' },
     config = function()
-      (require('crates')).setup()
+      (require('crates')).setup({})
     end,
   },
   {
@@ -380,7 +379,16 @@ return {
           max_items = 10,
         },
         documentation = { auto_show = true },
+        menu = {
+          draw = {
+            columns = {
+              { 'label', 'label_description', gap = 1 },
+							{ 'kind' },
+            },
+          },
+        },
       },
+      signature = { enabled = true },
       snippets = { preset = 'luasnip' },
       -- Disable command line completion:
       cmdline = { enabled = false },
@@ -400,6 +408,9 @@ return {
           end
           return sources
         end,
+        per_filetype = {
+          codecompanion = { 'codecompanion', 'buffer' },
+        },
       },
       fuzzy = { implementation = 'prefer_rust_with_warning' },
     },
