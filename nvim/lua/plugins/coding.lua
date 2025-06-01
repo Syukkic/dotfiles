@@ -378,14 +378,24 @@ return {
           selection = { preselect = false, auto_insert = true },
           max_items = 10,
         },
-        documentation = { auto_show = true },
         menu = {
           draw = {
             columns = {
+              { 'kind_icon' },
               { 'label', 'label_description', gap = 1 },
-							{ 'kind' },
+              { 'kind' },
+              { 'source_name' },
             },
           },
+        },
+        documentation = {
+          window = {
+            border = nil,
+            scrollbar = true,
+            winhighlight = 'Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,EndOfBuffer:BlinkCmpDoc',
+          },
+          auto_show = true,
+          auto_show_delay_ms = 500,
         },
       },
       signature = { enabled = true },
@@ -456,6 +466,7 @@ return {
               'json',
               'yaml',
               'markdown',
+              'svelte',
             },
           }),
           null_ls.builtins.formatting.stylua.with({

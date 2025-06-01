@@ -24,6 +24,7 @@ else
       { import = 'plugins.ui' },
       { import = 'plugins.navigation' },
       { import = 'plugins.coding' },
+      { import = 'plugins.debugging' },
       { import = 'plugins.utils' },
     },
     defaults = { lazy = false, version = false },
