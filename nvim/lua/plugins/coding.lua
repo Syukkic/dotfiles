@@ -105,6 +105,10 @@ return {
             },
           },
         },
+        bashls = {
+          cmd = { 'bash-language-server', 'start' },
+          filetypes = { 'bash', 'sh' },
+        },
         rust_analyzer = {
           settings = {
             cargo = {
@@ -156,6 +160,7 @@ return {
             },
           },
         },
+        taplo = {},
         ts_ls = {
           -- root_dir = function(fname)
           --   local lspconfig = require('lspconfig')
@@ -453,6 +458,9 @@ return {
           }),
           null_ls.builtins.formatting.isort.with({
             filetypes = { 'python' },
+          }),
+          null_ls.builtins.formatting.shfmt.with({
+            filetypes = { 'sh' },
           }),
           null_ls.builtins.formatting.prettier.with({
             extra_args = { '--single-quote' },
