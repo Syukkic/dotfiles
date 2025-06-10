@@ -29,7 +29,6 @@ return {
           'clangd',
           'cssls',
           'emmet_language_server',
-          'emmet_ls',
           'eslint',
           'gopls',
           'html',
@@ -196,6 +195,95 @@ return {
           },
         },
         cssls = {},
+        tailwindcss = {
+          cmd = { 'tailwindcss-language-server', '--stdio' },
+          filetypes = {
+            'aspnetcorerazor',
+            'astro',
+            'astro-markdown',
+            'blade',
+            'django-html',
+            'edge',
+            'eelixir',
+            'ejs',
+            'erb',
+            'eruby',
+            'gohtml',
+            'haml',
+            'handlebars',
+            'hbs',
+            'html',
+            'html-eex',
+            'jade',
+            'leaf',
+            'liquid',
+            'markdown',
+            'mdx',
+            'mustache',
+            'njk',
+            'nunjucks',
+            'php',
+            'razor',
+            'slim',
+            'twig',
+            'css',
+            'html',
+            'less',
+            'postcss',
+            'sass',
+            'scss',
+            'stylus',
+            'sugarss',
+            'javascript',
+            'javascriptreact',
+            'reason',
+            'rescript',
+            'typescript',
+            'typescriptreact',
+            'vue',
+            'svelte',
+          },
+          init_options = {
+            userLanguages = {
+              eelixir = 'html-eex',
+              eruby = 'erb',
+            },
+          },
+          on_new_config = function(new_config)
+            if not new_config.settings then
+              new_config.settings = {}
+            end
+            if not new_config.settings.editor then
+              new_config.settings.editor = {}
+            end
+            if not new_config.settings.editor.tabSize then
+              -- set tab size for hover
+              new_config.settings.editor.tabSize = vim.lsp.util.get_effective_tabstop()
+            end
+          end,
+          -- root_dir = function(fname)
+          -- 	return util.root_pattern('tailwind.config.js', 'tailwind.config.ts')(fname)
+          -- 			or util.root_pattern('postcss.config.js', 'postcss.config.ts')(fname)
+          -- 			or util.find_package_json_ancestor(fname)
+          -- 			or util.find_node_modules_ancestor(fname)
+          -- 			or util.find_git_ancestor(fname)
+          -- end,
+          settings = {
+            tailwindCSS = {
+              lint = {
+                cssConflict = 'warning',
+                invalidApply = 'error',
+                invalidConfigPath = 'error',
+                invalidScreen = 'error',
+                invalidTailwindDirective = 'error',
+                invalidVariant = 'error',
+                recommendedVariantOrder = 'warning',
+              },
+              validate = true,
+            },
+          },
+        },
+        jsonls = {},
         html = {},
         svelte = {
           filetypes = { 'svelte' },
@@ -251,6 +339,26 @@ return {
             'scss',
             'pug',
             'typescriptreact',
+          },
+          init_options = {
+            ---@type table<string, string>
+            includeLanguages = {},
+            --- @type string[]
+            excludeLanguages = {},
+            --- @type string[]
+            extensionsPath = {},
+            --- @type table<string, any> [Emmet Docs](https://docs.emmet.io/customization/preferences/)
+            preferences = {},
+            --- @type boolean Defaults to `true`
+            showAbbreviationSuggestions = true,
+            --- @type "always" | "never" Defaults to `"always"`
+            showExpandedAbbreviation = 'always',
+            --- @type boolean Defaults to `false`
+            showSuggestionsAsSnippets = false,
+            --- @type table<string, any> [Emmet Docs](https://docs.emmet.io/customization/syntax-profiles/)
+            syntaxProfiles = {},
+            --- @type table<string, string> [Emmet Docs](https://docs.emmet.io/customization/snippets/#variables)
+            variables = {},
           },
         },
         beancount = {
@@ -352,13 +460,6 @@ return {
       -- vim.keymap.set('n', 'gD', vim.lsp.buf.declaration)
       -- vim.keymap.set('n', 'gr', vim.lsp.buf.references)
       -- vim.keymap.set('n', 'gi', vim.lsp.buf.implementation)
-    end,
-  },
-  {
-    'saecki/crates.nvim',
-    event = { 'BufRead Cargo.toml' },
-    config = function()
-      (require('crates')).setup({})
     end,
   },
   {
@@ -486,5 +587,16 @@ return {
         },
       })
     end,
+  },
+  {
+    'saecki/crates.nvim',
+    event = { 'BufRead Cargo.toml' },
+    config = function()
+      (require('crates')).setup({})
+    end,
+  },
+  {
+    'MuntasirSZN/tera-autoextsyn.nvim',
+    lazy = false,
   },
 }
