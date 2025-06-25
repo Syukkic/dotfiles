@@ -79,6 +79,7 @@ return {
     },
     config = function(_, opts)
       require('cloak').setup(opts)
+      vim.keymap.set('n', '<leader>ct', ':CloakToggle<CR>', { noremap = true, silent = true })
     end,
   },
   {
@@ -150,11 +151,17 @@ return {
       })
     end,
   },
+  -- {
+  --   'folke/ts-comments.nvim',
+  --   opts = {},
+  --   event = 'VeryLazy',
+  --   enabled = vim.fn.has('nvim-0.10.0') == 1,
+  -- },
   {
-    'folke/ts-comments.nvim',
-    opts = {},
-    event = 'VeryLazy',
-    enabled = vim.fn.has('nvim-0.10.0') == 1,
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end,
   },
   {
     'andymass/vim-matchup',

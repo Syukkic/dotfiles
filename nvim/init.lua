@@ -18,7 +18,6 @@ vim.opt.rtp:prepend(lazypath)
 require('config.options')
 require('config.keymaps')
 require('config.autocmds')
-require('config.save_as_root')
 
 if vim.g.vscode then
   require('lazy').setup({
@@ -60,4 +59,3 @@ else
     },
   })
 end
-

@@ -195,94 +195,6 @@ return {
           },
         },
         cssls = {},
-        tailwindcss = {
-          cmd = { 'tailwindcss-language-server', '--stdio' },
-          filetypes = {
-            'aspnetcorerazor',
-            'astro',
-            'astro-markdown',
-            'blade',
-            'django-html',
-            'edge',
-            'eelixir',
-            'ejs',
-            'erb',
-            'eruby',
-            'gohtml',
-            'haml',
-            'handlebars',
-            'hbs',
-            'html',
-            'html-eex',
-            'jade',
-            'leaf',
-            'liquid',
-            'markdown',
-            'mdx',
-            'mustache',
-            'njk',
-            'nunjucks',
-            'php',
-            'razor',
-            'slim',
-            'twig',
-            'css',
-            'html',
-            'less',
-            'postcss',
-            'sass',
-            'scss',
-            'stylus',
-            'sugarss',
-            'javascript',
-            'javascriptreact',
-            'reason',
-            'rescript',
-            'typescript',
-            'typescriptreact',
-            'vue',
-            'svelte',
-          },
-          init_options = {
-            userLanguages = {
-              eelixir = 'html-eex',
-              eruby = 'erb',
-            },
-          },
-          on_new_config = function(new_config)
-            if not new_config.settings then
-              new_config.settings = {}
-            end
-            if not new_config.settings.editor then
-              new_config.settings.editor = {}
-            end
-            if not new_config.settings.editor.tabSize then
-              -- set tab size for hover
-              new_config.settings.editor.tabSize = vim.lsp.util.get_effective_tabstop()
-            end
-          end,
-          -- root_dir = function(fname)
-          -- 	return util.root_pattern('tailwind.config.js', 'tailwind.config.ts')(fname)
-          -- 			or util.root_pattern('postcss.config.js', 'postcss.config.ts')(fname)
-          -- 			or util.find_package_json_ancestor(fname)
-          -- 			or util.find_node_modules_ancestor(fname)
-          -- 			or util.find_git_ancestor(fname)
-          -- end,
-          settings = {
-            tailwindCSS = {
-              lint = {
-                cssConflict = 'warning',
-                invalidApply = 'error',
-                invalidConfigPath = 'error',
-                invalidScreen = 'error',
-                invalidTailwindDirective = 'error',
-                invalidVariant = 'error',
-                recommendedVariantOrder = 'warning',
-              },
-              validate = true,
-            },
-          },
-        },
         jsonls = {},
         html = {},
         svelte = {
@@ -326,6 +238,9 @@ return {
               formattingProvider = 'ormolu',
             },
           },
+        },
+        racket_langserver = {
+          -- https://www.andersevenrud.net/neovim.github.io/lsp/configurations/racket_langserver/
         },
         emmet_language_server = {
           filetypes = {
@@ -594,9 +509,5 @@ return {
     config = function()
       (require('crates')).setup({})
     end,
-  },
-  {
-    'MuntasirSZN/tera-autoextsyn.nvim',
-    lazy = false,
   },
 }

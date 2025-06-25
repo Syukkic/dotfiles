@@ -61,3 +61,9 @@ vim.keymap.set('i', '<F1>', '<Esc>')
 -- Move line(s) up or down
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+
+-- -- execute
+-- vim.keymap.set('n', '<space><space>x', '<cmd>source %<CR>')
+-- vim.keymap.set('n', '<space>x', ':.lua<CR>')
+-- vim.keymap.set('n', '<space>x', ':lua<CR>')
+

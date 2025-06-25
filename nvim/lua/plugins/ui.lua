@@ -20,7 +20,7 @@ return {
         invert_tabline = false,
         invert_intend_guides = false,
         inverse = true, -- invert background for search, diffs, statuslines and errors
-        contrast = '', -- can be "hard", "soft" or empty string
+        contrast = 'soft', -- can be "hard", "soft" or empty string
         palette_overrides = {},
         overrides = {},
         dim_inactive = false,
@@ -49,7 +49,7 @@ return {
     end,
   },
   -- {
-  --   'RRethy/base16-nvim',
+  --   'rrethy/base16-nvim',
   --   lazy = false, -- load at start
   --   priority = 1000, -- load first
   --   config = function()
@@ -66,24 +66,24 @@ return {
   --       base07 = '#000000',
   --       base08 = '#257e99',
   --       base09 = '#007d00',
-  --       base0A = '#af4444',
-  --       base0B = '#a3182b',
-  --       base0C = '#0598bc',
-  --       base0D = '#785d25',
-  --       base0E = '#0000ff',
-  --       base0F = '#424442',
+  --       base0a = '#af4444',
+  --       base0b = '#a3182b',
+  --       base0c = '#0598bc',
+  --       base0d = '#785d25',
+  --       base0e = '#0000ff',
+  --       base0f = '#424442',
   --     })
-  --     -- XXX: hi Normal ctermbg=NONE
-  --     -- Make comments more prominent -- they are important.
+  --     -- xxx: hi normal ctermbg=none
+  --     -- make comments more prominent -- they are important.
   --     local bools = vim.api.nvim_get_hl(0, {
-  --       name = 'Boolean',
+  --       name = 'boolean',
   --     })
-  --     vim.api.nvim_set_hl(0, 'Comment', bools)
-  --     -- Make it clearly visible which argument we're at.
+  --     vim.api.nvim_set_hl(0, 'comment', bools)
+  --     -- make it clearly visible which argument we're at.
   --     local marked = vim.api.nvim_get_hl(0, {
-  --       name = 'PMenu',
+  --       name = 'pmenu',
   --     })
-  --     vim.api.nvim_set_hl(0, 'LspSignatureActiveParameter', {
+  --     vim.api.nvim_set_hl(0, 'lspsignatureactiveparameter', {
   --       fg = marked.fg,
   --       bg = marked.bg,
   --       ctermfg = marked.ctermfg,
@@ -91,5 +91,11 @@ return {
   --       bold = true,
   --     })
   --   end,
+  --   vim.api.nvim_set_hl(0, 'Comment', { italic = false }),
+  --   vim.api.nvim_set_hl(0, 'Function', { italic = false }),
+  --   vim.api.nvim_set_hl(0, 'Type', { italic = false }),
+  --   vim.api.nvim_set_hl(0, '@comment', { italic = false }),
+  --   vim.api.nvim_set_hl(0, '@function', { italic = false }),
+  --   vim.api.nvim_set_hl(0, '@type', { italic = false }),
   -- },
 }
