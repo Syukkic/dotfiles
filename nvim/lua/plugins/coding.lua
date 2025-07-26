@@ -42,7 +42,6 @@ return {
           'yamlls',
         },
       })
-
       mason_tool_installer.setup({
         ensure_installed = {
           'black',
@@ -211,7 +210,7 @@ return {
           settings = {
             python = {
               analysis = {
-                typeCheckingMode = 'basic', -- "off", "basic", or "strict"
+                typeCheckingMode = 'off', -- "off", "basic", or "strict"
                 autoSearchPaths = true,
                 useLibraryCodeForTypes = true,
                 reportMissingImports = true,
@@ -228,19 +227,21 @@ return {
         },
         hls = {
           cmd = { 'haskell-language-server-wrapper', '--lsp' },
-          filetypes = { 'hs', 'lhs', 'haskell' },
-          initializationOptions = { 'languageServerHaskell', {} },
-          rootPatterns = { '*.cabal', 'stack.yaml', 'cabal.project', 'package.yaml', 'hie.yaml' },
-          single_file_support = true,
-          settings = {
-            haskell = {
-              cabalFormattingProvider = 'cabalfmt',
-              formattingProvider = 'ormolu',
-            },
-          },
+          -- filetypes = { 'hs', 'lhs', 'haskell' },
+          -- initializationOptions = { 'languageServerHaskell', {} },
+          -- rootPatterns = { '*.cabal', 'stack.yaml', 'cabal.project', 'package.yaml', 'hie.yaml' },
+          -- single_file_support = true,
+          -- settings = {
+          --   haskell = {
+          --     cabalFormattingProvider = 'cabalfmt',
+          --     formattingProvider = 'ormolu',
+          --   },
+          -- },
         },
         racket_langserver = {
           -- https://www.andersevenrud.net/neovim.github.io/lsp/configurations/racket_langserver/
+          cmd = { 'racket', '--lib', 'racket-langserver' },
+          filetypes = { 'racket', 'scheme' },
         },
         emmet_language_server = {
           filetypes = {
@@ -280,7 +281,7 @@ return {
           cmd = { 'beancount-language-server', '--stdio' },
           filetypes = { 'bean', 'beancount' },
           init_options = {
-            journalFile = '~/personal/finance/',
+            journalFile = '~/personal/finance/main.bean',
             pythonPath = 'python',
           },
           root_dir = function(fname)
@@ -457,9 +458,15 @@ return {
     event = { 'BufReadPre', 'BufNewFile' },
     config = function()
       local null_ls = require('null-ls')
+      local helpers = require('null-ls.helpers')
+      local methods = require('null-ls.methods')
 
       null_ls.setup({
         sources = {
+          null_ls.builtins.formatting.raco_fmt.with({
+            command = 'raco',
+            args = { 'fmt' },
+          }),
           null_ls.builtins.formatting.djlint.with({
             extra_args = { '--quiet', '--reformat', '--indent=2', '-' },
             filetypes = { 'html', 'jinja', 'django', 'htmldjango' },
@@ -498,6 +505,9 @@ return {
           }),
           null_ls.builtins.formatting.ocamlformat.with({
             filetypes = { 'ocaml' },
+          }),
+          null_ls.builtins.formatting.pg_format.with({
+            extra_args = { '--spaces', '2' },
           }),
         },
       })
