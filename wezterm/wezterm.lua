@@ -2,7 +2,9 @@ local wezterm = require("wezterm")
 local act = wezterm.action
 local config = {}
 
--- config.color_scheme = "Gruvbox dark, medium (base16)"
+config.color_scheme = "Gruvbox dark, medium (base16)"
+-- config.color_scheme = "Solarized Light (Gogh)"
+-- config.color_scheme = "light modern"
 -- calt=0 means ligatures-disabled
 config.harfbuzz_features = { "calt=0" }
 config.window_background_opacity = 1.0
@@ -12,17 +14,19 @@ config.xcursor_theme = "breeze_cursors"
 config.scrollback_lines = 65536
 
 config.font = wezterm.font_with_fallback({
-	"Iosevka Nerd Font",
-	"Fira Code",
-	"JetBrainsMonoNL Nerd Font Mono",
+	"Fira Code Retina",
+	"FiraCode Nerd Font Mono",
+	"JetBrainsMono Nerd Font Mono",
 	"ComicShannsMono Nerd Font",
+	"Noto Sans Mono",
+	"Iosevka Nerd Font",
 	"Noto Sans CJK HK",
 	"Noto Sans CJK SC",
 	"Noto Sans CJK JP",
 	"Noto Color Emoji",
 })
 
-config.font_size = 12.5
+config.font_size = 12.0
 config.initial_cols = 120
 config.initial_rows = 36
 
@@ -103,58 +107,58 @@ config.key_tables = {
 	},
 }
 
--- Light Modern
-config.colors = {
-	foreground = "#3b3b3b",
-	background = "#f8f8f8",
-	cursor_fg = "#d4d4d4",
-	cursor_bg = "#323232",
-	selection_bg = "#e5ebf1",
-
-	ansi = {
-		"#000000",
-		"#cd3131",
-		"#107c10",
-		"#7f6000",
-		"#0451a5",
-		"#bc05bc",
-		"#0598bc",
-		"#555555",
-	},
-
-	brights = {
-		"#666666",
-		"#cd3131",
-		"#14ce14",
-		"#660000",
-		"#0451a5",
-		"#bc05bc",
-		"#0598bc",
-		"#a5a5a5",
-	},
-	tab_bar = {
-		background = "#e5e5e5",
-		new_tab = {
-			bg_color = "#e5e5e5",
-			fg_color = "#000000",
-		},
-		new_tab_hover = {
-			bg_color = "#dadada",
-			fg_color = "#000000",
-		},
-		active_tab = {
-			bg_color = "#e5e5e5",
-			fg_color = "#000d72",
-		},
-		inactive_tab = {
-			bg_color = "#e5e5e5",
-			fg_color = "#3b3b3b",
-		},
-		inactive_tab_hover = {
-			bg_color = "#e5e5e5",
-			fg_color = "#921425",
-		},
-	},
-}
+-- -- Light Modern
+-- config.colors = {
+-- 	foreground = "#3b3b3b",
+-- 	background = "#f8f8f8",
+-- 	cursor_fg = "#d4d4d4",
+-- 	cursor_bg = "#323232",
+-- 	selection_bg = "#e5ebf1",
+--
+-- 	ansi = {
+-- 		"#000000",
+-- 		"#cd3131",
+-- 		"#107c10",
+-- 		"#7f6000",
+-- 		"#0451a5",
+-- 		"#bc05bc",
+-- 		"#0598bc",
+-- 		"#555555",
+-- 	},
+--
+-- 	brights = {
+-- 		"#666666",
+-- 		"#cd3131",
+-- 		"#14ce14",
+-- 		"#660000",
+-- 		"#0451a5",
+-- 		"#bc05bc",
+-- 		"#0598bc",
+-- 		"#a5a5a5",
+-- 	},
+-- 	tab_bar = {
+-- 		background = "#e5e5e5",
+-- 		new_tab = {
+-- 			bg_color = "#e5e5e5",
+-- 			fg_color = "#000000",
+-- 		},
+-- 		new_tab_hover = {
+-- 			bg_color = "#dadada",
+-- 			fg_color = "#000000",
+-- 		},
+-- 		active_tab = {
+-- 			bg_color = "#e5e5e5",
+-- 			fg_color = "#000d72",
+-- 		},
+-- 		inactive_tab = {
+-- 			bg_color = "#e5e5e5",
+-- 			fg_color = "#3b3b3b",
+-- 		},
+-- 		inactive_tab_hover = {
+-- 			bg_color = "#e5e5e5",
+-- 			fg_color = "#921425",
+-- 		},
+-- 	},
+-- }
 
 return config

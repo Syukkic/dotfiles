@@ -119,15 +119,8 @@ return {
                 enable = false,
               },
             },
-            completion = {
-              postfix = {
-                enable = false,
-                command = 'clippy',
-              },
-            },
-            checkOnsave = {
+            checkOnSave = {
               enable = true,
-
               allFeatures = true,
               command = 'clippy',
               extraArgs = {
@@ -210,13 +203,16 @@ return {
           settings = {
             python = {
               analysis = {
-                typeCheckingMode = 'off', -- "off", "basic", or "strict"
+                typeCheckingMode = 'basic', -- "off", "basic", or "strict"
                 autoSearchPaths = true,
                 useLibraryCodeForTypes = true,
+                stubPath = 'typings',
+                diagnosticSeverityOverrides = {
+                  reportAttributeAccessIssue = 'none', -- or 'warning'
+                },
                 reportMissingImports = true,
                 reportUnusedImport = true,
                 reportUndefinedVariable = true,
-                stubPath = 'typings',
               },
             },
           },
@@ -505,9 +501,6 @@ return {
           }),
           null_ls.builtins.formatting.ocamlformat.with({
             filetypes = { 'ocaml' },
-          }),
-          null_ls.builtins.formatting.pg_format.with({
-            extra_args = { '--spaces', '2' },
           }),
         },
       })
