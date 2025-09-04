@@ -32,11 +32,11 @@ return { -- Fuzz Finder
           prompt_position = 'bottom',
         },
         sorting_strategy = 'descending',
-        -- mappings = {
-        --   i = {
-        --     ['<C-l>'] = require('telescope.actions.layout').toggle_preview,
-        --   },
-        -- },
+        mappings = {
+          i = {
+            ['<C-l>'] = require('telescope.actions.layout').toggle_preview,
+          },
+        },
         preview = {
           hide_on_startup = true, -- hide previewer when picker starts
         },
@@ -119,24 +119,6 @@ return { -- Fuzz Finder
 
       vim.keymap.set('n', '<leader>mo', ':lua MiniFiles.open()<cr>')
       vim.keymap.set('n', '<leader>mc', ':lua MiniFiles.close()<cr>')
-    end,
-  },
-  {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-    config = function()
-      require('lualine').setup({
-        options = { icons_enabled = true },
-        sections = {
-          lualine_c = {
-            {
-              'filename',
-              file_status = true, -- displays file status (readonly status, modified status)
-              path = 1, -- 0 = just filename, 1 = relative path, 2 = absolute path
-            },
-          },
-        },
-      })
     end,
   },
 }

@@ -169,17 +169,4 @@ return {
       vim.g.matchup_matchparen_offscreen = { method = 'popup' }
     end,
   },
-  {
-    'j-hui/fidget.nvim',
-    config = function()
-      require('fidget').setup({})
-    end,
-  },
-  {
-    'saecki/crates.nvim',
-    event = { 'BufRead Cargo.toml' },
-    config = function()
-      (require('crates')).setup({})
-    end,
-  },
 }

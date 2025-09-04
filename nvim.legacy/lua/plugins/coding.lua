@@ -36,7 +36,7 @@ return {
           'lua_ls',
           'marksman',
           'pyright',
-          'rust_analyzer',
+          -- 'rust_analyzer',
           'tinymist',
           'ts_ls',
           'yamlls',
@@ -108,45 +108,36 @@ return {
           filetypes = { 'bash', 'sh' },
         },
         rust_analyzer = {
-          settings = {
-            cargo = {
-              allFeatures = true,
-              loadOutDirsFromCheck = true,
-              runBuildScripts = true,
-            },
-            imports = {
-              group = {
-                enable = false,
-              },
-            },
-            checkOnSave = {
-              enable = true,
-              allFeatures = true,
-              command = 'clippy',
-              extraArgs = {
-                '--',
-                '--no-deps',
-                '-Dclippy::correctness',
-                '-Dclippy::complexity',
-                '-Wclippy::perf',
-                '-Wclippy::pedantic',
-              },
-            },
-            diagnostics = {
-              enable = true,
-            },
-            inlayHints = {
-              enable = true,
-              showParameterNames = true,
-              parameterHintsPrefix = '<- ',
-              otherHintsPrefix = '=> ',
-            },
-            procMacro = {
-              enable = true,
-              ignored = {
-                ['async-trait'] = { 'async_trait' },
-                ['napi-derive'] = { 'napi' },
-                ['async-recursion'] = { 'async_recursion' },
+          rust_analyzer = {
+            settings = {
+              ['rust-analyzer'] = {
+                assist = {
+                  importGranularity = 'module',
+                  importPrefix = 'self',
+                },
+                check = {
+                  command = 'clippy',
+                },
+                cargo = {
+                  allFeatures = true,
+                  loadOutDirsFromCheck = true,
+                  runBuildScripts = true,
+                },
+                checkOnSave = true,
+                diagnostics = {
+                  enable = true,
+                },
+                inlayHints = {
+                  enable = true,
+                  showParameterNames = true,
+                  parameterHintsPrefix = '<- ',
+                  otherHintsPrefix = '=> ',
+                },
+                rustfmt = {
+                  rangeFormatting = {
+                    enable = true,
+                  },
+                },
               },
             },
           },
@@ -457,6 +448,18 @@ return {
       local helpers = require('null-ls.helpers')
       local methods = require('null-ls.methods')
 
+      -- null_ls.builtins.formatting.pgformatter = helpers.make_builtin({
+      --   name = 'pgformatter',
+      --   method = null_ls.methods.FORMATTING,
+      --   filetypes = { 'sql' },
+      --   generator_opts = {
+      --     command = 'pg_format',
+      --     args = { '-' },
+      --     to_stdin = true,
+      --   },
+      --   factory = helpers.formatter_factory,
+      -- })
+
       null_ls.setup({
         sources = {
           null_ls.builtins.formatting.raco_fmt.with({
@@ -502,10 +505,21 @@ return {
           null_ls.builtins.formatting.ocamlformat.with({
             filetypes = { 'ocaml' },
           }),
+          null_ls.builtins.diagnostics.sqlfluff.with({
+            extra_args = { '--dialect', 'postgres', '--exclude-rules', 'LT01,L009', '--rules', 'LT10,ST05' },
+          }),
+          null_ls.builtins.formatting.sqlfluff.with({
+            extra_args = { '--dialect', 'postgres', '--exclude-rules', 'LT01,L009', '--rules', 'LT10,ST05' },
+          }),
         },
       })
     end,
   },
+  -- {
+  --   'mrcjkb/rustaceanvim',
+  --   version = '^6', -- Recommended
+  --   lazy = false, -- This plugin is already lazy
+  -- },
   {
     'saecki/crates.nvim',
     event = { 'BufRead Cargo.toml' },
