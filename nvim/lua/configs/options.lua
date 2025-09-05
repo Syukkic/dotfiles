@@ -34,7 +34,7 @@ vim.opt.wildignore = '.hg,.svn,*~,*.png,*.jpg,*.gif,*.min.js,*.swp,*.o,vendor,di
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 vim.opt.tabstop = 2
-vim.opt.expandtab = false
+vim.opt.expandtab = true
 -- case-insensitive search/replace
 vim.opt.ignorecase = true
 -- unless uppercase in search term

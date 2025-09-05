@@ -66,7 +66,6 @@ return { -- Fuzz Finder
         'tsx',
         'typescript',
         'vim',
-        'zig',
         'htmldjango',
       },
       highlight = {

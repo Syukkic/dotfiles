@@ -4,9 +4,28 @@ return {
     event = { 'BufReadPre', 'BufNewFile' },
     config = function()
       local null_ls = require('null-ls')
+      local h = require('null-ls.helpers')
+      local methods = require('null-ls.methods')
+
+      local sql_formatter = {
+        name = 'sql-formatter',
+        method = methods.internal.FORMATTING,
+        filetypes = { 'sql' },
+        generator = h.formatter_factory({
+          command = 'sql-formatter',
+          args = {
+            '--language',
+            'postgresql',
+            '--config',
+            '{"keywordCase": "upper"}',
+          },
+          to_stdin = true,
+        }),
+      }
 
       null_ls.setup({
         sources = {
+          sql_formatter,
           null_ls.builtins.formatting.raco_fmt.with({
             command = 'raco',
             args = { 'fmt' },
