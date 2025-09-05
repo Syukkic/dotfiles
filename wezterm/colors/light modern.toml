@@ -1,0 +1,39 @@
+[colors]
+ansi = [ "#000000", "#cd3131", "#107c10", "#7f6000", "#0451a5", "#bc05bc", "#0598bc", "#555555" ]
+brights = [ "#666666", "#cd3131", "#14ce14", "#660000", "#0451a5", "#bc05bc", "#0598bc", "#a5a5a5" ]
+
+foreground = "#3b3b3b"
+background = "#f8f8f8"
+
+cursor_fg = "#d4d4d4"
+cursor_bg = "#323232"
+
+selection_bg = "#e5ebf1"
+# selection_fg = ""
+
+
+[colors.tar_bar]
+background = "#e5e5e5"
+
+[colors.tar_bar.new_tab]
+bg_color = "#e5e5e5"
+fg_color = "#000000"
+
+[colors.tar_bar.new_tab_hover]
+bg_color = "#dadada"
+fg_color = "#000000"
+
+[colors.tar_bar.active_tab]
+bg_color = "#e5e5e5"
+fg_color = "#000d72"
+
+[colors.tar_bar.inactive_tab]
+bg_color = "#e5e5e5"
+fg_color = "#3b3b3b"
+
+[colors.tar_bar.inactive_tab_hover]
+bg_color = "#e5e5e5"
+fg_color = "#921425"
+
+[metadata]
+name = 'light modern'

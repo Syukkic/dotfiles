@@ -1,30 +1,39 @@
-local wezterm = require("wezterm")
+local wezterm = require('wezterm')
 local act = wezterm.action
 local config = {}
 
-config.color_scheme = "Gruvbox dark, medium (base16)"
+config.color_scheme = 'Gruvbox dark, medium (base16)'
 -- config.color_scheme = "Solarized Light (Gogh)"
 -- config.color_scheme = "light modern"
 -- calt=0 means ligatures-disabled
-config.harfbuzz_features = { "calt=0" }
-config.window_background_opacity = 1.0
-config.window_decorations = "TITLE | RESIZE"
+config.harfbuzz_features = { 'calt=0' }
+config.window_background_opacity = 0.9
+config.window_decorations = 'TITLE | RESIZE'
 config.scrollback_lines = 3000
-config.xcursor_theme = "breeze_cursors"
+config.xcursor_theme = 'breeze_cursors'
 config.scrollback_lines = 65536
 
+config.default_workspace = 'home'
+
 config.font = wezterm.font_with_fallback({
-	"Fira Code Retina",
-	"FiraCode Nerd Font Mono",
-	"JetBrainsMono Nerd Font Mono",
-	"ComicShannsMono Nerd Font",
-	"Noto Sans Mono",
-	"Iosevka Nerd Font",
-	"Noto Sans CJK HK",
-	"Noto Sans CJK SC",
-	"Noto Sans CJK JP",
-	"Noto Color Emoji",
+  'Fira Code Retina',
+  'FiraCode Nerd Font Mono',
+  'JetBrainsMono Nerd Font Mono',
+  'ComicShannsMono Nerd Font',
+  'Noto Sans Mono',
+  'Iosevka Nerd Font',
+  'Noto Sans CJK HK',
+  'Noto Sans CJK SC',
+  'Noto Sans CJK JP',
+  'Noto Color Emoji',
 })
+
+config.window_padding = {
+  left = 1,
+  right = 1,
+  top = 0,
+  bottom = 0,
+}
 
 config.font_size = 12.0
 config.initial_cols = 120
@@ -35,6 +44,9 @@ config.enable_tab_bar = true
 config.use_fancy_tab_bar = false
 config.tab_max_width = 16
 config.tab_bar_at_bottom = true
+config.show_tab_index_in_tab_bar = true
+config.hide_tab_bar_if_only_one_tab = true
+config.show_new_tab_button_in_tab_bar = false
 
 config.status_update_interval = 300
 config.enable_wayland = true
@@ -47,64 +59,64 @@ config.hyperlink_rules = wezterm.default_hyperlink_rules()
 
 -- Keybindings
 -- Keys
-config.leader = { key = "a", mods = "ALT", timeout_milliseconds = 1000 }
+config.leader = { key = 'a', mods = 'ALT', timeout_milliseconds = 1000 }
 config.keys = {
-	-- Send C-a when pressing C-a twice
-	{ key = "a", mods = "LEADER", action = act.SendKey({ key = "a", mods = "ALT" }) },
-	{ key = "c", mods = "LEADER", action = act.ActivateCopyMode },
+  -- Send C-a when pressing C-a twice
+  { key = 'a', mods = 'LEADER', action = act.SendKey({ key = 'a', mods = 'ALT' }) },
+  { key = 'c', mods = 'LEADER', action = act.ActivateCopyMode },
 
-	-- Pane keybindings
-	{ key = "-", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
-	-- SHIFT is for when caps lock is on
-	{ key = "|", mods = "LEADER|SHIFT", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
-	{ key = "h", mods = "LEADER", action = act.ActivatePaneDirection("Left") },
-	{ key = "j", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
-	{ key = "k", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
-	{ key = "l", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
-	{ key = "x", mods = "LEADER", action = act.CloseCurrentPane({ confirm = true }) },
-	{ key = "z", mods = "LEADER", action = act.TogglePaneZoomState },
-	{ key = "s", mods = "LEADER", action = act.RotatePanes("Clockwise") },
-	-- We can make separate keybindings for resizing panes
-	-- But Wezterm offers custom "mode" in the name of "KeyTable"
-	{ key = "r", mods = "LEADER", action = act.ActivateKeyTable({ name = "resize_pane", one_shot = false }) },
+  -- Pane keybindings
+  { key = '-', mods = 'LEADER', action = act.SplitVertical({ domain = 'CurrentPaneDomain' }) },
+  -- SHIFT is for when caps lock is on
+  { key = '|', mods = 'LEADER|SHIFT', action = act.SplitHorizontal({ domain = 'CurrentPaneDomain' }) },
+  { key = 'h', mods = 'LEADER', action = act.ActivatePaneDirection('Left') },
+  { key = 'j', mods = 'LEADER', action = act.ActivatePaneDirection('Down') },
+  { key = 'k', mods = 'LEADER', action = act.ActivatePaneDirection('Up') },
+  { key = 'l', mods = 'LEADER', action = act.ActivatePaneDirection('Right') },
+  { key = 'x', mods = 'LEADER', action = act.CloseCurrentPane({ confirm = true }) },
+  { key = 'z', mods = 'LEADER', action = act.TogglePaneZoomState },
+  { key = 's', mods = 'LEADER', action = act.RotatePanes('Clockwise') },
+  -- We can make separate keybindings for resizing panes
+  -- But Wezterm offers custom "mode" in the name of "KeyTable"
+  { key = 'r', mods = 'LEADER', action = act.ActivateKeyTable({ name = 'resize_pane', one_shot = false }) },
 
-	-- Tab keybindings
-	{ key = "n", mods = "LEADER", action = act.SpawnTab("CurrentPaneDomain") },
-	{ key = "[", mods = "LEADER", action = act.ActivateTabRelative(-1) },
-	{ key = "]", mods = "LEADER", action = act.ActivateTabRelative(1) },
-	{ key = "t", mods = "LEADER", action = act.ShowTabNavigator },
-	-- Key table for moving tabs around
-	{ key = "m", mods = "LEADER", action = act.ActivateKeyTable({ name = "move_tab", one_shot = false }) },
+  -- Tab keybindings
+  { key = 'n', mods = 'LEADER', action = act.SpawnTab('CurrentPaneDomain') },
+  { key = '[', mods = 'LEADER', action = act.ActivateTabRelative(-1) },
+  { key = ']', mods = 'LEADER', action = act.ActivateTabRelative(1) },
+  { key = 't', mods = 'LEADER', action = act.ShowTabNavigator },
+  -- Key table for moving tabs around
+  { key = 'm', mods = 'LEADER', action = act.ActivateKeyTable({ name = 'move_tab', one_shot = false }) },
 
-	-- Lastly, workspace
-	{ key = "w", mods = "LEADER", action = act.ShowLauncherArgs({ flags = "FUZZY|WORKSPACES" }) },
+  -- Lastly, workspace
+  { key = 'w', mods = 'LEADER', action = act.ShowLauncherArgs({ flags = 'FUZZY|WORKSPACES' }) },
 }
 
 for i = 1, 9 do
-	table.insert(config.keys, {
-		key = tostring(i),
-		mods = "LEADER",
-		action = act.ActivateTab(i - 1),
-	})
+  table.insert(config.keys, {
+    key = tostring(i),
+    mods = 'LEADER',
+    action = act.ActivateTab(i - 1),
+  })
 end
 
 config.key_tables = {
-	resize_pane = {
-		{ key = "h", action = act.AdjustPaneSize({ "Left", 1 }) },
-		{ key = "j", action = act.AdjustPaneSize({ "Down", 1 }) },
-		{ key = "k", action = act.AdjustPaneSize({ "Up", 1 }) },
-		{ key = "l", action = act.AdjustPaneSize({ "Right", 1 }) },
-		{ key = "Escape", action = "PopKeyTable" },
-		{ key = "Enter", action = "PopKeyTable" },
-	},
-	move_tab = {
-		{ key = "h", action = act.MoveTabRelative(-1) },
-		{ key = "j", action = act.MoveTabRelative(-1) },
-		{ key = "k", action = act.MoveTabRelative(1) },
-		{ key = "l", action = act.MoveTabRelative(1) },
-		{ key = "Escape", action = "PopKeyTable" },
-		{ key = "Enter", action = "PopKeyTable" },
-	},
+  resize_pane = {
+    { key = 'h', action = act.AdjustPaneSize({ 'Left', 1 }) },
+    { key = 'j', action = act.AdjustPaneSize({ 'Down', 1 }) },
+    { key = 'k', action = act.AdjustPaneSize({ 'Up', 1 }) },
+    { key = 'l', action = act.AdjustPaneSize({ 'Right', 1 }) },
+    { key = 'Escape', action = 'PopKeyTable' },
+    { key = 'Enter', action = 'PopKeyTable' },
+  },
+  move_tab = {
+    { key = 'h', action = act.MoveTabRelative(-1) },
+    { key = 'j', action = act.MoveTabRelative(-1) },
+    { key = 'k', action = act.MoveTabRelative(1) },
+    { key = 'l', action = act.MoveTabRelative(1) },
+    { key = 'Escape', action = 'PopKeyTable' },
+    { key = 'Enter', action = 'PopKeyTable' },
+  },
 }
 
 -- -- Light Modern
