@@ -32,11 +32,11 @@ return { -- Fuzz Finder
           prompt_position = 'bottom',
         },
         sorting_strategy = 'descending',
-        -- mappings = {
-        --   i = {
-        --     ['<C-l>'] = require('telescope.actions.layout').toggle_preview,
-        --   },
-        -- },
+        mappings = {
+          i = {
+            ['<C-l>'] = require('telescope.actions.layout').toggle_preview,
+          },
+        },
         preview = {
           hide_on_startup = true, -- hide previewer when picker starts
         },

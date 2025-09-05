@@ -6,9 +6,22 @@
 -- This actually just enables the lsp servers.
 -- The configuration is found in the lsp folder inside the nvim config folder,
 -- so in ~.config/lsp/lua_ls.lua for lua_ls, for example.
+local M = {}
 
-vim.lsp.enable({ 'lua_ls', 'rust_analyzer', 'pyright', 'ts_ls', 'svelte' })
+-- local servers = { "lua_ls", "rust_analyzer", "pyright", "ts_ls" }
 
+local servers_dir = vim.fn.stdpath('config') .. '/lua/core/servers'
+local files = vim.fn.globpath(servers_dir, '*.lua', false, true)
+local servers = {}
+for _, file in ipairs(files) do
+  local name = vim.fn.fnamemodify(file, ':t:r')
+  table.insert(servers, name)
+  require('core.servers.' .. name)
+end
+
+
+-- 啓動
+vim.lsp.enable(servers)
 
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('lsp-attach', { clear = true }),
@@ -129,3 +142,5 @@ vim.diagnostic.config({
     vim.diagnostic.jump({ count = 1, float = true })
   end),
 })
+
+return M
