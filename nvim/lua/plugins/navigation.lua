@@ -97,45 +97,22 @@ return { -- Fuzz Finder
       })
     end,
   },
-  {
-    'echasnovski/mini.nvim',
-    version = '*',
-    config = function()
-      require('mini.files').setup({
-        windows = {
-          -- Maximum number of windows to show side by side
-          max_number = math.huge,
-          -- Whether to show preview of file/directory under cursor
-          preview = true,
-          -- Width of focused window
-          width_focus = 50,
-          -- Width of non-focused window
-          width_nofocus = 15,
-          -- Width of preview window
-          width_preview = 60,
-        },
-      })
-
-      vim.keymap.set('n', '<leader>mo', ':lua MiniFiles.open()<cr>')
-      vim.keymap.set('n', '<leader>mc', ':lua MiniFiles.close()<cr>')
-    end,
-  },
-  {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-    config = function()
-      require('lualine').setup({
-        options = { icons_enabled = true },
-        sections = {
-          lualine_c = {
-            {
-              'filename',
-              file_status = true, -- displays file status (readonly status, modified status)
-              path = 1, -- 0 = just filename, 1 = relative path, 2 = absolute path
-            },
-          },
-        },
-      })
-    end,
-  },
+  -- {
+  --   'nvim-lualine/lualine.nvim',
+  --   dependencies = { 'nvim-tree/nvim-web-devicons' },
+  --   config = function()
+  --     require('lualine').setup({
+  --       options = { icons_enabled = true },
+  --       sections = {
+  --         lualine_c = {
+  --           {
+  --             'filename',
+  --             file_status = true, -- displays file status (readonly status, modified status)
+  --             path = 1, -- 0 = just filename, 1 = relative path, 2 = absolute path
+  --           },
+  --         },
+  --       },
+  --     })
+  --   end,
+  -- },
 }
