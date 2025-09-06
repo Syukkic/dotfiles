@@ -7,11 +7,12 @@ config.color_scheme = 'Gruvbox dark, medium (base16)'
 -- config.color_scheme = "light modern"
 -- calt=0 means ligatures-disabled
 config.harfbuzz_features = { 'calt=0' }
-config.window_background_opacity = 0.9
+config.window_background_opacity = 1.0
 config.window_decorations = 'TITLE | RESIZE'
 config.scrollback_lines = 3000
 config.xcursor_theme = 'breeze_cursors'
 config.scrollback_lines = 65536
+config.window_close_confirmation = 'AlwaysPrompt'
 
 config.default_workspace = 'home'
 
