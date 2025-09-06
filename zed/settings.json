@@ -1,83 +1,68 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "features": {
-    "edit_prediction_provider": "none"
-  },
-  "base_keymap": "VSCode",
   "theme": "Gruvbox Dark",
   "ui_font_size": 16,
+  "buffer_font_family": "FiraCode Nerd Font Mono",
+  "buffer_font_weight": 450,
   "buffer_font_size": 14,
-  "buffer_font_family": "Noto Sans Mono",
+  "buffer_font_features": { "calt": false, "cv01": 7 },
   "buffer_font_fallbacks": [
     "Noto Sans Mono",
-    "Iosevka",
     "FiraCode Nerd Font Mono",
-    "JetBrainsMonoNL Nerd Font Mono",
     "Noto Sans CJK HK",
     "Noto Sans CJK SC",
     "Noto Sans CJK JP",
     "Noto Color Emoji"
   ],
-  "buffer_font_features": { "calt": false, "cv01": 7 },
-  "vim_mode": true,
-  "relative_line_numbers": true,
+  "minimap": { "show": "auto" },
+  "vim_mode": false,
   "soft_wrap": "bounded",
-  "preferred_line_length": 120,
   "tab_bar": {
     "show": true
-  },
-  "indent_guides": {
-    "enabled": true,
-    "coloring": "indent_aware"
-  },
-  "centered_layout": {
-    "left_padding": 0.15,
-    "right_padding": 0.15
   },
   "inlay_hints": {
     "enabled": true
   },
+  // Lsp
   "lsp": {
-    "tailwindcss-language-server": {
-      "settings": {
-        "classAttributes": ["class", "className", "ngClass", "styles"]
-      }
-    },
     "rust-analyzer": {
       "initialization_options": {
-        "checkOnSave": {
+        "check": {
           "command": "clippy"
+        },
+        "rustfmt": {
+          "rangeFormatting": true
+        }
+      }
+    },
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "diagnosticMode": "workspace",
+          "typeCheckingMode": "strict"
         }
       }
     }
   },
   "languages": {
-    "TypeScript": {
-      "inlay_hints": {
-        "enabled": true,
-        "show_parameter_hints": false,
-        "show_other_hints": true,
-        "show_type_hints": true
-      }
+    "Rust": {
+      "formatter": "language_server",
+      "format_on_save": "on"
     },
     "Python": {
       "format_on_save": { "language_server": { "name": "ruff" } },
       "formatter": { "language_server": { "name": "ruff" } },
       "language_servers": ["pyright", "ruff"]
-    },
-    "Rust": {
-      "formatter": "language_server",
-      "format_on_save": "on"
     }
   },
-  "terminal": {
-    "env": {
-      "EDITOR": "zed --wait"
-    }
-  },
-  "file_types": {
-    "Dockerfile": ["Dockerfile", "Dockerfile.*"],
-    "JSON": ["json", "jsonc", "*.code-snippets"]
-  },
+  // misc
   "file_scan_exclusions": [
     "**/.git",
     "**/.svn",
@@ -103,32 +88,5 @@
   "telemetry": {
     "diagnostics": false,
     "metrics": false
-  },
-  "project_panel": {
-    "button": true,
-    "dock": "right",
-    "git_status": true
-  },
-  "outline_panel": {
-    "dock": "left"
-  },
-  "collaboration_panel": {
-    "dock": "left",
-    "button": false
-  },
-  "notification_panel": {
-    "dock": "left"
-  },
-  "chat_panel": {
-    "dock": "left",
-    "button": false
-  },
-  "assistant": {
-    "version": "2",
-    "button": false,
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-3-5-sonnet"
-    }
   }
 }
