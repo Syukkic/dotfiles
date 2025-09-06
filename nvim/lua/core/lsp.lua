@@ -19,7 +19,6 @@ for _, file in ipairs(files) do
   require('core.servers.' .. name)
 end
 
-
 -- 啓動
 vim.lsp.enable(servers)
 
@@ -55,6 +54,27 @@ vim.api.nvim_create_autocmd('LspAttach', {
     -- end, { expr = true, buffer = event.buf })
 
     local opts = { buffer = event.buf }
+    vim.keymap.set('n', '<leader>l', '<cmd>Outline<CR>', {
+      desc = 'Toggle Outline',
+    })
+    vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
+    vim.keymap.set('n', '[d', function()
+      vim.diagnostic.jump({
+        count = -1,
+        float = true,
+      })
+    end)
+    vim.keymap.set('n', ']d', function()
+      vim.diagnostic.jump({
+        count = 1,
+        float = true,
+      })
+    end)
+    vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
+    vim.keymap.set('n', 'gr', '<cmd>Telescope lsp_references<CR>', { noremap = true, silent = true })
+    vim.keymap.set('n', 'gd', '<cmd>Telescope lsp_definitions<CR>', { noremap = true, silent = true })
+    vim.keymap.set('n', 'ge', '<cmd>Telescope diagnostics<CR>', { noremap = true, silent = true })
+
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
     vim.keymap.set('n', 'gi', '<cmd>Telescope lsp_implementations<CR>', opts)
     vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)

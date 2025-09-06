@@ -176,6 +176,16 @@ return {
     end,
   },
   {
+    'hedyhli/outline.nvim',
+    config = function()
+      require('outline').setup({
+        outline_window = {
+          position = 'left',
+        },
+      })
+    end,
+  },
+  {
     'saecki/crates.nvim',
     event = { 'BufRead Cargo.toml' },
     config = function()

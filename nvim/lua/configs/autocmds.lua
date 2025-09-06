@@ -4,7 +4,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   command = 'silent! lua vim.highlight.on_yank({ timeout = 500 })',
 })
 
-
 -- jump to last edit position on opening file
 vim.api.nvim_create_autocmd('BufReadPost', {
   pattern = '*',
@@ -91,18 +90,29 @@ vim.api.nvim_create_autocmd('BufEnter', {
   command = 'set formatoptions-=cro',
 })
 
--- Trigger when a new Python file is created (BufNewFile)
--- or a Python file is saved (BufWritePost)
-vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufWritePost' }, {
-  pattern = '*.py',
-  callback = function()
-    local clients = vim.lsp.get_clients()
-    for _, client in ipairs(clients) do
-      if client.name == 'pyright' then
-        client.notify('workspace/didChangeWatchedFiles', {
-          changes = { { uri = vim.uri_from_fname(vim.fn.expand('%:p')), type = 1 } },
-        })
-      end
+-- -- Trigger when a new Python file is created (BufNewFile)
+-- -- or a Python file is saved (BufWritePost)
+-- vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufWritePost' }, {
+--   pattern = '*.py',
+--   callback = function()
+--     local clients = vim.lsp.get_clients()
+--     for _, client in ipairs(clients) do
+--       if client.name == 'pyright' then
+--         client.notify('workspace/didChangeWatchedFiles', {
+--           changes = { { uri = vim.uri_from_fname(vim.fn.expand('%:p')), type = 1 } },
+--         })
+--       end
+--     end
+--   end,
+-- })
+
+-- https://vinnymeller.com/posts/neovim_nightly_inlay_hints/#globally
+vim.api.nvim_create_autocmd('LspAttach', {
+  group = vim.api.nvim_create_augroup('UserLspConfig', {}),
+  callback = function(args)
+    local client = vim.lsp.get_client_by_id(args.data.client_id)
+    if client and client.server_capabilities.inlayHintProvider then
+      vim.lsp.inlay_hint.enable(true, { args.buf })
     end
   end,
 })
@@ -132,7 +142,7 @@ local function save_as_root(opts)
   -- us detect if doas/sudo asks for a password. If it asks, we ask the user to
   -- enter their password using vim.fn.inputsecret in order to obscure it. We then
   -- send that password over to doas/sudo to authenticate.
-  local function handle_stdout(channel_id, data, name)
+  local function handle_stdout(channel_id, data, _)
     if #data > 0 then
       if data[1]:find('password') then
         local password = vim.fn.inputsecret('(' .. tool .. ') password: ')
