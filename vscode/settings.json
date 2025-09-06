@@ -1,29 +1,60 @@
 {
   "workbench.colorCustomizations": {
-    // "activityBar.background": "#f3f3f3",
     // "activityBar.foreground": "#000000",
+    // "activityBar.background": "#f3f3f3",
     // "activityBar.activeBorder": "#f3f3f3",
     // "statusBar.background": "#007acc",
     // "statusBar.foreground": "#ffffff",
     // "statusBarItem.remoteBackground": "#16825d",
     // "statusBarItem.remoteForeground": "#ffffff",
-    // "editor.background": "#f3f3f3",
-    // "tab.activeBackground": "#fcfcfc"
-    //     // "statusBar.background": "#c491a1",
-    //     // "statusBarItem.remoteBackground": "#996c79",
-    //     // "activityBarBadge.background": "#c28699",
-    //     // "list.activeSelectionBackground": "#d6bfc7",
-    //     // "list.activeSelectionForeground": "#0c0c0c",
+    // "editor.background": "#f8f8f8"
   },
-  "window.menuBarVisibility": "toggle",
-  "editor.fontFamily": "'Noto Sans Mono','JetBrains Mono','Iosevka Nerd Font Mono', 'Fira Code','ComicShannsMono Nerd Font','Cascadia Code','Droid Sans Mono','monospace'",
-  "editor.fontSize": 15,
+  "editor.fontFamily": "'Fira Code Retina', 'JetBrainsMono Nerd Font Mono','Iosevka Nerd Font Mono', 'ComicShannsMono Nerd Font','Cascadia Code','Droid Sans Mono','monospace'",
+  "editor.fontSize": 14.8,
   "editor.fontLigatures": false,
+  "editor.rulers": [80, 100],
+  "editor.wordWrap": "off",
   // "http.proxy": "http://127.0.0.1:8080",
   "editor.lineNumbers": "relative",
   "editor.tabCompletion": "onlySnippets",
-  "terminal.integrated.fontFamily": "'Noto Sans Mono','Iosevka Nerd Font Mono',MesloLGS NF",
+  "terminal.integrated.fontFamily": "'Fira Code Retina', 'JetBrainsMono Nerd Font Mono','Noto Sans Mono','Iosevka Nerd Font Mono',MesloLGS NF",
   "terminal.integrated.fontSize": 15,
+  "editor.unicodeHighlight.allowedLocales": {
+    "zh-hans": true,
+    "zh-hant": true
+  },
+  "path-intellisense.showHiddenFiles": true,
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "go.gopath": "/home/yuki/.go",
+  "beancount.mainBeanFile": "~/personal/finance/main.bean",
+  "workbench.startupEditor": "none",
+  "redhat.telemetry.enabled": false,
+  "update.mode": "none",
+  "editor.formatOnSave": false,
+  "window.customTitleBarVisibility": "never",
+  "workbench.navigationControl.enabled": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  // inlay hints
+  "editor.inlayHints.fontSize": 1,
+  "editor.inlayHints.padding": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "svelte.enable-ts-plugin": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "telemetry.telemetryLevel": "off",
+  "beancount.fixedCJKWidth": true,
+  "beancount.completePayeeNarration": false,
+  "beancountFormatter.fixedCJKWidth": true,
+  "window.titleBarStyle": "native",
+  "chat.commandCenter.enabled": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
   "latex-workshop.latex.tools": [
     {
       "name": "xelatex",
@@ -55,23 +86,10 @@
       "tools": ["xelatex", "bibtex", "xelatex", "xelatex"]
     }
   ],
-  "editor.wordWrap": "off",
-  "editor.unicodeHighlight.allowedLocales": {
-    "zh-hans": true,
-    "zh-hant": true
-  },
-  "path-intellisense.showHiddenFiles": true,
-  "path-intellisense.autoSlashAfterDirectory": true,
-  "go.gopath": "/home/yuki/.go",
-  "beancount.mainBeanFile": "~/personal/finance/main.bean",
-  "beancount.fixedCJKWidth": true,
-  "workbench.startupEditor": "none",
   "rust-analyzer.check.command": "clippy",
   "rust-analyzer.rustfmt.rangeFormatting.enable": true,
-  "redhat.telemetry.enabled": false,
-  "[lua]": {
-    "editor.defaultFormatter": "yinfei.luahelper"
-  },
+  "rust-analyzer.imports.granularity.group": "module",
+  "rust-analyzer.imports.prefix": "self",
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "editor.formatOnSave": true
@@ -88,34 +106,53 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[typescriptreact]": {
+  "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "black-formatter.args": ["--skip-string-normalization"],
-  "editor.minimap.enabled": true,
-  "window.titleBarStyle": "native",
-  "chat.commandCenter.enabled": false,
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "update.mode": "none",
-  "editor.formatOnSave": true,
-  "window.customTitleBarVisibility": "auto",
-  "workbench.navigationControl.enabled": false,
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Default Light Modern",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.singleQuote": true
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
+  "black-formatter.args": ["--skip-string-normalization"],
   "emmet.includeLanguages": {
     "postcss": "css"
   },
-  // inlay hints
-  "editor.inlayHints.fontSize": 1,
-  "editor.inlayHints.padding": true,
-  "python.analysis.inlayHints.functionReturnTypes": true,
-  "python.analysis.inlayHints.callArgumentNames": "partial",
-  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "javascript.inlayHints.parameterNames.enabled": "literals",
-  "typescript.inlayHints.enumMemberValues.enabled": true,
-  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "typescript.inlayHints.parameterNames.enabled": "literals"
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc"
+  },
+  "SQL-Formatter-VSCode.dialect": "postgresql",
+  "SQL-Formatter-VSCode.keywordCase": "upper",
+  "sqlfluff.dialect": "postgres",
+  "sqlfluff.excludeRules": ["LT01", "L009"],
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "svelte.plugin.svelte.format.config.singleQuote": true,
+  "bun.runtime": "/usr/bin/bun",
+  "bun.debugTerminal.enabled": true,
+  "bun.debugTerminal.stopOnEntry": false,
+  "bun.test.filePattern": "**/*{.test.,.spec.,_test_,_spec_}{js,ts,tsx,jsx,mts,cts}",
+  "python.languageServer": "None",
+  "window.menuBarVisibility": "toggle",
+  "diffEditor.ignoreTrimWhitespace": false,
 }

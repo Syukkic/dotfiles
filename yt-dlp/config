@@ -1,5 +1,6 @@
 # Save in ~/Videos
 -o ~/Videos/%(title)s.%(ext)s
+# -o ~/Videos/%(playlist_index)03d-%(title)s.%(ext)s
 
 # Always extract audio
 # -x

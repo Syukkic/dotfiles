@@ -8,7 +8,7 @@ abbr -a lt 'exa --tree'
 ## entrance
 abbr -a .. "cd .."
 abbr -a ... "cd ..; cd .."
-abbr -a blog "cd ~/personal/blog/"
+abbr -a blog "cd ~/personal/bun-blog/"
 abbr -a de "cd ~/Desktop"
 abbr -a dot "cd ~/projects/dotfiles"
 abbr -a pjs "cd ~/projects/"
@@ -17,7 +17,7 @@ abbr -a vimconf "nvim ~/projects/dotfiles/nvim/"
 abbr -a start "sudo systemctl start"
 abbr -a stop "sudo systemctl stop"
 abbr -a restart "sudo systemctl restart"
-abbr -a status "sudo systemctl status"
+abbr -a status "systemctl status"
 abbr -a enable "sudo systemctl enable"
 abbr -a disable "sudo systemctl disable"
 
@@ -34,10 +34,14 @@ abbr -a gc "git clone"
 abbr -a gts "git status"
 abbr -a steam "flatpak run com.valvesoftware.Steam"
 abbr -a wine "flatpak run --command=winetricks org.winehq.Wine"
-abbr -a zed "zeditor"
-abbr -a mail "aerc"
+abbr -a zed zeditor
+abbr -a mail aerc
 abbr -a wrename "wezterm cli set-tab-title"
+# abbr -a code "codium --ozone-platform=wayland --enable-wayland-ime"
+# abbr -a fin "codium ~/personal/finance --ozone-platform=wayland --enable-wayland-ime"
+# abbr -a code "codium"
 abbr -a fin "code ~/personal/finance"
+abbr -a vm "bash ~/vm/lanuch.sh"
 
 abbr -a orphans "sudo pacman -Qtdq | sudo pacman -Rns -"
 abbr -a install "sudo pacman -S"
@@ -48,12 +52,3 @@ abbr -a qserach "pacman -Qi"
 
 abbr -a setproxy "set -x all_proxy socks5://127.0.0.1:8080"
 abbr -a unsetproxy "set -e all_proxy"
-
-
-
-
-
-
-
-
-
