@@ -1,14 +1,20 @@
-vim.lsp.config('emmet_language_server', {
+vim.filetype.add({
+  extension = {
+    beancount = 'beancount',
+    bean = 'beancount',
+  },
+})
+
+vim.lsp.config('beancount', {
   cmd = { 'beancount-language-server', '--stdio' },
   filetypes = { 'bean', 'beancount' },
   init_options = {
-    journalFile = '~/personal/finance/main.bean',
-    pythonPath = 'python',
+    journal_file = vim.fn.expand('~/personal/finance/main.bean'),
+    -- formatting = {
+    --   prefix_width = 30,
+    --   num_width = 10,
+    --   -- currency_column = 60,
+    --   number_currency_spacing = 1,
+    -- },
   },
-  root_dir = function(fname)
-    return vim.fs.dirname((vim.fs.find('.git', {
-      path = fname,
-      upward = true,
-    }))[1])
-  end,
 })

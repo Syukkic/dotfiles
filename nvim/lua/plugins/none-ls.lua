@@ -1,6 +1,9 @@
 return {
   {
     'nvimtools/none-ls.nvim',
+    dependencies = {
+      'nvimtools/none-ls-extras.nvim',
+    },
     event = { 'BufReadPre', 'BufNewFile' },
     config = function()
       local null_ls = require('null-ls')
@@ -22,6 +25,7 @@ return {
           to_stdin = true,
         }),
       }
+
 
       null_ls.setup({
         sources = {
@@ -70,12 +74,9 @@ return {
           null_ls.builtins.formatting.ocamlformat.with({
             filetypes = { 'ocaml' },
           }),
-          -- null_ls.builtins.diagnostics.sqlfluff.with({
-          --   extra_args = { '--dialect', 'postgres', '--exclude-rules', 'LT01,L009', '--rules', 'LT10,ST05' },
-          -- }),
-          -- null_ls.builtins.formatting.sqlfluff.with({
-          --   extra_args = { '--dialect', 'postgres', '--exclude-rules', 'LT01,L009', '--rules', 'LT10,ST05' },
-          -- }),
+          -- https://stackoverflow.com/questions/78108133/issue-with-none-ls-configuration-error-with-eslint-d
+          require("none-ls.diagnostics.eslint_d"),
+          require("none-ls.code_actions.eslint_d"),
         },
       })
     end,

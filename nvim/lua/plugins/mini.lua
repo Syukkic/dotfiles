@@ -1,29 +1,10 @@
 return {
   {
-    'nvim-mini/mini.tabline',
-    version = false,
+    'nvim-mini/mini.nvim',
     config = function()
-      require('mini.tabline').setup()
-    end,
-  },
-  {
-    'nvim-mini/mini.statusline',
-    version = false,
-    config = function()
-      require('mini.statusline').setup()
-    end,
-  },
-  {
-    'nvim-mini/mini.pairs',
-    version = '*',
-    config = function()
-      require('mini.pairs').setup()
-    end,
-  },
-  {
-    'nvim-mini/mini.files',
-    version = '*',
-    config = function()
+      require('mini.tabline').setup({})
+      require('mini.statusline').setup({})
+      -- require('mini.pairs').setup({})
       require('mini.files').setup({
         windows = {
           -- Maximum number of windows to show side by side

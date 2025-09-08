@@ -1,3 +1,5 @@
+local utils = require('configs.utils')
+
 -- search buffers
 vim.keymap.set('n', '<leader>;', '<cmd>Buffers<cr>')
 -- quick-save
@@ -61,6 +63,9 @@ vim.keymap.set('i', '<F1>', '<Esc>')
 -- Move line(s) up or down
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+
+-- vim.api.nvim_create_user_command('W', utils.save_as_root, { desc = 'Save file as root', nargs = '?' })
+vim.keymap.set('n', '<leader>bo', utils.close_other_buffers, { desc = 'close other buffers' })
 
 -- -- execute
 -- vim.keymap.set('n', '<space><space>x', '<cmd>source %<CR>')

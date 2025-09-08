@@ -9,7 +9,8 @@ vim.opt.foldlevelstart = 99
 -- very basic "continue indent" mode (autoindent) is always on in neovim
 -- vim.opt.timeoutlen = 300
 -- keep more context on screen while scrolling
-vim.opt.scrolloff = 5
+vim.opt.scrolloff = 15
+vim.opt.sidescrolloff = 10
 -- never show me line breaks if they're not there
 vim.opt.wrap = false
 -- always draw sign column. prevents buffer moving when adding/deleting sign
@@ -64,7 +65,4 @@ vim.opt.list = true
 vim.opt.spelllang = { 'en_us', 'cjk' }
 
 vim.opt.swapfile = false
-
-vim.diagnostic.config({ virtual_text = { current_line = true } })
-
 vim.opt.winborder = 'rounded'

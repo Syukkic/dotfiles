@@ -32,7 +32,6 @@ return {
           'lua_ls',
           'pyright',
           'rust_analyzer',
-          'tinymist',
           'ts_ls',
         },
         automatic_enable = true,
@@ -40,11 +39,11 @@ return {
       mason_tool_installer.setup({
         ensure_installed = {
           'black',
-          'clangd',
           'djlint',
           'isort',
           'prettier',
           'stylua',
+          'eslint_d',
         },
       })
     end,
