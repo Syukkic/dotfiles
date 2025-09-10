@@ -29,6 +29,7 @@ vim.lsp.config('rust_analyzer', {
         showParameterNames = true,
         parameterHintsPrefix = '<- ',
         otherHintsPrefix = '=> ',
+        hainingHints = { enable = false },
       },
       rustfmt = {
         rangeFormatting = {
