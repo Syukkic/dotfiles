@@ -2,8 +2,7 @@ local wezterm = require('wezterm')
 local act = wezterm.action
 local config = {}
 
-config.color_scheme = 'Gruvbox dark, medium (base16)'
--- config.color_scheme = "Solarized Light (Gogh)"
+config.color_scheme = 'Gruvbox dark, hard (base16)'
 -- config.color_scheme = "light modern"
 -- calt=0 means ligatures-disabled
 config.harfbuzz_features = { 'calt=0' }
@@ -14,7 +13,7 @@ config.xcursor_theme = 'breeze_cursors'
 config.scrollback_lines = 65536
 config.window_close_confirmation = 'AlwaysPrompt'
 
-config.default_workspace = 'home'
+-- config.default_workspace = 'home'
 
 config.font = wezterm.font_with_fallback({
   'Fira Code Retina',

@@ -40,7 +40,7 @@ abbr -a wrename "wezterm cli set-tab-title"
 # abbr -a code "codium --ozone-platform=wayland --enable-wayland-ime"
 # abbr -a fin "codium ~/personal/finance --ozone-platform=wayland --enable-wayland-ime"
 # abbr -a code "codium"
-abbr -a fin "code ~/personal/finance"
+abbr -a fin "cd ~/personal/finance/ && nvim ~/personal/finance"
 abbr -a vm "bash ~/vm/lanuch.sh"
 
 abbr -a orphans "sudo pacman -Qtdq | sudo pacman -Rns -"
