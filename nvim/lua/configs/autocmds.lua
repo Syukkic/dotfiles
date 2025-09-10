@@ -4,7 +4,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   command = 'silent! lua vim.highlight.on_yank({ timeout = 500 })',
 })
 
-
 -- jump to last edit position on opening file
 vim.api.nvim_create_autocmd('BufReadPost', {
   pattern = '*',
@@ -36,22 +35,6 @@ vim.api.nvim_create_autocmd('InsertLeave', {
   command = 'set nopaste',
 })
 
--- help filetype detection (add as needed)
--- vim.api.nvim_create_autocmd('BufRead', { pattern = '*.ext', command = 'set filetype=someft' })
--- correctly classify mutt buffers
-local email = vim.api.nvim_create_augroup('email', { clear = true })
-vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufRead' }, {
-  pattern = '/tmp/mutt*',
-  group = email,
-  command = 'setfiletype mail',
-})
-
--- https://brianbuccola.com/line-breaks-in-mutt-and-vim/
-vim.api.nvim_create_autocmd('Filetype', {
-  pattern = 'mail',
-  group = email,
-  command = 'setlocal formatoptions+=w',
-})
 
 -- shorter columns in text because it reads better that way
 local text = vim.api.nvim_create_augroup('text', { clear = true })
@@ -91,22 +74,6 @@ vim.api.nvim_create_autocmd('BufEnter', {
   command = 'set formatoptions-=cro',
 })
 
--- -- Trigger when a new Python file is created (BufNewFile)
--- -- or a Python file is saved (BufWritePost)
--- vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufWritePost' }, {
---   pattern = '*.py',
---   callback = function()
---     local clients = vim.lsp.get_clients()
---     for _, client in ipairs(clients) do
---       if client.name == 'pyright' then
---         client.notify('workspace/didChangeWatchedFiles', {
---           changes = { { uri = vim.uri_from_fname(vim.fn.expand('%:p')), type = 1 } },
---         })
---       end
---     end
---   end,
--- })
-
 -- https://vinnymeller.com/posts/neovim_nightly_inlay_hints/#globally
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('UserLspConfig', {}),
@@ -118,27 +85,19 @@ vim.api.nvim_create_autocmd('LspAttach', {
   end,
 })
 
--- vim.api.nvim_create_autocmd("CursorMoved", {
--- 	-- https://stackoverflow.com/a/14957727
--- 	pattern = "*",
--- 	callback = function()
--- 		local current_line = vim.fn.line(".") -- current cursor
--- 		local last_line = vim.fn.line("$") -- last line of file
---
--- 		if current_line == last_line then
--- 			vim.fn.append(last_line, "") -- insert empty line at the bottom
--- 		end
--- 	end,
--- })
-
 -- [[
 
--- -- Being replaced by conform.nvim
--- -- Remove Trailing Whitespace on Save
--- vim.api.nvim_create_autocmd("BufWritePre", {
--- 	pattern = "*",
--- 	command = [[%s/\s\+$//e]],
+-- vim.api.nvim_create_autocmd('CursorMoved', {
+--   -- https://stackoverflow.com/a/14957727
+--   pattern = '*',
+--   callback = function()
+--     local current_line = vim.fn.line('.') -- current cursor
+--     local last_line = vim.fn.line('$') -- last line of file
+--
+--     if current_line == last_line then
+--       vim.fn.append(last_line, '') -- insert empty line at the bottom
+--     end
+--   end,
 -- })
 
 --]]
-

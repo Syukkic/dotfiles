@@ -44,7 +44,7 @@ return {
       },
     },
   },
- {
+  {
     'laytan/cloak.nvim',
     opts = {
       enabled = true,
@@ -171,9 +171,11 @@ return {
   },
   {
     'j-hui/fidget.nvim',
-    config = function()
-      require('fidget').setup({})
-    end,
+    opts = {
+      notification = {
+        window = { winblend = 0 },
+      },
+    },
   },
   {
     'hedyhli/outline.nvim',
